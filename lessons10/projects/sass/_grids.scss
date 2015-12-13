@@ -1,0 +1,95 @@
+@import "susy";
+
+// Susy Grid Config
+// For more information: http://susydocs.oddbird.net/en/latest/settings/
+
+$susy: (
+  columns: 12,//  сколько колоноу
+  gutters: 1/4, //растояни между колонками
+	container: 1170px,// ширина контейнера
+	math: fluid,// всё расчитываеться автоматически в %
+	output: float,//стандарт
+	gutter-position: inside,//
+
+	debug: (//вертикальный ритм
+		image: show,
+		color: rgba(#66f, .5),
+		output: background,
+		toggle: top right,
+	)
+
+);
+/*
+.body{
+  @include container(3);
+  @media screen and (min-width: 500px) {
+    width:480px;
+  }
+}
+/* Susy Grid Rules */
+/*
+#main {
+	@include container(10);
+	// Using Compass Vertical Rhythm
+	@include margin-trailer(2);
+	@include margin-leader(2);
+	@media screen and (max-width: 768px) {
+		margin: 0;
+	}
+}
+
+#masthead {
+	@include span(10);
+	background: rgba(green, .7);
+}
+
+#content {
+	@include span(7);
+	background: rgba(darkorange, .7);
+	@media screen and (max-width: 768px) {
+		@include span(10);
+	}
+}
+
+#sidebar {
+	@include span(3 last);
+	background: rgba(hotpink, .7);
+	@media screen and (max-width: 768px) {
+		@include span(10);
+	}
+}
+
+#ad {
+	@include span(7);
+	@include push(1.5);
+	background: rgba(red, .7);
+	@media screen and (max-width: 768px) {
+		@include span(10);
+	}
+}
+
+#pre-footer {
+	@include span(10);
+	background: rgba(brown, .7);
+}
+.pre-footer-column {
+	@include span(3.3);
+	&:last-child {
+		@include span(3.3 last);
+		@media screen and (max-width: 768px) {
+			@include span(10);
+		}
+	}
+	@media screen and (max-width: 768px) {
+		@include span(10);
+	}
+}
+
+#colophon {
+	@include span(10);
+	// Using Compass Vertical Rhythm
+	@include padding-trailer(1);
+	@include padding-leader(1);
+	background: rgba(black, .7);
+}
+*/

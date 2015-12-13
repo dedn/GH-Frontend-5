@@ -1,0 +1,808 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 4, ../sass/_reset.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 5, ../sass/_reset.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font: 15px Roboto, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+/* line 6, ../sass/_reset.scss */
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
+/* line 12, ../sass/_reset.scss */
+select, input, textarea {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+/* line 13, ../sass/_reset.scss */
+textarea {
+  vertical-align: top;
+}
+
+/* line 14, ../sass/_reset.scss */
+:focus {
+  outline: none;
+}
+
+/* line 15, ../sass/_reset.scss */
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 16, ../sass/_reset.scss */
+img, fieldset {
+  border: 0;
+}
+
+/* line 17, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 18, ../sass/_reset.scss */
+a:link, a:visited {
+  font: 12px Tahoma, sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 19, ../sass/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 23, ../sass/_reset.scss */
+.float-r {
+  float: right !important;
+}
+
+/* line 24, ../sass/_reset.scss */
+.float-l {
+  float: left !important;
+}
+
+/* line 25, ../sass/_reset.scss */
+.no-float {
+  float: none !important;
+}
+
+/* line 26, ../sass/_reset.scss */
+.no-border {
+  border: 0 !important;
+}
+
+/* line 27, ../sass/_reset.scss */
+.no-bg {
+  background: none !important;
+}
+
+/* line 28, ../sass/_reset.scss */
+.no-margin {
+  margin: 0 !important;
+}
+
+/* line 29, ../sass/_reset.scss */
+.no-padding {
+  padding: 0 !important;
+}
+
+/* line 30, ../sass/_reset.scss */
+.no-display {
+  display: none !important;
+}
+
+/* line 31, ../sass/_reset.scss */
+.display {
+  display: block !important;
+}
+
+/* line 32, ../sass/_reset.scss */
+.inline {
+  display: inline !important;
+}
+
+/* line 33, ../sass/_reset.scss */
+.overflow {
+  overflow: hidden !important;
+}
+
+/* line 34, ../sass/_reset.scss */
+.align-r {
+  text-align: right !important;
+}
+
+/* line 35, ../sass/_reset.scss */
+.align-l {
+  text-align: left !important;
+}
+
+/* line 36, ../sass/_reset.scss */
+.align-c {
+  text-align: center !important;
+}
+
+/* line 37, ../sass/_reset.scss */
+.clear {
+  clear: both;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+@font-face {
+  font-family: "proximanova";
+  src: url("../fonts/proximanova-light.otf");
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 11, ../sass/styles.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 15, ../sass/styles.scss */
+section {
+  padding: 50px 0;
+}
+
+/* line 19, ../sass/styles.scss */
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 23, ../sass/styles.scss */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 32, ../sass/styles.scss */
+.hero {
+  padding-top: 0;
+  position: relative;
+  height: 205vh;
+  background: url("../images/background.jpg") fixed center center/cover no-repeat;
+}
+/* line 37, ../sass/styles.scss */
+.hero .hero-body {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+/* line 44, ../sass/styles.scss */
+.hero .hero-body .hero-title {
+  color: #fff;
+  font: 300 72px/48px 'RobotoSlab';
+}
+/* line 47, ../sass/styles.scss */
+.hero .hero-body .hero-title span {
+  font: 400 30px/48px 'RobotoSlab';
+}
+
+/*-------------------------------------HEADER-MAIN-CONTENT---------------------------*/
+/* line 55, ../sass/styles.scss */
+.main
+li {
+  margin: 40px auto;
+  border-bottom: 1px solid #dd4b2b;
+  color: #fff;
+}
+/* line 60, ../sass/styles.scss */
+.main
+li p {
+  font: 300 15px/30px 'Roboto';
+  padding-bottom: 10px;
+}
+
+/* line 66, ../sass/styles.scss */
+.feature-title {
+  font: 700 30px/24px 'RobotoSlab';
+  padding: 20px 0;
+}
+
+/* line 71, ../sass/styles.scss */
+.button-hero {
+  margin: 0 auto;
+  display: block;
+  width: 213px;
+  height: 54px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  background: #fff;
+}
+/* line 79, ../sass/styles.scss */
+.button-hero:hover {
+  background: none;
+  color: #fff;
+  transition: 0.5s;
+}
+/* line 84, ../sass/styles.scss */
+.button-hero a {
+  color: #612316;
+  font: 400 18px/30px 'RobotoSlab';
+  line-height: 54px;
+}
+/* line 88, ../sass/styles.scss */
+.button-hero a:hover {
+  color: #fff;
+  transition: 0.5s;
+  font-size: 20px;
+}
+
+/*---------------------------Desktop------------------------------------------------*/
+@media (min-width: 769px) {
+  /* line 97, ../sass/styles.scss */
+  .main {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+  .main:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 100, ../sass/styles.scss */
+  .main .linear-view {
+    border: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 108, ../sass/styles.scss */
+  .hero {
+    height: 130vh;
+  }
+
+  /* line 111, ../sass/styles.scss */
+  .hero .hero-body {
+    top: 65%;
+  }
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 119, ../sass/styles.scss */
+#logo {
+  float: left;
+  padding: 5px;
+  margin: 5px 5px 0 0;
+}
+/* line 123, ../sass/styles.scss */
+#logo a {
+  vertical-align: middle;
+  font: 700 36px/36px 'RobotoSlab';
+  padding-bottom: 0;
+  color: #31353e;
+}
+/* line 128, ../sass/styles.scss */
+#logo a span {
+  display: block;
+  padding-top: 0;
+  font: 400 16px/10px 'RobotoSlab';
+  color: #dd4b2b;
+  letter-spacing: 1.5px;
+}
+
+/* line 138, ../sass/styles.scss */
+#navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: #edeff1;
+}
+
+/* line 147, ../sass/styles.scss */
+#navbar.default {
+  position: fixed;
+  top: 0;
+  background-color: #edeff1;
+  color: white;
+  transition-duration: 1s;
+}
+
+/* line 155, ../sass/styles.scss */
+.iconMenu {
+  float: right;
+  padding-top: 15px;
+  margin-right: 10px;
+}
+
+/* line 162, ../sass/styles.scss */
+.nav li {
+  float: left;
+  margin-right: 35px;
+  text-align: center;
+}
+/* line 166, ../sass/styles.scss */
+.nav li a {
+  text-decoration: none;
+  color: #31353e;
+  font: 400 18px/24px 'RobotoSlab';
+}
+/* line 170, ../sass/styles.scss */
+.nav li a:hover {
+  background: #dd4b2b;
+  border-radius: 25px;
+  color: #edeff1;
+  transition: 0.5s;
+  padding: 5px 10px;
+}
+
+/* line 181, ../sass/styles.scss */
+.itemsMenu li {
+  display: inline;
+  padding-right: 35px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 186, ../sass/styles.scss */
+.itemsMenu li a {
+  padding: 5px 10px;
+}
+
+/* line 191, ../sass/styles.scss */
+.iconMenu {
+  color: #dd4b2b;
+  cursor: pointer;
+  display: none;
+}
+/* line 195, ../sass/styles.scss */
+.iconMenu:hover {
+  color: #31353e;
+  transition: 0.5s;
+}
+
+/* line 201, ../sass/styles.scss */
+.showitems {
+  display: block !important;
+  transition: 1s;
+}
+
+/* line 206, ../sass/styles.scss */
+.iconMenu {
+  display: block;
+}
+
+/* line 210, ../sass/styles.scss */
+.itemsMenu {
+  display: none;
+}
+
+/* line 214, ../sass/styles.scss */
+.itemsMenu li {
+  display: block;
+  padding: 5px;
+}
+
+@media (min-width: 769px) {
+  /* line 220, ../sass/styles.scss */
+  .itemsMenu {
+    display: block;
+  }
+
+  /* line 223, ../sass/styles.scss */
+  .iconMenu {
+    display: none;
+  }
+
+  /* line 226, ../sass/styles.scss */
+  .itemsMenu li {
+    width: auto;
+    float: right;
+    margin-top: 15px;
+  }
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------OUR NEWS--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 237, ../sass/styles.scss */
+.news {
+  padding-top: 0;
+  background: #edeff1;
+}
+/* line 240, ../sass/styles.scss */
+.news h2 {
+  text-align: center;
+  font: 700 30px/24px 'RobotoSlab';
+  margin: 0 auto 50px;
+  padding-top: 50px;
+}
+
+/* line 248, ../sass/styles.scss */
+.row {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+/* line 254, ../sass/styles.scss */
+.news h4 {
+  margin: 25px 0 15px;
+  text-align: center;
+  font: 700 24px/30px 'RobotoSlab';
+}
+
+/* line 260, ../sass/styles.scss */
+.news p {
+  margin-bottom: 25px;
+  text-align: center;
+  font: 300 15px/30px 'Roboto';
+}
+
+/* line 266, ../sass/styles.scss */
+.read-more-button {
+  margin: 0 auto 25px;
+  display: block;
+  width: 179px;
+  height: 54px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  background: #fff;
+  background-image: linear-gradient(to bottom, #fff, #fff);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 1px white;
+}
+/* line 277, ../sass/styles.scss */
+.read-more-button:hover {
+  color: #fff;
+  transition: 0.5s;
+}
+/* line 281, ../sass/styles.scss */
+.read-more-button a {
+  color: #612316;
+  font: 400 18px/30px 'RobotoSlab';
+  line-height: 54px;
+}
+/* line 285, ../sass/styles.scss */
+.read-more-button a:hover {
+  transition: 0.5s;
+  font-size: 20px;
+}
+
+/*---------------------------Desktop------------------------------------------------*/
+@media (min-width: 769px) {
+  /* line 295, ../sass/styles.scss */
+  .linear-view {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+@media (min-width: 961px) {
+  /* line 301, ../sass/styles.scss */
+  .linear-view p {
+    width: 288px;
+    margin: 0 auto 30px;
+  }
+}
+/*---------------------------Desktop------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NEWSLETTER-----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 312, ../sass/styles.scss */
+.newsletter {
+  background-image: url("../images/newsletter_bg.jpg");
+  color: #fff;
+}
+/* line 317, ../sass/styles.scss */
+.newsletter p {
+  font: 300 15px/24px 'Roboto';
+  text-align: center;
+}
+
+/* line 323, ../sass/styles.scss */
+.newsletter .title {
+  font: 700 30px/48px 'RobotoSlab';
+  text-align: center;
+}
+
+/* line 328, ../sass/styles.scss */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* line 334, ../sass/styles.scss */
+.gorizontal {
+  position: relative;
+  float: left;
+  left: 50%;
+}
+
+/* line 340, ../sass/styles.scss */
+.email-main {
+  position: relative;
+  float: left;
+  right: 50%;
+  list-style: none;
+  background: #dd4b2b;
+  width: 300px;
+  height: 54px;
+  margin-top: 20px;
+  font: 400 18px/30px 'RobotoSlab';
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 27px;
+}
+/* line 353, ../sass/styles.scss */
+.email-main li {
+  float: left;
+}
+
+/* line 358, ../sass/styles.scss */
+#email-send {
+  background: none;
+  border: none;
+  margin: 15px 0 10px;
+  width: 185px;
+  padding-left: 5px;
+  color: #f3f4f6;
+}
+
+/* line 367, ../sass/styles.scss */
+.sign-up {
+  width: 113px;
+  height: 54px;
+  border-radius: 27px;
+  background: #fff;
+  color: #612316;
+  cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  /* line 377, ../sass/styles.scss */
+  .email-main {
+    width: 509px;
+  }
+
+  /* line 380, ../sass/styles.scss */
+  .sign-up {
+    width: 184px;
+  }
+
+  /* line 383, ../sass/styles.scss */
+  #email-send {
+    width: 322px;
+    padding-left: 15px;
+    color: #fff;
+  }
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------Product--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 393, ../sass/styles.scss */
+.product {
+  padding: 50px 0;
+  color: #191b29;
+}
+
+/* line 398, ../sass/styles.scss */
+.product h4 {
+  font: 700 30px/48px 'RobotoSlab';
+  margin-bottom: 20px;
+}
+
+/* line 403, ../sass/styles.scss */
+.product p {
+  font: 300 16px/30px 'Roboto';
+  margin-bottom: 30px;
+}
+
+/* line 408, ../sass/styles.scss */
+.product-detali {
+  text-align: center;
+}
+
+/* line 412, ../sass/styles.scss */
+.product-detali li {
+  margin-bottom: 30px;
+}
+
+/* line 416, ../sass/styles.scss */
+.product-button-blue, .product-button-red {
+  margin: 0 auto 25px;
+  display: block;
+  width: 213px;
+  height: 54px;
+  border: 2px solid #dd4b2b;
+  border-radius: 25px;
+  background: #dd4b2b;
+}
+/* line 424, ../sass/styles.scss */
+.product-button-blue:hover, .product-button-red:hover {
+  background: none;
+  color: #fff;
+  transition: 0.5s;
+}
+/* line 429, ../sass/styles.scss */
+.product-button-blue a, .product-button-red a {
+  color: #fff;
+  font: 400 18px/30px 'RobotoSlab';
+  line-height: 54px;
+}
+/* line 433, ../sass/styles.scss */
+.product-button-blue a:hover, .product-button-red a:hover {
+  transition: 0.5s;
+  font-size: 20px;
+  color: #dd4b2b;
+}
+
+/* line 441, ../sass/styles.scss */
+.product-button-red {
+  background: #4b4e73;
+  border: 2px solid #4b4e73;
+}
+/* line 446, ../sass/styles.scss */
+.product-button-red a:hover {
+  color: #4b4e73;
+}
+
+/*---------------------------Desktop------------------------------------------------*/
+@media (min-width: 769px) {
+  /* line 455, ../sass/styles.scss */
+  .product2-detali-line {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 458, ../sass/styles.scss */
+  .product-detali li {
+    height: 407px;
+  }
+  /* line 460, ../sass/styles.scss */
+  .product-detali li p, .product-detali li h4 {
+    text-align: left;
+  }
+  /* line 463, ../sass/styles.scss */
+  .product-detali li .product-button-red,
+  .product-detali li .product-button-blue,
+  .product-detali li .product-button-red {
+    float: left;
+  }
+}
+@media (min-width: 769px) {
+  /* line 471, ../sass/styles.scss */
+  .product1-detali-line {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+/*---------------------------Desktop------------------------------------------------*/
+/*-------------------------------------PRE-FOOTER---------------------------------------*/
+/* line 480, ../sass/styles.scss */
+.prefooter {
+  padding: 50px 0;
+  background: #d75d0e;
+  color: #fff;
+  font: 400 18px/36px 'Roboto';
+}
+/* line 485, ../sass/styles.scss */
+.prefooter li {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  /* line 491, ../sass/styles.scss */
+  p {
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (min-width: 769px) {
+  /* line 499, ../sass/styles.scss */
+  .prefooter li {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 502, ../sass/styles.scss */
+  .prefooter p {
+    width: 144px;
+    margin: 0 auto;
+  }
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 513, ../sass/styles.scss */
+footer {
+  padding: 50px 0;
+  background: url(../images/footer_bg.jpg);
+  color: #fff;
+}
+/* line 517, ../sass/styles.scss */
+footer span {
+  text-align: center;
+  font: 300 18px/24px 'proximanova';
+}
+
+/* line 523, ../sass/styles.scss */
+.url {
+  font: 700 18px/24px 'proximanova';
+}

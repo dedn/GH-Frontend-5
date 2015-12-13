@@ -1,0 +1,525 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "reset";
+@import "fonts";
+@import "grids";
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.container {
+  @include container;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.hero {
+  padding-top: 0;
+  position: relative;
+  height: 205vh;
+  background: url("../images/background.jpg") fixed center center/cover no-repeat;
+  .hero-body {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    .hero-title {
+      color: #fff;
+      font: 300 72px/48px 'RobotoSlab';
+      span {
+        font: 400 30px/48px 'RobotoSlab';
+      }
+    }
+  }
+}
+
+/*-------------------------------------HEADER-MAIN-CONTENT---------------------------*/
+.main
+li {
+  margin: 40px auto;
+  border-bottom: 1px solid #dd4b2b;
+  color: #fff;
+  p {
+    font: 300 15px/30px 'Roboto';
+    padding-bottom: 10px;
+  }
+}
+
+.feature-title {
+  font: 700 30px/24px 'RobotoSlab';
+  padding: 20px 0;
+}
+
+.button-hero {
+  margin: 0 auto;
+  display: block;
+  width: 213px;
+  height: 54px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  background: #fff;
+  &:hover {
+    background: none;
+    color: #fff;
+    transition: 0.5s;
+  }
+  a {
+    color: #612316;
+    font: 400 18px/30px 'RobotoSlab';
+    line-height: 54px;
+    &:hover {
+      color: #fff;
+      transition: 0.5s;
+      font-size: 20px;
+    }
+  }
+}
+
+/*---------------------------Desktop------------------------------------------------*/
+.main {
+  @media(min-width: 769px) {
+    @include container;
+    .linear-view {
+      border: none;
+      @include span(4);
+    }
+  }
+}
+
+@media(min-width: 769px) {
+  .hero {
+    height: 130vh;
+  }
+  .hero .hero-body {
+    top: 65%;
+  }
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#logo {
+  float: left;
+  padding: 5px;
+  margin: 5px 5px 0 0;
+  a {
+    vertical-align: middle;
+    font: 700 36px/36px 'RobotoSlab';
+    padding-bottom: 0;
+    color: #31353e;
+    span {
+      display: block;
+      padding-top: 0;
+      font: 400 16px/10px 'RobotoSlab';
+      color: #dd4b2b;
+      letter-spacing: 1.5px;
+    }
+  }
+}
+
+#navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: #edeff1;
+}
+
+#navbar.default {
+  position: fixed;
+  top: 0;
+  background-color: #edeff1;
+  color: white;
+  transition-duration: 1s;
+}
+
+.iconMenu {
+  float: right;
+  padding-top: 15px;
+  margin-right: 10px;
+}
+
+.nav {
+  li {
+    float: left;
+    margin-right: 35px;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: #31353e;
+      font: 400 18px/24px 'RobotoSlab';
+      &:hover {
+        background: #dd4b2b;
+        border-radius: 25px;
+        color: #edeff1;
+        transition: 0.5s;
+        padding: 5px 10px;
+      }
+    }
+  }
+}
+
+.itemsMenu li {
+  display: inline;
+  padding-right: 35px;
+  width: 100%;
+  margin: 0 auto;
+  a {
+    padding: 5px 10px;
+  }
+}
+
+.iconMenu {
+  color: #dd4b2b;
+  cursor: pointer;
+  display: none;
+  &:hover {
+    color: #31353e;
+    transition: 0.5s;
+  }
+}
+
+.showitems {
+  display: block !important;
+  transition: 1s;
+}
+
+.iconMenu {
+  display: block;
+}
+
+.itemsMenu {
+  display: none;
+}
+
+.itemsMenu li {
+  display: block;
+  padding: 5px;
+}
+
+@media(min-width: 769px) {
+  .itemsMenu {
+    display: block;
+  }
+  .iconMenu {
+    display: none;
+  }
+  .itemsMenu li {
+    width: auto;
+    float: right;
+    margin-top: 15px;
+  }
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------OUR NEWS--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.news {
+  padding-top: 0;
+  background: #edeff1;
+  h2 {
+    text-align: center;
+    font: 700 30px/24px 'RobotoSlab';
+    margin: 0 auto 50px;
+    padding-top: 50px;
+  }
+}
+
+.row {
+  text-align: center;
+  padding-bottom: 25px;
+
+}
+
+.news h4 {
+  margin: 25px 0 15px;
+  text-align: center;
+  font: 700 24px/30px 'RobotoSlab';
+}
+
+.news p {
+  margin-bottom: 25px;
+  text-align: center;
+  font: 300 15px/30px 'Roboto';
+}
+
+.read-more-button {
+  margin: 0 auto 25px;
+  display: block;
+  width: 179px;
+  height: 54px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  background: #fff;
+  background-image: linear-gradient(to bottom, #fff, #fff);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 1px white;
+  &:hover {
+    color: #fff;
+    transition: 0.5s;
+  }
+  a {
+    color: #612316;
+    font: 400 18px/30px 'RobotoSlab';
+    line-height: 54px;
+    &:hover {
+      transition: 0.5s;
+      font-size: 20px;
+    }
+  }
+}
+
+/*---------------------------Desktop------------------------------------------------*/
+
+@media(min-width: 769px) {
+  .linear-view {
+    @include span(4);
+  }
+}
+
+@media(min-width: 961px) {
+  .linear-view p {
+    width: 288px;
+    margin: 0 auto 30px;
+  }
+}
+
+/*---------------------------Desktop------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NEWSLETTER-----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.newsletter {
+  background-image: url("../images/newsletter_bg.jpg");
+  // background-image: linear-gradient(to top, rgba(0, 0, 0, 0.36) 0%, transparent 84%, transparent 100%);
+  color: #fff;
+
+  p {
+    font: 300 15px/24px 'Roboto';
+    text-align: center;
+  }
+}
+
+.newsletter .title {
+  font: 700 30px/48px 'RobotoSlab';
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.gorizontal {
+  position: relative;
+  float: left;
+  left: 50%;
+}
+
+.email-main {
+  position: relative;
+  float: left;
+  right: 50%;
+  list-style: none;
+  background: #dd4b2b;
+  width: 300px;
+  height: 54px;
+  margin-top: 20px;
+  font: 400 18px/30px 'RobotoSlab';
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 27px;
+  li {
+    float: left;
+  }
+}
+
+#email-send {
+  background: none;
+  border: none;
+  margin: 15px 0 10px;
+  width: 185px;
+  padding-left: 5px;
+  color: #f3f4f6;
+}
+
+.sign-up {
+  width: 113px;
+  height: 54px;
+  border-radius: 27px;
+  background: #fff;
+  color: #612316;
+  cursor: pointer;
+}
+
+@media(min-width: 769px) {
+  .email-main {
+    width: 509px;
+  }
+  .sign-up {
+    width: 184px;
+  }
+  #email-send {
+    width: 322px;
+    padding-left: 15px;
+    color: #fff;
+  }
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------Product--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.product {
+  padding: 50px 0;
+  color: #191b29;
+}
+
+.product h4 {
+  font: 700 30px/48px 'RobotoSlab';
+  margin-bottom: 20px;
+}
+
+.product p {
+  font: 300 16px/30px 'Roboto';
+  margin-bottom: 30px;
+}
+
+.product-detali {
+  text-align: center;
+}
+
+.product-detali li {
+  margin-bottom: 30px;
+}
+
+.product-button-blue {
+  margin: 0 auto 25px;
+  display: block;
+  width: 213px;
+  height: 54px;
+  border: 2px solid #dd4b2b;
+  border-radius: 25px;
+  background: #dd4b2b;
+  &:hover {
+    background: none;
+    color: #fff;
+    transition: 0.5s;
+  }
+  a {
+    color: #fff;
+    font: 400 18px/30px 'RobotoSlab';
+    line-height: 54px;
+    &:hover {
+      transition: 0.5s;
+      font-size: 20px;
+      color: #dd4b2b;
+    }
+  }
+}
+
+.product-button-red {
+  @extend .product-button-blue;
+  background: #4b4e73;
+  border: 2px solid #4b4e73;
+  a {
+    &:hover {
+      color: #4b4e73;
+    }
+  }
+}
+
+/*---------------------------Desktop------------------------------------------------*/
+
+@media(min-width: 769px) {
+  .product2-detali-line {
+    @include span(6 last);
+  }
+  .product-detali li {
+    height: 407px;
+    p, h4 {
+      text-align: left;
+    }
+    .product-button-red,
+    .product-button-blue {
+      float: left;
+    }
+  }
+}
+
+@media(min-width: 769px) {
+  .product1-detali-line {
+    @include span(6 last);
+  }
+
+}
+
+/*---------------------------Desktop------------------------------------------------*/
+
+/*-------------------------------------PRE-FOOTER---------------------------------------*/
+.prefooter {
+  padding: 50px 0;
+  background: #d75d0e;
+  color: #fff;
+  font: 400 18px/36px 'Roboto';
+  li {
+    margin-bottom: 30px
+  }
+}
+
+@media(min-width: 480px) and (max-width: 768px) {
+  p {
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media(min-width: 769px) {
+  .prefooter li {
+    @include span(4);
+  }
+  .prefooter p {
+    width: 144px;
+    margin: 0 auto;
+
+  }
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+footer {
+  padding: 50px 0;
+  background: url(../images/footer_bg.jpg);
+  color: #fff;
+  span {
+    text-align: center;
+    font: 300 18px/24px 'proximanova';
+  }
+}
+
+.url {
+  font: 700 18px/24px 'proximanova';
+}
