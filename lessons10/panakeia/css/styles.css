@@ -212,7 +212,7 @@ img {
 .hero {
   padding-top: 0;
   position: relative;
-  height: 205vh;
+  min-height: 1800px;
   background: url("../images/background.jpg") fixed center center/cover no-repeat;
 }
 /* line 37, ../sass/styles.scss */
@@ -255,38 +255,27 @@ li p {
   padding: 20px 0;
 }
 
-/* line 71, ../sass/styles.scss */
-.button-hero {
+/* line 70, ../sass/styles.scss */
+.hero-body .cta-button {
   margin: 0 auto;
   display: block;
   width: 213px;
   height: 54px;
-  border: 2px solid #fff;
   border-radius: 25px;
   background: #fff;
-}
-/* line 79, ../sass/styles.scss */
-.button-hero:hover {
-  background: none;
-  color: #fff;
-  transition: 0.5s;
-}
-/* line 84, ../sass/styles.scss */
-.button-hero a {
-  color: #612316;
   font: 400 18px/30px 'RobotoSlab';
   line-height: 54px;
 }
-/* line 88, ../sass/styles.scss */
-.button-hero a:hover {
+/* line 79, ../sass/styles.scss */
+.hero-body .cta-button:hover {
+  background: #dd4b2b;
   color: #fff;
   transition: 0.5s;
-  font-size: 20px;
 }
 
 /*---------------------------Desktop------------------------------------------------*/
 @media (min-width: 769px) {
-  /* line 97, ../sass/styles.scss */
+  /* line 87, ../sass/styles.scss */
   .main {
     max-width: 1170px;
     margin-left: auto;
@@ -298,7 +287,7 @@ li p {
     display: block;
     clear: both;
   }
-  /* line 100, ../sass/styles.scss */
+  /* line 90, ../sass/styles.scss */
   .main .linear-view {
     border: none;
     -moz-box-sizing: border-box;
@@ -312,12 +301,12 @@ li p {
 }
 
 @media (min-width: 769px) {
-  /* line 108, ../sass/styles.scss */
+  /* line 98, ../sass/styles.scss */
   .hero {
-    height: 130vh;
+    min-height: 1000px;
   }
 
-  /* line 111, ../sass/styles.scss */
+  /* line 101, ../sass/styles.scss */
   .hero .hero-body {
     top: 65%;
   }
@@ -325,20 +314,20 @@ li p {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------NAV------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-/* line 119, ../sass/styles.scss */
+/* line 109, ../sass/styles.scss */
 #logo {
   float: left;
   padding: 5px;
   margin: 5px 5px 0 0;
 }
-/* line 123, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 #logo a {
   vertical-align: middle;
   font: 700 36px/36px 'RobotoSlab';
   padding-bottom: 0;
   color: #31353e;
 }
-/* line 128, ../sass/styles.scss */
+/* line 118, ../sass/styles.scss */
 #logo a span {
   display: block;
   padding-top: 0;
@@ -347,7 +336,7 @@ li p {
   letter-spacing: 1.5px;
 }
 
-/* line 138, ../sass/styles.scss */
+/* line 128, ../sass/styles.scss */
 #navbar {
   position: absolute;
   left: 0;
@@ -357,7 +346,7 @@ li p {
   background-color: #edeff1;
 }
 
-/* line 147, ../sass/styles.scss */
+/* line 137, ../sass/styles.scss */
 #navbar.default {
   position: fixed;
   top: 0;
@@ -366,26 +355,26 @@ li p {
   transition-duration: 1s;
 }
 
-/* line 155, ../sass/styles.scss */
+/* line 145, ../sass/styles.scss */
 .iconMenu {
   float: right;
   padding-top: 15px;
   margin-right: 10px;
 }
 
-/* line 162, ../sass/styles.scss */
+/* line 152, ../sass/styles.scss */
 .nav li {
   float: left;
   margin-right: 35px;
   text-align: center;
 }
-/* line 166, ../sass/styles.scss */
+/* line 156, ../sass/styles.scss */
 .nav li a {
   text-decoration: none;
   color: #31353e;
   font: 400 18px/24px 'RobotoSlab';
 }
-/* line 170, ../sass/styles.scss */
+/* line 160, ../sass/styles.scss */
 .nav li a:hover {
   background: #dd4b2b;
   border-radius: 25px;
@@ -394,64 +383,64 @@ li p {
   padding: 5px 10px;
 }
 
-/* line 181, ../sass/styles.scss */
+/* line 171, ../sass/styles.scss */
 .itemsMenu li {
   display: inline;
   padding-right: 35px;
   width: 100%;
   margin: 0 auto;
 }
-/* line 186, ../sass/styles.scss */
+/* line 176, ../sass/styles.scss */
 .itemsMenu li a {
   padding: 5px 10px;
 }
 
-/* line 191, ../sass/styles.scss */
+/* line 181, ../sass/styles.scss */
 .iconMenu {
   color: #dd4b2b;
   cursor: pointer;
   display: none;
 }
-/* line 195, ../sass/styles.scss */
+/* line 185, ../sass/styles.scss */
 .iconMenu:hover {
   color: #31353e;
   transition: 0.5s;
 }
 
-/* line 201, ../sass/styles.scss */
+/* line 191, ../sass/styles.scss */
 .showitems {
   display: block !important;
   transition: 1s;
 }
 
-/* line 206, ../sass/styles.scss */
+/* line 196, ../sass/styles.scss */
 .iconMenu {
   display: block;
 }
 
-/* line 210, ../sass/styles.scss */
+/* line 200, ../sass/styles.scss */
 .itemsMenu {
   display: none;
 }
 
-/* line 214, ../sass/styles.scss */
+/* line 204, ../sass/styles.scss */
 .itemsMenu li {
   display: block;
   padding: 5px;
 }
 
 @media (min-width: 769px) {
-  /* line 220, ../sass/styles.scss */
+  /* line 210, ../sass/styles.scss */
   .itemsMenu {
     display: block;
   }
 
-  /* line 223, ../sass/styles.scss */
+  /* line 213, ../sass/styles.scss */
   .iconMenu {
     display: none;
   }
 
-  /* line 226, ../sass/styles.scss */
+  /* line 216, ../sass/styles.scss */
   .itemsMenu li {
     width: auto;
     float: right;
@@ -461,12 +450,12 @@ li p {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OUR NEWS--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-/* line 237, ../sass/styles.scss */
+/* line 227, ../sass/styles.scss */
 .news {
   padding-top: 0;
   background: #edeff1;
 }
-/* line 240, ../sass/styles.scss */
+/* line 230, ../sass/styles.scss */
 .news h2 {
   text-align: center;
   font: 700 30px/24px 'RobotoSlab';
@@ -474,59 +463,49 @@ li p {
   padding-top: 50px;
 }
 
-/* line 248, ../sass/styles.scss */
+/* line 238, ../sass/styles.scss */
 .row {
   text-align: center;
   padding-bottom: 25px;
 }
 
-/* line 254, ../sass/styles.scss */
+/* line 244, ../sass/styles.scss */
 .news h4 {
   margin: 25px 0 15px;
   text-align: center;
   font: 700 24px/30px 'RobotoSlab';
 }
 
-/* line 260, ../sass/styles.scss */
+/* line 250, ../sass/styles.scss */
 .news p {
   margin-bottom: 25px;
   text-align: center;
   font: 300 15px/30px 'Roboto';
 }
 
-/* line 266, ../sass/styles.scss */
-.read-more-button {
+/* line 256, ../sass/styles.scss */
+.news .read-more-button {
   margin: 0 auto 25px;
   display: block;
   width: 179px;
   height: 54px;
-  border: 2px solid #fff;
   border-radius: 25px;
   background: #fff;
-  background-image: linear-gradient(to bottom, #fff, #fff);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  text-shadow: 0 1px 1px white;
-}
-/* line 277, ../sass/styles.scss */
-.read-more-button:hover {
-  color: #fff;
-  transition: 0.5s;
-}
-/* line 281, ../sass/styles.scss */
-.read-more-button a {
   color: #612316;
   font: 400 18px/30px 'RobotoSlab';
   line-height: 54px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
-/* line 285, ../sass/styles.scss */
-.read-more-button a:hover {
+/* line 267, ../sass/styles.scss */
+.news .read-more-button:hover {
+  background: #dd4b2b;
+  color: #fff;
   transition: 0.5s;
-  font-size: 20px;
 }
 
 /*---------------------------Desktop------------------------------------------------*/
 @media (min-width: 769px) {
-  /* line 295, ../sass/styles.scss */
+  /* line 277, ../sass/styles.scss */
   .linear-view {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -538,7 +517,7 @@ li p {
   }
 }
 @media (min-width: 961px) {
-  /* line 301, ../sass/styles.scss */
+  /* line 283, ../sass/styles.scss */
   .linear-view p {
     width: 288px;
     margin: 0 auto 30px;
@@ -548,38 +527,38 @@ li p {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------NEWSLETTER-----------------------------------*/
 /*----------------------------------------------------------------------------------*/
-/* line 312, ../sass/styles.scss */
+/* line 294, ../sass/styles.scss */
 .newsletter {
   background-image: url("../images/newsletter_bg.jpg");
   color: #fff;
 }
-/* line 317, ../sass/styles.scss */
+/* line 299, ../sass/styles.scss */
 .newsletter p {
   font: 300 15px/24px 'Roboto';
   text-align: center;
 }
 
-/* line 323, ../sass/styles.scss */
+/* line 305, ../sass/styles.scss */
 .newsletter .title {
   font: 700 30px/48px 'RobotoSlab';
   text-align: center;
 }
 
-/* line 328, ../sass/styles.scss */
+/* line 310, ../sass/styles.scss */
 img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
 }
 
-/* line 334, ../sass/styles.scss */
+/* line 316, ../sass/styles.scss */
 .gorizontal {
   position: relative;
   float: left;
   left: 50%;
 }
 
-/* line 340, ../sass/styles.scss */
+/* line 322, ../sass/styles.scss */
 .email-main {
   position: relative;
   float: left;
@@ -594,12 +573,12 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 27px;
 }
-/* line 353, ../sass/styles.scss */
+/* line 335, ../sass/styles.scss */
 .email-main li {
   float: left;
 }
 
-/* line 358, ../sass/styles.scss */
+/* line 340, ../sass/styles.scss */
 #email-send {
   background: none;
   border: none;
@@ -609,28 +588,37 @@ img {
   color: #f3f4f6;
 }
 
-/* line 367, ../sass/styles.scss */
+/* line 349, ../sass/styles.scss */
 .sign-up {
   width: 113px;
+  margin-top: -1px;
   height: 54px;
   border-radius: 27px;
   background: #fff;
   color: #612316;
   cursor: pointer;
+  border: none;
+}
+/* line 358, ../sass/styles.scss */
+.sign-up:hover {
+  background: #dd4b2b;
+  color: #fff;
+  transition: 0.5s;
 }
 
 @media (min-width: 769px) {
-  /* line 377, ../sass/styles.scss */
+  /* line 367, ../sass/styles.scss */
   .email-main {
     width: 509px;
   }
 
-  /* line 380, ../sass/styles.scss */
+  /* line 370, ../sass/styles.scss */
   .sign-up {
-    width: 184px;
+    width: 185px;
+    margin-top: -1px;
   }
 
-  /* line 383, ../sass/styles.scss */
+  /* line 374, ../sass/styles.scss */
   #email-send {
     width: 322px;
     padding-left: 15px;
@@ -640,35 +628,35 @@ img {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------Product--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-/* line 393, ../sass/styles.scss */
+/* line 384, ../sass/styles.scss */
 .product {
   padding: 50px 0;
   color: #191b29;
 }
 
-/* line 398, ../sass/styles.scss */
+/* line 389, ../sass/styles.scss */
 .product h4 {
   font: 700 30px/48px 'RobotoSlab';
   margin-bottom: 20px;
 }
 
-/* line 403, ../sass/styles.scss */
+/* line 394, ../sass/styles.scss */
 .product p {
   font: 300 16px/30px 'Roboto';
   margin-bottom: 30px;
 }
 
-/* line 408, ../sass/styles.scss */
+/* line 399, ../sass/styles.scss */
 .product-detali {
   text-align: center;
 }
 
-/* line 412, ../sass/styles.scss */
+/* line 403, ../sass/styles.scss */
 .product-detali li {
   margin-bottom: 30px;
 }
 
-/* line 416, ../sass/styles.scss */
+/* line 407, ../sass/styles.scss */
 .product-button-blue, .product-button-red {
   margin: 0 auto 25px;
   display: block;
@@ -678,38 +666,38 @@ img {
   border-radius: 25px;
   background: #dd4b2b;
 }
-/* line 424, ../sass/styles.scss */
+/* line 415, ../sass/styles.scss */
 .product-button-blue:hover, .product-button-red:hover {
   background: none;
   color: #fff;
   transition: 0.5s;
 }
-/* line 429, ../sass/styles.scss */
+/* line 420, ../sass/styles.scss */
 .product-button-blue a, .product-button-red a {
   color: #fff;
   font: 400 18px/30px 'RobotoSlab';
-  line-height: 54px;
+  line-height: 52px;
 }
-/* line 433, ../sass/styles.scss */
+/* line 424, ../sass/styles.scss */
 .product-button-blue a:hover, .product-button-red a:hover {
   transition: 0.5s;
   font-size: 20px;
   color: #dd4b2b;
 }
 
-/* line 441, ../sass/styles.scss */
+/* line 432, ../sass/styles.scss */
 .product-button-red {
   background: #4b4e73;
   border: 2px solid #4b4e73;
 }
-/* line 446, ../sass/styles.scss */
+/* line 437, ../sass/styles.scss */
 .product-button-red a:hover {
   color: #4b4e73;
 }
 
 /*---------------------------Desktop------------------------------------------------*/
 @media (min-width: 769px) {
-  /* line 455, ../sass/styles.scss */
+  /* line 446, ../sass/styles.scss */
   .product2-detali-line {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -720,15 +708,15 @@ img {
     padding-right: 0.83333%;
   }
 
-  /* line 458, ../sass/styles.scss */
+  /* line 449, ../sass/styles.scss */
   .product-detali li {
     height: 407px;
   }
-  /* line 460, ../sass/styles.scss */
+  /* line 451, ../sass/styles.scss */
   .product-detali li p, .product-detali li h4 {
     text-align: left;
   }
-  /* line 463, ../sass/styles.scss */
+  /* line 454, ../sass/styles.scss */
   .product-detali li .product-button-red,
   .product-detali li .product-button-blue,
   .product-detali li .product-button-red {
@@ -736,7 +724,7 @@ img {
   }
 }
 @media (min-width: 769px) {
-  /* line 471, ../sass/styles.scss */
+  /* line 462, ../sass/styles.scss */
   .product1-detali-line {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -749,20 +737,20 @@ img {
 }
 /*---------------------------Desktop------------------------------------------------*/
 /*-------------------------------------PRE-FOOTER---------------------------------------*/
-/* line 480, ../sass/styles.scss */
+/* line 471, ../sass/styles.scss */
 .prefooter {
   padding: 50px 0;
   background: #d75d0e;
   color: #fff;
   font: 400 18px/36px 'Roboto';
 }
-/* line 485, ../sass/styles.scss */
+/* line 476, ../sass/styles.scss */
 .prefooter li {
   margin-bottom: 30px;
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 491, ../sass/styles.scss */
+  /* line 482, ../sass/styles.scss */
   p {
     width: 450px;
     margin-right: auto;
@@ -770,7 +758,7 @@ img {
   }
 }
 @media (min-width: 769px) {
-  /* line 499, ../sass/styles.scss */
+  /* line 490, ../sass/styles.scss */
   .prefooter li {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -781,7 +769,7 @@ img {
     padding-right: 0.83333%;
   }
 
-  /* line 502, ../sass/styles.scss */
+  /* line 493, ../sass/styles.scss */
   .prefooter p {
     width: 144px;
     margin: 0 auto;
@@ -790,19 +778,19 @@ img {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-/* line 513, ../sass/styles.scss */
+/* line 504, ../sass/styles.scss */
 footer {
   padding: 50px 0;
   background: url(../images/footer_bg.jpg);
   color: #fff;
 }
-/* line 517, ../sass/styles.scss */
+/* line 508, ../sass/styles.scss */
 footer span {
   text-align: center;
   font: 300 18px/24px 'proximanova';
 }
 
-/* line 523, ../sass/styles.scss */
+/* line 514, ../sass/styles.scss */
 .url {
   font: 700 18px/24px 'proximanova';
 }
