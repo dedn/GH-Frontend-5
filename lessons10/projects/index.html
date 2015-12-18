@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Howe Work</title>
 	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -9,69 +10,45 @@
 	<script type="text/javascript" src="js/jquery.1.7.1.min.js"></script>
 	<script src="js/script.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function(){
 
-			$("#navbar").removeClass("default");
-			$("#logo").removeClass("default-logo");
-			$(window).scroll(function(){
-				if ($(this).scrollTop() > 20) {
-					$("#navbar").addClass("default").fadeIn('fast');
-				} else {
-					$("#navbar").removeClass("default").fadeIn('fast');
-				};
-			});
-
-			$('a[href^="#"]').click(function () {
-				elementClick = $(this).attr("href");
-				destination = $(elementClick).offset().top;
-				if($.browser.safari){
-					$('body').animate( { scrollTop: destination }, 1000 );
-				} else {
-					$('html').animate( { scrollTop: destination }, 1000 );
-				}
-				return false;
-			});
-		});
 	</script>
 </head>
 <body>
 <section id="home" class="hero">
 	<header id="navbar" class="navbar">
 		<div class="container clearfix">
-			<h1 id="logo"><a href="#"><img src="images/logo.png" alt="Logo"></a></h1>
+			<h1 ><a id="logo" href="#"><img src="images/logo.png" alt="Logo"></a></h1>
 			<ul class="nav">
 				<div class="iconMenu"><i class="fa fa-bars fa-2x"></i></div>
 				<div class="itemsMenu">
+					<li><a href="#contact">Contact Us</a></li>
+					<li><a href="#news">Blog</a></li>
+					<li><a href="#team">Our Team</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#services-scroll">Services</a></li>
 					<li><a href="#home">Home</a></li>
-					<li><a href="#who">Services</a></li>
-					<li><a href="#work">Portfolio</a></li>
-					<li><a href="#portfolio">Our Team</a></li>
-					<li><a href="#who">Blog</a></li>
-					<li><a href="#our-team">Contact Us</a></li>
 				</div>
-
 			</ul>
-
 		</div>
 	</header>
 	<div class="hero-body">
-		<div id="container-top .clearfix">
+		<div class="container clearfix">
 			<ul class="main-text">
 				<li><h1>ONE PAGE</h1></li>
 				<li><span>IS ALL THAT YOU NEED</span></li>
 				<li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p></li>
+				<li><a class="hero-button" href="#">OUR TEAM</a></li>
+				<li><a  class="hero-button" href="#">CONTACT US</a></li>
 			</ul>
 			<ul class="main-img">
-				<li class="left"><a href="#">OUR TEAM</a></li>
-				<li class="left"><a href="#">CONTACT US</a></li>
 				<li><img src="images/mak.png" alt="Mak"></li>
 			</ul>
 		</div>
 	</div>
 </section>
-<section class="our-services clearfix">
+<section id="services-scroll" class="our-services clearfix">
 	<div class="container clearfix" id="content">
-		<h2 class="title">OUR Services</h2>
+		<h2 class="title-dark">OUR Services</h2>
 		<span class="doted"></span>
 		<div class="row">
 			<ul>
@@ -94,57 +71,79 @@
 		</div>
 	</div>
 </section>
-
 <section id="portfolio" class="portfolio">
 	<div class="container clearfix">
-		<h2 class="title">Our Portfolio</h2>
-		<span class="doted"></span>
-		<div class=" works gallery clearfix">
-			<div class="row">
-			<ul>
-				<li class="work"><a href="#"><img src="images/portfolioimg1.jpg" alt="Портфолио" /></a>
-				<div class="change">
-					<span>Love Conquers All</span>
-					<a href="#"><i class="fa fa-arrows"></i></a><a href=""><i class="fa fa-star"></i></a>
-				</div>
-				</li>
-				<li class="work"><a href="#"><img src="images/portfolioimg2.jpg" alt="Портфолио"  /></a>
-					<div class="change">
-						<span>Love Conquers All</span>
-						<a href="#"><i class="fa fa-arrows"></i></a><a href=""><i class="fa fa-star"></i></a>
-					</div>
-				</li>
-				<li class="work"><a href="#"><img src="images/project3_img.jpg" alt="Портфолио" /></a>
-					<div class="change">
-						<span>Love Conquers All</span>
-						<a href="#"><i class="fa fa-arrows"></i></a><a href=""><i class="fa fa-star"></i></a>
-					</div>
-				</li>
-				<li  class="work"><a href="#"><img src="images/project4_img.jpg" alt="Портфолио"  /></a>
-					<div class="change">
-						<span>Love Conquers All</span>
-						<a href="#"><i class="fa fa-arrows"></i></a><a href=""><i class="fa fa-star"></i></a>
-					</div>
-				</li>
-				<li class="work"><a href="#"><img src="images/project5_img.jpg" alt="Портфолио"  /></a>
-					<div class="change">
-						<span>Love Conquers All</span>
-						<a href="#"><i class="fa fa-arrows"></i></a><a href=""><i class="fa fa-star"></i></a>
-					</div>
-				</li>
-				<li class="work"><a href="#"><img src="images/project6_img.jpg" alt="Портфолио"  /></a>
-					<div class="change">
-						<span>Love Conquers All</span>
-						<a href="#"><i class="fa fa-arrows"></i></a><a href=""><i class="fa fa-star"></i></a>
-					</div>
-				</li>
-			</ul>
+		<h2 class="title-whait">Our Portfolio</h2>
+		<span class="doted-white"></span>
+			<div class="row-1">
+				<ul>
+					<li class="grid-porfolio-width">
+						<div class="project-block">
+							<img src="images/project-1.jpg" alt="Project-1">
+						</div>
+						<div class="overlay-block">
+							<p>Love concquers all</p>
+							<a href="#"><span class="fa fa-arrows"></span></a>
+							<a href="#"><span class="fa fa-star"></span></a>
+						</div>
+					</li>
+					<li class="grid-porfolio-width" >
+						<div class="project-block">
+							<img src="images/project-2.jpg" alt="Project-2">
+						</div>
+						<div class="overlay-block">
+							<p>Love concquers all</p>
+							<a href="#"><span class="fa fa-arrows"></span></a>
+							<a href="#"><span class="fa fa-star"></span></a>
+						</div>
+					</li>
+					<li class="grid-porfolio">
+						<div class="project-block">
+							<img src="images/project-3.jpg" alt="Project-3">
+						</div>
+						<div class="overlay-block">
+							<p>Love concquers all</p>
+							<a href="#"><span class="fa fa-arrows"></span></a>
+							<a href="#"><span class="fa fa-star"></span></a>
+						</div>
+					</li>
+					<li class="grid-porfolio">
+						<div class="project-block">
+							<img src="images/project-4.jpg" alt="Project-4">
+						</div>
+						<div class="overlay-block">
+							<p>Love concquers all</p>
+							<a href="#"><span class="fa fa-arrows"></span></a>
+							<a href="#"><span class="fa fa-star"></span></a>
+						</div>
+					</li>
+					<li class="grid-porfolio">
+						<div class="project-block">
+							<img src="images/project-5.jpg" alt="Project-5">
+						</div>
+						<div class="overlay-block">
+							<p>Love concquers all</p>
+							<a href="#"><span class="fa fa-arrows"></span></a>
+							<a href="#"><span class="fa fa-star"></span></a>
+						</div>
+					</li>
+					<li class="grid-porfolio">
+						<div class="project-block">
+							<img src="images/project-6.jpg" alt="Project-6">
+						</div>
+						<div class="overlay-block">
+							<p>Love concquers all</p>
+							<a href="#"><span class="fa fa-arrows"></span></a>
+							<a href="#"><span class="fa fa-star"></span></a>
+						</div>
+					</li>
+				</ul>
 		</div>
 		</div>
 </section>
 <section id="team" class="team">
 	<div class="container clearfix">
-		<h2>Our Wonderful Team </h2>
+		<h2 class="title-dark" >Our Wonderful Team </h2>
 		<span class="doted"></span>
 		<ul class="team-block-first">
 			<li><img src="images/george.png" alt="team images" /></li>
@@ -186,15 +185,15 @@
 </section>
 <section id="news" class="news">
 	<div class="container">
-		<h2 class="title">The Lates News</h2>
-		<span class="doted"></span>
+		<h2 class="title-whait">The Lates News</h2>
+		<span class="doted-white"></span>
 		<ul class="news-block-first">
 			<li><img src="images/news_img.jpg" alt="news img" /></li>
 			<li><h5>Theme Hotel Deluxe Released</h5></li>
 			<li class="data"><i class="fa fa-calendar-o"></i>15th September, 21:24</li>
 			<li><p>Nunc vitae euismod orci, sit amet hendrerit est. Nulla id ipsum rhoncus, porttitor ipsum ut, tempus libero. Morbi eget justo gravida, ornare ipsum interdum, imperdiet sapien. Pellentesque vitae ipsum dui. Vivamus a dolor urna. Cras posuere eros eu odio aliquet tincidunt. Sed at consequat nulla. Nulla luctus dapibus nulla.
 				Lorem ut, tempus libero. Morbi eget justo gravida, ornare ipsum interdum, imperdiet sapien. Pellentesque vitae ipsum dui. Vivamus a dolor urna. Cras posuere eros eu odio aliquet tincidunt. Sed at consequat nulla. Nulla luctus dapibus nulla...</p></li>
-			<li><i class="fa fa-user"></i>Dan Aase<i class="fa fa-comments-o"></i> 21 Comments</li>
+			<li><i class="fa fa-user"></i><a href="#">Dan Aase</a><i class="fa fa-comments-o"></i><a href="#"> 21 Comments</a></li>
 		</ul>
 		<ul class="news-block-two">
 			<li><img src="images/news_img.jpg" alt="news img" /></li>
@@ -202,7 +201,7 @@
 			<li class="data"><i class="fa fa-calendar-o"></i>15th September, 21:24</li>
 			<li><p>Nunc vitae euismod orci, sit amet hendrerit est. Nulla id ipsum rhoncus, porttitor ipsum ut, tempus libero. Morbi eget justo gravida, ornare ipsum interdum, imperdiet sapien. Pellentesque vitae ipsum dui. Vivamus a dolor urna. Cras posuere eros eu odio aliquet tincidunt. Sed at consequat nulla. Nulla luctus dapibus nulla.
 				Lorem ut, tempus libero. Morbi eget justo gravida, ornare ipsum interdum, imperdiet sapien. Pellentesque vitae ipsum dui. Vivamus a dolor urna. Cras posuere eros eu odio aliquet tincidunt. Sed at consequat nulla. Nulla luctus dapibus nulla...</p></li>
-			<li><i class="fa fa-user"></i>Dan Aase<i class="fa fa-comments-o"></i> 21 Comments</li>
+			<li><i class="fa fa-user"></i><a href="#">Dan Aase</a><i class="fa fa-comments-o"></i><a href="#"> 21 Comments</a></li>
 		</ul>
 		<ul class="news-block-three">
 			<li><img src="images/news_img.jpg" alt="news img" /></li>
@@ -210,49 +209,57 @@
 			<li class="data"><i class="fa fa-calendar-o"></i>15th September, 21:24</li>
 			<li><p>Nunc vitae euismod orci, sit amet hendrerit est. Nulla id ipsum rhoncus, porttitor ipsum ut, tempus libero. Morbi eget justo gravida, ornare ipsum interdum, imperdiet sapien. Pellentesque vitae ipsum dui. Vivamus a dolor urna. Cras posuere eros eu odio aliquet tincidunt. Sed at consequat nulla. Nulla luctus dapibus nulla.
 				Lorem ut, tempus libero. Morbi eget justo gravida, ornare ipsum interdum, imperdiet sapien. Pellentesque vitae ipsum dui. Vivamus a dolor urna. Cras posuere eros eu odio aliquet tincidunt. Sed at consequat nulla. Nulla luctus dapibus nulla...</p></li>
-			<li><i class="fa fa-user"></i>Dan Aase<i class="fa fa-comments-o"></i> 21 Comments</li>
+			<li><i class="fa fa-user"></i><a href="#">Dan Aase</a><i class="fa fa-comments-o"></i><a href="#"> 21 Comments</a></li>
 		</ul>
 	</div>
 </section>
 <section id="contact" class="contact clearfix">
 	<div class="container clearfix">
-		<h2 class="title">Contac Us</h2>
+		<h2 class="title-dark">Contac Us</h2>
 		<span class="doted" ></span>
 		<div class="row">
-		<form>
-			<ul>
+			<ul class="contact-information">
 				<li>
-					<input type="text" name="name"  placeholder="Name" />
+					<h5>Information</h5>
 				</li>
 				<li>
-					<input type="email" name="email" placeholder="Email" />
+					<p>Proin nec dignissim tellus, ut hendrerit erat. Vivamus ut augue ac est sagittis ullamcorper a porttitor nibh. Donec non tortor consequat, sollicitudin odio id, vehicula lorem. Suspendisse a euismod sem. Mauris rutrum arcu a lorem aliquet feugiat. Praesent tincidunt lacus at nisl pharetra, nec suscipit risus lobortis. Nunc vitae enim a quam ultrices faucibus. Proin sit amet condimentum libero, ac dignissim enim. Praesent aliquam lacinia dapibus.</p>
+				</li>
+				<li><i class="fa fa-map-marker"></i>StreetName 163, 254 23 City</li>
+				<li><i class="fa fa-phone"></i>(+254) 001 454 333 66</li>
+				<img class="pointer" src="images/pointer.psd">
+				<li class="button-mobile-none">
+					 <a class="button-mobile" href="#">VIEP MAP</a>
+				</li>
+				<li  class="send-desktop">
+					<input type="submit" value="SEND MESSAGE">
+				</li>
+				<li class="button-desktop-none">
+					<a class="button-desctope" href="#">VIEP MAP</a>
+				</li>
+
+			</ul>
+		<form class="contact-box" action="#" method="get" name="contact-box">
+			<ul>
+				<li>
+					<input type="text" name="name"  placeholder="Name" required>
+				</li>
+				<li>
+					<input type="email" name="email" placeholder="Email" required>
 				</li>
 				<li>
 					<textarea placeholder="Message" ></textarea>
 				</li>
+				<li  class="send-mobile">
+					<input type="submit" value="SEND MESSAGE">
+				</li>
 			</ul>
 		</form>
-		<ul class="contact-information">
-			<li>
-				<h5>Information</h5>
-			</li>
-			<li>
-				<p>Proin nec dignissim tellus, ut hendrerit erat. Vivamus ut augue ac est sagittis ullamcorper a porttitor nibh. Donec non tortor consequat, sollicitudin odio id, vehicula lorem. Suspendisse a euismod sem. Mauris rutrum arcu a lorem aliquet feugiat. Praesent tincidunt lacus at nisl pharetra, nec suscipit risus lobortis. Nunc vitae enim a quam ultrices faucibus. Proin sit amet condimentum libero, ac dignissim enim. Praesent aliquam lacinia dapibus.</p>
-			</li>
-			<li><i class="fa fa-map-marker"></i>StreetName 163, 254 23 City</li>
-			<li><i class="fa fa-phone"></i>(+254) 001 454 333 66</li>
-			<img class="pointer" src="images/pointer.psd">
-			<li>
-				<a href="#" /> Submit</a> <a href="#">VIEP MAP</a>
-			</li>
-		</ul>
 	</div>
 	</div>
 </section>
-
 	<footer>
 		<span>© Copyright 2013 By Projex - All rights Reserved!</span>
 	</footer>
-
 </body>
 </html>
