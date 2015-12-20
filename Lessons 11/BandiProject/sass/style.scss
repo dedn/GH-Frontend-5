@@ -1,0 +1,362 @@
+// Screen
+// ======
+@import "grids";
+@import "reset";
+@import "header";
+@import "features";
+@import "portfolio";
+@import "team";
+@import "facts";
+
+*{
+  box-sizing: border-box;
+}
+section {
+  padding: 60px 0;
+}
+.title {
+  font: 700 28px/20px 'Open Sans';
+  margin-bottom: 15px;
+  color: #0eb493;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.container {
+  @include container;
+  padding: 0 5px;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.delimeter {
+  margin:0 auto 40px;
+  width: 240px;
+  position: relative;
+  display: block;
+  color: #062033;
+  opacity: 1;
+  text-align: center;
+}
+.delimeter:before {
+  position: absolute;
+  top: 10px;
+  left:0;
+  content:'';
+  display: block;
+  width: 90px;
+  border-top: 1px solid #062033;
+  opacity: 0.1;
+}
+.delimeter:after {
+  position: absolute;
+  top: 10px;
+  right:0;
+  content:'';
+  display: block;
+  width: 90px;
+  border-top: 1px solid #062033;
+  opacity: 0.1;
+}
+.delimeter-white {
+  margin:0 auto 40px;
+  width: 240px;
+  position: relative;
+  display: block;
+  color: #062033;
+  opacity: 1;
+  text-align: center;
+}
+.delimeter-white:before {
+  position: absolute;
+  top: 10px;
+  left:0;
+  content: '';
+  display: block;
+  width: 90px;
+  border-top: 1px solid #fff;
+  opacity: 0.5;
+}
+.delimeter-white:after {
+  position: absolute;
+  top: 10px;
+  right:0;
+  content: '';
+  display: block;
+  width: 90px;
+  border-top: 1px solid #fff;
+  opacity: 0.5;
+
+}
+/*------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*----------------------------------CONTACT---------------------------------------*/
+.contact {
+  p {
+    opacity: 0.8;
+    font: 600 18px/24px 'Open Sans';
+    color: #062033;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+.main-contact {
+  text-align: center;
+  h5 {
+    font:400 22px/32px 'Open Sans';
+    margin: 20px 0 30px 0;
+    color: #062033;
+    text-align: center;
+  }
+  span {
+    text-align: center;
+    color: #6a737b;
+    font: 400 13px/24px 'Open Sans';
+  }
+}
+.main-contact-form {
+  h5 {
+    text-align: center;
+    font:700 24px/24px 'Open Sans';
+    margin: 20px 0 30px 0;
+    color: #062033;
+  }
+  span{
+    text-align: center;
+  }
+}
+form {
+  text-align: center;
+  width: 100%;
+}
+.contact input[type="text"],
+.contact input[type="email"] {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding-left: 5px;
+  opacity: 0.2;
+  &:focus {
+    color: #fff;
+    border-bottom: 1px solid #1fa78d;
+    transition: 0.5s;
+  }
+}
+textarea {
+  width: 100%;
+  height: 160px;
+  padding: 10px 0 0 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  opacity: 0.2;
+
+  &:focus {
+    color: #fff;
+    font-size: 15px;
+    border-bottom: 1px solid #1fa78d;
+    transition: 0.5s;
+  }
+}
+.contact .submit {
+  background: none;
+  border: none;
+  display: block;
+  margin: 10px auto;
+  color: #000;
+  font: 400 16px/24px 'Open Sans';
+  transition: 0.4s ease;
+  &:hover {
+    transition: 0.5s;
+    color: #1fa78d;
+  }
+}
+.contact .fa-envelope-o,
+.contact .submit {
+  display: inline-block;
+  margin-right: 10px;
+}
+.fa-envelope-o {
+  color: #0eb493;
+}
+
+.contact label {
+  cursor: pointer;
+}
+.main-social-bar {
+  text-align: center;
+  margin: 20px auto 0;
+}
+.main-social-bar .fa {
+  color: rgba(6, 32, 51, 0.2);
+  font-size: 30px;
+  margin-right: 15px;
+  &:hover {
+    transition: 0.5s;
+    color: #0eb493;
+    cursor: pointer;
+  }
+}
+.map{
+  text-align: center;
+  margin: 30px auto 10px;
+  width:100%
+}
+
+@media (min-width: 769px) {
+  .main-contact {
+    @include span(3);
+    text-align: left;
+    h5 {
+      text-align: left;
+    }
+  }
+  .main-contact-form {
+    @include span(8);
+    text-align: left;
+    h5 {
+      text-align: left;
+    }
+    label{
+      float:right;
+    }
+  }
+  .contact .main-social-bar {
+    @include span(1)
+  }
+  .contact a {
+    display: block;
+  }
+
+ .contact input[type="text"],
+ .contact input[type="email"]{
+    @include span(6);
+}
+   textarea{
+    height: 80px;
+    background: none;
+  }
+
+}
+.main-social-bar a{
+  margin-bottom: 10px;
+}
+  /*
+  @media (min-width: 481px) {
+    .contact-us .submit {
+      float: right;
+      margin-top: 20px;
+    }
+  }
+  @media (min-width: 561px) {
+    .contact-us form {
+      width: 560px;
+      margin: 0 auto;
+    }
+  }
+  */
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------foooter---------------------*/
+footer {
+  background: #1fa78d;
+  color: #fff;
+  text-align: center;
+  h6 {
+    font: 400 28px 'Pacifico', cursive;
+  }
+  p {
+    font: 400 13px 'Open Sans';
+    margin-bottom: 30px;
+  }
+}
+
+.block-2,
+.block-3 {
+  span {
+    font: 700 14px/24px 'Open Sans';
+  }
+}
+
+.email-main {
+  position: relative;
+  width: 270px;
+}
+
+.search-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+#email-send {
+  background: none;
+  border: 2px solid white;
+  border-radius: 3px;
+  width: 270px;
+  height: 45px;
+}
+
+.gorizontal {
+  margin: 20px auto 10px;
+  width: 270px;
+}
+
+.block-3 {
+  text-align: center;
+  ul {
+    display: inline-block;
+    li {
+      width: 130px;
+      a {
+        color: #fff;
+        font: 400 13px/32px 'Open Sans';
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+  }
+}
+
+.block-3 span {
+  display: block;
+}
+
+.block-4 {
+  margin: 30px 0;
+  border-left: 2px solid rgba(6, 32, 51, 0.3);
+  div {
+    margin-bottom: 30px;
+  }
+  .fa {
+    color: rgba(6, 32, 51, 0.3);
+    margin: 0 10px;
+  }
+  span {
+    color: #062033;
+  }
+}
+
+
+@media (min-width: 769px) {
+  .block-1,
+  .block-2,
+  .block-3,
+  .block-4{
+    @include span(3);
+
+  }
+  footer {
+  text-align: left;
+  }
+}

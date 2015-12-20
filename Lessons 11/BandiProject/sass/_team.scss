@@ -1,0 +1,122 @@
+/*--------------------------OUR TEAM---------------------------*/
+.team {
+  p {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
+.team ul {
+  text-align: center;
+}
+
+.team-item {
+  position: relative;
+  width: 270px;
+  margin: 30px auto 15px;
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 270px;
+  padding: 20px 10px 0;
+  transition: all 0.7s;
+  opacity: 0;
+  background-color: #0eb493;
+  color: #fff;
+  &:hover.overlay {
+    opacity: 0.9;
+    p {
+      font: 400 12px/32px 'Open Sans';
+      span {
+        font: 700 14px/24px 'Open Sans';
+        margin: 15px 0 15px;
+      }
+    }
+  }
+}
+
+.team .social-networks {
+  margin-top: 0;
+  a {
+    display: inline-block;
+    color: #fff;
+    width: 42px;
+    height: 42px;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 42px;
+    &:hover {
+      opacity: 1;
+    }
+    .fa {
+      font-size: 20px;
+    }
+  }
+}
+
+.team {
+  li {
+    h4 {
+      color: #062033;
+      font: 600 18px/24px 'Open Sans';
+      margin: 10px 0 5px 0;
+    }
+  }
+}
+
+.job-title {
+  color: #062033;
+  font: 600 13px/24px 'Open Sans';
+  margin: 10px 0 30px 0;
+  opacity: 0.5;
+}
+
+@media (min-width: 962px) {
+  .team li {
+    @include span(3);
+
+  }
+}
+@media(min-width: 769px) and (max-width: 961px){
+  .team li{
+    @include gallery(6 of 12);
+  }
+}
+/*----------------------SLIDERS-------------------*/
+.slider {
+  position: relative;
+}
+.slider input[type=radio] {
+  display: none;
+}
+.slider-controls {
+  text-align: center;
+  position:absolute;
+  left:0;
+  bottom:-20px;
+  width:100%
+}
+.slider-controls label {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 3px;
+  cursor: pointer;
+  border: 1px solid #062033;
+  border-radius: 50%;
+  opacity: 0.2;
+
+}
+#team-btn-1:checked ~ .slider-controls label[for="team-btn-1"] {
+  background-color: #062033;
+}
+#team-btn-2:checked ~ .slider-controls label[for="team-btn-2"] {
+  background-color: #062033;
+}
+#team-btn-3:checked ~ .slider-controls label[for="team-btn-3"] {
+  background-color: #062033;
+}

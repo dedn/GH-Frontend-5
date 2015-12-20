@@ -1,0 +1,59 @@
+/*-------------------------------------FACTS------------------------*/
+.facts {
+
+  background: url("../images/opacity-fact-bg.png"), url("../images/fact-bg.png");
+  color: #fff;
+  .fa {
+    display: block;
+    margin: 0 auto;
+    width: 130px;
+    height: 130px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 126px;
+
+  }
+}
+
+.fan-facts {
+  text-align: center;
+  li {
+    margin-bottom: 40px;
+    .amount {
+      font: 600 60px 'Open Sans';
+    }
+  }
+}
+
+.facts{
+  animation: rainbow 8s infinite;
+  background-image:url("../images/opacity-fact-bg.png"), url("../images/fact-bg.png") ;
+  background-position:top center;
+  background-size:cover;
+
+}
+@keyframes rainbow {
+  0% {
+    background:url("../images/opacity-fact-bg.png"), url("../images/fact-bg.png");
+    background-position: top center;
+    background-size: cover;
+  }
+  50.0% {
+    background:url("../images/opacity-fact-bg.png"), url("../images/fact-bg-1.png");
+    background-position: top center;
+    background-size: cover;
+  }
+}
+
+.fan-facts .last {
+  display: block;
+  font: 400 10px 'Open Sans';
+  text-transform: uppercase;
+}
+@media (min-width: 769px) {
+  .fan-facts .linear-view {
+    @include span(3);
+
+  }
+}
