@@ -1,0 +1,138 @@
+.team{
+  color: #222;
+  p{
+    font:300 22px/36px 'Open Sans' ;
+    text-align: center;
+    margin-bottom: 95px;
+  }
+  .team-group{
+    li{
+      position: relative;
+      text-align: center;
+      margin: 0 auto;
+      width: 265px;
+          }
+
+    .team-layer{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 265px;
+      height: 352px;
+      padding-top: 240px;
+      text-align: center;
+      background:rgba(34, 34, 34, 0.5) ;
+      color: #fff;
+      opacity: 1;
+    }
+  }
+ .name{
+   display: block;
+     font: 400 23px/35px 'Open Sans';
+ }
+  .position{
+    display: block;
+     font: 400 18px/35px 'Open Sans';
+  }
+}
+
+
+.team-group{
+  img{
+    width:265px;
+    height: 352px;
+
+  }
+
+}
+.team-rollover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 265px;
+  height: 352px;
+  color: #fff;
+  opacity: 0;
+  text-align: center;
+  border: 1px solid #222;
+  background: #fff;
+  &:hover{
+    opacity: 1;
+    transition: 0.5s;
+  }
+  span{
+    display: block;
+    margin-top: 100px;
+    font: 400 23px/35px "Open Sans";
+    text-align: center;
+    color: #222;
+  }
+  a{
+    display: block;
+    height:60px ;
+    width:180px ;
+    border: 3px solid #222;
+    background: none;
+    color:#222 ;
+    font: 700 23px/54px 'Open Sans';
+    margin: 80px auto 0;
+    &:hover{
+      background:#222;
+      color: #fff;
+      transition: 0.5s;
+    }
+  }
+}
+/*-----------------------------DESKTOP------------------------*/
+
+@media(min-width: 540px){
+  .team .grid-team{
+    @include gallery(6 of 12);
+    transition: 1s;
+  }
+  .team-group{
+    margin: 0 auto;
+    max-width: 540px;
+  }
+}
+
+@media(min-width: 769px){
+  .team .grid-team{
+    @include gallery(4 of 12);
+    transition: 1s;
+
+  }
+  .team-group{
+    margin: 0 auto;
+    max-width:100% ;
+  }
+}
+@media(min-width: 1140px){
+  .team .grid-team{
+    @include gallery(3 of 12);
+    transition: 1s;
+  }
+}
+
+
+/*@media(min-width: 769px) {
+  .team .team-group li {
+   float:left;
+    margin-right: 20px;
+
+  }
+  .team .team-group li:last-child{
+    margin-right: 0;
+  }
+
+}
+
+@media(min-width: 961px) {
+
+}
+
+@media(min-width: 1280px) {
+
+  }
+
+*/

@@ -1,0 +1,42 @@
+.about{
+  background:#232323;
+  color: #fff;
+}
+.Itemes li{
+ margin-bottom: 25px;
+img
+{
+  float:left;
+  margin-right:15px;
+}
+  h4{
+    font: 700 18px/30px 'Montserrat';
+  }
+  p{
+    font: 400 16px/20px 'Open Sans';
+  }
+}
+.tablet-image-container{
+  display: none;
+}
+
+
+
+@media(min-width: 769px) {
+  .about {
+    background: #232323 url(../images/tablet.png) no-repeat right bottom;
+  }
+  .Itemes li {
+    margin-bottom: 50px;
+
+  }
+  .Itemes li:first-child{
+    margin-bottom: 80px;
+    font: 400 16px 'Open Sans';
+
+  }
+  .Itemes{
+    @include span(6)
+  }
+
+}

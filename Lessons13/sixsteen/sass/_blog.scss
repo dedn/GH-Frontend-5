@@ -1,0 +1,129 @@
+.blog {
+  background: #f7f7f7;
+  padding-bottom: 0;
+  p {
+
+    font: 400 18px 'Source Sans Pro';
+    margin-top: 30px;
+    text-align: center;
+
+  }
+  .blog-group {
+    width: 270px;
+    height: 335px;
+    margin: 80px auto;
+    background: #ebebeb;
+    li:nth-child(1) {
+      position: relative;
+    }
+    li:nth-child(2) {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 55px;
+      height: 55px;
+      background: #acd373;
+      border: 5px solid #ebebeb;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 66px;
+    }
+
+  }
+  li:nth-child(3) {
+
+    font: 600 18px 'Source Sans Pro';
+    color: #454545;
+    text-align: center;
+    margin-top: 50px;
+  }
+  a {
+
+    bottom: 0;
+    display: block;
+    width: 270px;
+    height: 50px;
+    background: #acd373;
+    color: #f7f7f7;
+    text-align: center;
+    font: italic 18px/50px 'Droid Serif';
+    margin-top: 40px;
+    &:hover {
+      color: #454545;
+      background: #ebebeb;
+      transition: 0.5s;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.06);
+
+    }
+  }
+  .blog-group:nth-of-type(2)  {
+    a {
+      margin-top: 12px;
+    }
+  }
+
+  .blog-group:nth-of-type(3)  {
+    a {
+      margin-top: 35px;
+    }
+  }
+
+  .blog-group:nth-of-type(4) {
+    a {
+      margin-top: 11px;
+    }
+  }
+}
+
+.bottom {
+  padding: 10px 0;
+  background: #acd373;
+
+  p {
+    font: 400 18px 'Source Sans Pro';
+    text-align: center;
+    color: #f7f7f7;
+    margin-bottom: 20px;
+  }
+  form {
+    width: 230px;
+    margin: 0 auto;
+    text-align: center;
+    #email-send {
+      position: relative;
+      width: 230px;
+      height: 41px;
+      border: 1px solid #f7f7f7;
+      background: none;
+      color: #f7f7f7;
+      padding-left: 5px;
+    }
+    .button-image-email {
+      position: absolute;
+      width: 50px;
+      left: 179px;
+      margin-top: -40px;
+      height: 40px;
+      background-color: #f7f7f7;
+      line-height: 40px;
+      &:hover {
+        box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+        transition: 0.5s;
+      }
+
+    }
+  }
+  .email-main {
+    position: relative;
+    width: 230px;
+    margin: 0 auto;
+  }
+}
+
+@media(min-width: 769px) {
+  .blog .blog-group {
+    float: left;
+    margin-right:20px ;
+  }
+
+  }

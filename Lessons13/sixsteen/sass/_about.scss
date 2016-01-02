@@ -1,0 +1,96 @@
+/*------------------------ABOUT------------------------------------*/
+.about {
+  background: #f7f7f7;
+  padding-bottom: 10px;
+  h3 {
+    font: 400 30px 'Source Sans Pro', sans-serif;
+    text-align: center;
+    color: #454545;
+    margin-left: 10px;
+  }
+  p {
+    font: 400 18px 'Source Sans Pro';
+    margin-top: 30px;
+    text-align: center;
+  }
+  .button {
+    display: block;
+    width: 140px;;
+    height: 40px;
+    color: #acd373;
+    background: none;
+    border: 1px solid #acd373;
+
+    font: italic 18px/40px 'Droid Serif';
+    text-align: center;
+    margin: 30px auto 0;
+    &:hover {
+      color: #454545;;
+      background: #acd373;
+      transition: 0.5s;
+
+    }
+  }
+}
+
+.about-title {
+  margin: 0 auto;
+  text-align: center;
+  h3,
+  img {
+    display: inline-block;
+  }
+
+}
+
+.iphone-image {
+  text-align: center;
+  margin: 20px auto;
+}
+
+@media(min-width: 769px) {
+    .who-we-are,
+    .iphone-image {
+      @include gallery(6 of 12);
+      transition: 2s;
+      padding-left: 15px;
+      }
+  .about {
+    h3 {
+      text-align: left;
+    }
+    p {
+      text-align: left;
+    }
+    .button {
+      margin: 30px 0 15px 0;
+      &:hover {
+        color: #454545;
+
+      }
+    }
+  }
+  .about-title{
+    text-align: left;
+  }
+}
+
+#video_holder{
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  height: auto;
+}
+#overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: url(../images/play.png) 50% 50% no-repeat;
+  transition: 0.2s;
+}
+#overlay.o{
+  background: none;
+}

@@ -1,0 +1,104 @@
+/*------------------------------TESTIMONIALS------------*/
+.testimonials{
+  background:url(../images/bg-testimonials.jpg)fixed center/cover no-repeat;
+  color: #f7f7f7;
+  h5{
+    color: #f7f7f7;
+    font:400 30px 'Source Sans Pro' ;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  p{
+    font:400 18px 'Source Sans Pro';
+    margin-bottom: 30px;
+  }
+  .button-testimonials{
+    display: block;
+    width: 200px;;
+    height:40px;
+    color: #acd373;
+    background: none;
+    border: 1px solid #acd373;
+    font:italic 18px/40px 'Droid Serif' ;
+    text-align: center;
+    margin:30px auto 40px;
+    &:hover {
+      color:#454545; ;
+      background:#acd373;
+      transition: 0.5s;
+
+    }
+  }
+}
+.client-group-first{
+  max-width: 310px;
+  margin: 0 auto;
+}
+
+.testimonials .client-group li:first-child{
+  width: 310px;
+  text-align: center;
+  border: 1px solid #ebebeb;
+  margin: 0 auto;
+  p{
+    font: 400 16px  'Droid Serif';
+  }
+}
+.fa-quote-right{
+  float: right;
+  font-size: 25px;
+  opacity: 0.4;
+  color: #f7f7f7;
+  text-align: right;
+  margin: -25px 20px 0 0;
+}
+.fa-caret-right{
+  float: left;
+  font-size: 25px;
+  opacity: 0.8;
+  color: #f7f7f7;
+  margin: 0px 20px 0 0;
+
+}
+
+.client-group li:last-child{
+  padding-top: 30px;
+  width: 310px;
+  margin: 0 auto 100px;
+  img{
+    float: left;
+    margin-right: 20px;
+  }
+  h4{
+    color: #acd373;
+    font:700 18px 'Source Sans Pro' ;
+
+  }
+  span{
+    font: italic 18px 'Droid Serif';
+    color: #f7f7f7;
+    opacity: 0.85;
+  }
+}
+.slider{
+  margin: 0 auto;
+  text-align: center;
+}
+.row{
+  text-align: center;
+  margin: 0 auto;
+}
+.client-group{
+  margin: 0 auto;
+  text-align: center;
+   }
+
+
+@media(min-width: 769px) {
+  .client-group,
+  .client-group-first{
+    /*  @include gallery(6 of 12);*/
+    @include span(4);
+    transition: 2s;
+  }
+  }

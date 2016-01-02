@@ -1,0 +1,70 @@
+// Screen
+// ======
+@import "reset";
+@import "grids";
+@import "header";
+@import "intro";
+@import "download-section";
+@import "about";
+@import "services";
+@import "portfolio";
+@import "team";
+@import "clients";
+@import "../app/bower/font-awesome/scss/font-awesome.scss";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600);
+@import url(https://fonts.googleapis.com/css?family=Raleway:800);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../font/helveticaneuecyr-roman.otf");
+}
+
+* {
+  Box-sizing: border-box;
+}
+
+section {
+  padding: 50px 0px;
+}
+
+@media(min-width: 769px) {
+  section {
+    padding: 100px 0px;
+  }
+  .title {
+        margin: 0 auto 100px;
+  }
+  .title-white {
+    margin: 0 auto 100px;
+  }
+}
+
+.container {
+  @include container;
+  padding: 0 5px;
+}
+
+.title {
+  margin: 0 auto;
+  font: 400 40px "Open Sans";
+  margin: 0 auto 50px;
+  color:#086fab;
+  text-align: center;
+}
+
+.title-white {
+  margin: 0 auto;
+  font: 400 40px "Open Sans";
+  margin: 0 auto 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+

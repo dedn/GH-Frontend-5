@@ -1,0 +1,51 @@
+.services{
+  background:#d11f2d;
+  color: #fff;
+  .fa{
+    display: block;
+    float: left;
+    margin-right: 20px;
+    width:42px;
+    height:42px;
+    background: #fff;
+    color: #2b2b2b;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 1px 2px 2px 1px;
+  }
+  h4{
+    font:700 16px/40px 'Open Sans';
+  }
+  p{
+    font:400 13px/18px 'Open Sans';
+   margin: 20px auto 30px ;
+  }
+}
+.services
+ul {
+  margin: 0 auto;
+  li {
+    width: 220px;
+    margin:0 auto;
+  }
+}
+/*----------------------------DESKTOP--------------------------------------*/
+
+@media(min-width: 481px) {
+  .services ul li{
+    @include gallery(6 of 12);
+    transition: 1s;
+  }
+}
+@media(min-width: 769px) {
+  .services ul li{
+    @include gallery(4 of 12);
+    transition: 1s;
+  }
+}
+@media(min-width: 961px) {
+  .services ul li{
+    @include gallery(3 of 12);
+    transition: 1s;
+  }
+}

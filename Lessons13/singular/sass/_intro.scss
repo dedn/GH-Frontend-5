@@ -1,0 +1,20 @@
+.introduction{
+p{
+  font: 300 20px/36px 'Open Sans';
+  color: #222;
+  text-align: center;
+}
+}
+
+
+@media(min-width: 769px) {
+  .introduction p,
+  .download p{
+    @include span(8 );
+    @include push(2);
+  }
+  .download .container div{
+    padding-top: 100px;
+  }
+
+}

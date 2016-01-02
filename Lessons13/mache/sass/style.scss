@@ -1,0 +1,629 @@
+// Screen
+// ======
+@import "reset";
+@import "grids";
+@import "header";
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../font/helveticaneuecyr-roman.otf");
+}
+
+* {
+  Box-sizing: border-box;
+}
+
+section {
+  padding: 50px 0px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  @include container;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.line {
+  display: block;
+  height: 2px;
+  width: 200px;
+  background: #ed145b;
+  margin: 40px auto;
+}
+
+.title {
+  color: #5a5a5a;
+  font: italic 300 38px/52px 'Lato';
+  text-align: center;
+}
+
+/*---------------------------ABOUT----------------------------------*/
+.about {
+  background:url(../images/hero-bg-oblique.png) 0 -52px no-repeat #f4f4f4;
+  .title-about {
+    color: #5a5a5a;
+    font: italic 300 38px/52px 'Lato';
+    text-align: center;
+  }
+  p {
+    color: #5a5a5a;
+    font: 300 15px/30px 'Lato';
+    text-align: center;
+  }
+}
+
+.vidio-box {
+  margin: 30px auto;
+  text-align: center;
+  a {
+    span {
+      color: #ed145b;
+      font: 400 15px/30px 'Lato';
+      text-transform: uppercase;
+      margin-right: 10px;
+    }
+
+  }
+  .fa {
+    display: block;
+    height: 27px;
+    width: 27px;
+    border: 1px solid #ed145b;
+    border-radius: 50%;
+    line-height: 27px;
+    text-align: center;
+    color: #ed145b;
+    &:hover {
+      border: 1px solid #fff;
+      background: #ffffff;
+      transition: 0.5s;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+  }
+  .span, .fa {
+    display: inline-block;
+  }
+  .mak {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+.about .grid-about{
+  @include span(4 of 12);
+  text-align: left;
+    h3{
+      text-align: left;
+    }
+  .line{
+    text-align: left;
+    margin-left: 0
+  }
+  p{
+    text-align: left;
+  }
+  .vidio-box{
+    text-align: left;
+  }
+}
+
+  .mak-book{
+    @include span(8 of 12 last);
+    img{
+      max-width: none;
+    }
+  }
+  .about{
+    padding-bottom: 0;
+  }
+}
+/*-------------------------- OUR SERVICES---------------------------------*/
+#services {
+  background: #fff;
+  .title {
+    color: #5a5a5a;
+    font: italic 300 38px/52px 'Lato';
+    text-align: center;
+  }
+}
+.text {
+  color: #5a5a5a;
+  font: 300 15px/30px 'Lato';
+  text-align: center;
+}
+.icon-group{
+  text-align: center;
+  margin-top: 50px;
+  li{
+    margin-bottom: 50px;
+    span{
+      font:400 15px 'Lato' ;
+      color: #ed145b;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+
+}
+
+.icon-services{
+  width: 130px;
+  height: 130px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  line-height: 161px;
+  text-align: center;
+ margin: 0 auto 20px;
+}
+@media (min-width: 769px) {
+  .icon-group li {
+    @include span(3 of 12);
+  }
+  .icon-group li:last-child{
+    @include span(last);
+  }
+  .text{
+    width: 680px;
+    margin: 0 auto;
+  }
+}
+
+/*-------------------------- INTRO---------------------------------*/
+.intro{
+  background: url("../images/intro-bg.jpg") fixed center/cover no-repeat;
+  .fa {
+    font-size: 60px;
+    color: #ed145b;
+
+  }
+  p{
+    margin: 50px auto;
+    font: italic 300 25px/40px 'Lato';
+    color: #fff;
+    max-width:800px;
+
+  }
+  .row{
+    text-align: center;
+  }
+}
+/*-------------------------- PRICES---------------------------------*/
+.prices {
+  background:#f4f4f4 ;
+  p {
+    color: #5a5a5a;
+    font: 300 15px/30px 'Lato';
+    text-align: center;
+    margin-bottom: 50px;
+
+    .row {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}
+
+.prices-box{
+  position: relative;
+  width:262px;
+  height:443px ;
+  margin: 30px auto;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  li:first-child{
+    height: 130px;
+    background:#5a5a5a ;
+    text-align: center;
+    color:#f4f4f4 ;
+    padding-top: 40px;
+    font:700 50px/0px "Lato";
+    span{
+      font:700 15px/0px "Lato";
+    }
+    .dollar{
+      font:700 20px/20px "Lato";
+    }
+  }
+  li:nth-child(2){
+    position: relative;
+    top:-25px;
+    width: 200px;
+    height: 50px;
+    background:#f4f4f4 ;
+    border-radius: 24px;
+    font: 700 15px/50px 'Lato';
+    color: #5a5a5a;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+
+  }
+  li:nth-child(3){
+    text-align: center;
+    font: 300 15px/38px 'Lato';
+    color: #5a5a5a;
+    margin-bottom: 40px;
+  }
+  li:last-child{
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    a{
+      display: block;
+      width: 200px;
+      height: 50px;
+      background:#ed145b ;
+      color: #fff;
+      text-align: center;
+      border-radius: 24px;
+      font: 700 15px/50px 'Lato';
+
+      &:hover{
+        background:#f4f4f4 ;
+        color:#ed145b ;
+        transition: 0.5s;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+      }
+
+    }
+   }
+}
+@media (min-width: 769px) {
+  .prices-box-1,
+  .prices-box-2,
+  .prices-box-3,
+  .prices-box-4{
+
+    @include span(3 of 12);
+      max-width: 262px;
+  }
+  .prices-box-1{
+    @include push(0.2);
+
+  }
+  .prices p{
+    width: 680px;
+    margin: 0 auto;
+  }
+}
+/*-------------------------- INFO---------------------------------*/
+.info {
+  background: #fff;
+
+}
+.info-group {
+  margin: 30px auto;
+  text-align: left;
+  margin-bottom: 30px;
+  li {
+    margin-bottom: 40px;
+    span {
+      font: 400 15px 'Lato';
+      color: #ed145b;
+      text-transform: uppercase;
+      text-align: left;
+    }
+    p {
+      color: #5a5a5a;
+      font: 300 15px/30px 'Lato';
+      text-align: left;
+      margin-top: 20px;
+    }
+    .text-info {
+      max-width: 340px;
+    }
+  }
+}
+
+
+.icon-info{
+  float: left;
+  height: 135px;
+  margin-right: 15px;
+}
+
+.communications{
+  background: #ed145b;
+  min-height: 200px;
+  padding: 30px 0 10px;
+  p{
+    color: white;
+    font: 300 38px/38px 'Lato';
+    margin: 0px auto;
+    text-align: center;
+    span{
+      font: 700 38px/38px 'Lato';
+    }
+  }
+  a{
+    display: block;
+    width: 200px;
+    height: 50px;
+    background: #fff;
+    color:#ed145b ;
+    font: 700 15px/50px 'lato' ;
+    border-radius: 24px;
+    text-align: center;
+    margin: 30px auto;
+    &:hover{
+      background:#f4f4f4 ;
+      color:#ed145b ;
+      transition: 0.5s;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+    }
+
+  }
+
+}
+@media (min-width: 769px) {
+ .info-group li{
+
+   @include gallery(4 of 12);
+    transition: 2s;
+   padding-left: 15px;
+
+ }
+}
+/*------------------Portfolio----------------------------*/
+.portfolio{
+  background: #fff;
+  p{
+    color: #5a5a5a;
+    font: 300 15px/30px 'Lato';
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+.portfolio-group{
+  margin: 50px auto;
+
+  .grid{
+    max-width: 360px;
+    height: 390px;
+    background:#f4f4f4 ;
+    margin: 0 auto 40px;
+    h5{
+      font: 400 15px/30px 'Lato';
+      color: #5a5a5a;
+      text-align:left;
+      margin:0 0 15px 20px;
+    }
+    p{
+      text-align: left;
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}
+.img-main{
+  position: relative;
+
+
+}
+.img-decor{
+  position: absolute;
+  bottom:4px;
+
+}
+.rollover{
+  position: absolute;
+  top:0;
+  left: 0;
+  max-height:250px;
+  height: 100%;
+  width: 100%;
+  background-color: #ed145b;
+  z-index: 99;
+  opacity: 0;
+  &:hover {
+    transition: 0.5s;
+    opacity: 0.85;
+
+  }
+   a{
+     display: block;
+     margin: 100px auto 0;
+     width: 45px;
+     height: 45px;
+     text-align: center;
+     .fa{
+       color:#fff;
+       text-align: center;
+       font-size: 40px;
+       &:hover{
+         transform: scale(1.4);
+         transition: 0.2s;
+
+       }
+     }
+   }
+
+}
+.arrow{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  color: #ed145b;
+  text-transform: uppercase;
+  font: 400 15px/30px 'Lato';
+}
+.arrow-down{
+  display: block;
+  margin: 0 auto 30px;
+  text-align: center;
+  .fa{
+    color: #ed145b;
+    font-size: 15px;
+    &:hover{
+     transform: scale(1.6);
+      transition: 0.2s;
+
+    }
+  }
+
+}
+@media (min-width: 769px) {
+  .grid{
+
+    @include gallery(6 of 12);
+    transition: 2s;
+
+  }
+  .portfolio p{
+    width: 680px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  .grid{
+
+    @include gallery(4 of 12);
+    transition: 2s;
+
+  }
+  .portfolio p{
+    width: 680px;
+    margin: 0 auto;
+  }
+}
+/*---------------------------additional------------------------*/
+.additional{
+background:url("../images/additional-bg.jpg") fixed center/cover no-repeat;
+p{
+  margin: 50px auto;
+  font:300 15px/30px 'Lato';
+  color: #fff;
+  text-align: center;
+}
+  .title{
+    color: #fff;
+  }
+  a{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    background:#ed145b ;
+    color: #fff;
+    text-align: center;
+    border-radius: 24px;
+    font: 700 15px/50px 'Lato';
+    text-transform: uppercase;
+
+    &:hover{
+      background:#f4f4f4 ;
+      color:#ed145b ;
+      transition: 0.5s;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+  }
+}
+
+/*---------------------------DOWNLOAD------------------------*/
+
+.download {
+  background: #f4f4f4;
+  p {
+    margin: 50px auto;
+    font: 300 15px/30px 'Lato';
+    color: #5a5a5a;
+    text-align: center;
+  }
+  a {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    background: #ed145b;
+    color: #fff;
+    text-align: center;
+    border-radius: 24px;
+    font: 700 15px/50px 'Lato';
+    text-transform: uppercase;
+
+    &:hover {
+      background: #f4f4f4;
+      color: #ed145b;
+      transition: 0.5s;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+  }
+}
+.download-img{
+  display: none;
+}
+@media (min-width: 769px) {
+
+
+  .download-img{
+    display: block;
+    @include span(7 of 12 before first);
+
+  }
+
+  .download-text-section{
+    @include span(5 of 12 before);
+  }
+  .download .title{
+    text-align: left;
+  }
+  .download .line{
+    text-align: left;
+    margin-left: 0
+  }
+  .download h3,.download p{
+    text-align: left;
+  }
+  a{
+    margin-left: 0;
+  }
+
+}
+
+/*---------------------------footer------------------------*/
+footer{
+  background:#2b2b2b ;
+  p{
+    font: 300 15px/40px 'Lato';
+    text-align: center;
+    margin:0 auto ;
+    color:#fff;
+  }
+  img{
+    margin: 0 auto;
+    display: block;
+  }
+
+}
+.row-footer{
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+@media (min-width: 769px) {
+.copyright{
+  float: left;
+}
+
+ .row-footer{
+ float: right;
+   p, img{
+     display: inline-block;
+   }
+
+ }
+
+}

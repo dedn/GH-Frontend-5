@@ -1,0 +1,127 @@
+.clients{
+  background: #f4f4f4;
+  ul{
+    text-align: center;
+  }
+  li{
+   margin-bottom: 30px;
+    &:hover{
+      transition: 0.5s;
+      transform: scale(1.1);
+
+    }
+  }
+}
+
+/*-------------------------------CONTACT--------------------------*/
+.contact{
+  background:#d11f2d;
+  color: #fff;
+  p{
+    text-align: center;
+  }
+  a{
+    display: block;
+    height:65px ;
+    width:240px ;
+    color: #252525; ;
+    background:#fff ;
+    border-radius: 4px;
+    font: 700 24px/65px "Open Sans";
+    text-align: center;
+    margin:40px auto 0 ;
+    &:hover{
+      color:#fff;
+      background:#252525;
+      transition: 0.5s;
+    }
+  }
+}
+/*---------------------------FOOTER--------------------------*/
+footer{
+  background:#232323 ;
+  color: #fff;
+  text-align: center;
+   span{
+     font:400 14px/20px 'Open Sans';
+
+   }
+}
+.social-networks{
+  margin:20px auto;
+  text-align: center;
+  li{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    .fa{
+      display: block;
+      width: 50px;
+      height:50px ;
+      color:#fff ;
+      text-align: center;
+      line-height:50px ;
+      &:hover{
+        transition: 0.5s;
+        transform: scale(1.1);
+
+      }
+    }
+  }
+}
+
+.fa-facebook{
+  background:#018ada ;
+}
+.fa-twitter {
+  background:#3c5a98 ;
+}
+.fa-google-plus{
+  background:#d13f3f ;
+}
+.fa-linkedin{
+  background:#e95c93 ;
+}
+/*------------------------DESKTOP----------------------------*/
+
+@media(min-width: 540px){
+  .clients ul li{
+    @include gallery(6 of 12);
+    transition: 1s;
+  }
+  .clients ul {
+    margin: 0 auto;
+    max-width: 540px;
+  }
+}
+
+@media(min-width: 769px){
+  .clients ul li{
+    @include gallery(4 of 12);
+    transition: 1s;
+
+  }
+  .clients ul {
+    margin: 0 auto;
+    max-width:100%;
+  }
+}
+
+@media(min-width: 961px){
+  .clients ul li{
+    @include gallery(2.35 of 12);
+    transition: 1s;
+  }
+}
+
+@media(min-width: 769px){
+  .copyright{
+    float: left;
+    margin-top: 50px;
+  }
+  .social-networks{
+    float: right;
+    margin-top: 30px;
+  }
+}
+

@@ -1,0 +1,186 @@
+.hero {
+  position: relative;
+  min-height: 600px;
+  padding:0 5px 5px 5px;
+  background: url("../images/hero-bg.jpg") fixed center/cover no-repeat;
+  color: #fff;
+  .hero-body {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+      .hero-title{
+        font: 700 30px/50px "Open Sans";
+        opacity: 0.9;
+        text-transform: uppercase;
+      }
+    p{
+      font:400 16px/20px "Open Sans";
+      margin-bottom: 100px;
+    }
+    .hero-introduction{
+      display: block;
+      margin-bottom: 30px;
+      font:700 14px/20px 'Raleway';
+      text-transform: uppercase;
+    }
+  }
+
+}
+.hero .arrow-down{
+  position:absolute;
+  bottom:0px;
+  left:0;
+  right:0;
+  display:block;
+  color:#fff;
+}
+/*------------------------------------------------DASKTOP------------------------*/
+@media (min-width: 769px) {
+  .hero {
+    min-height: 800px;
+    .hero-body {
+      top: 60%;
+      .hero-title {
+        font: 700 40px/60px "Open Sans";
+
+      }
+      p {
+        font: 400 18px/24px "Open Sans";
+        margin-bottom: 250px;
+      }
+      .hero-introduction {
+
+      }
+    }
+  }
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAVBAR---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#hero .logo {
+  float: left;
+  color: #fff;
+  H1 {
+    a {
+      font: 700 20px/17px 'Open Sans';
+      margin: 0 0 10px 0;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+  img{
+    padding-left: 10px;
+  }
+}
+
+#hero .logo {
+  p {
+    font: 300 12px/17px 'Open Sans';
+    text-transform: uppercase;
+    margin-bottom: 5px
+  }
+}
+
+#navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  border-top: 10px solid rgba(209, 31, 45, 1);
+  }
+#navbar.default {
+  position: fixed;
+  top: 0;
+  transition-duration: 2s;
+  background:rgba(209, 31, 45, 1) ;
+}
+.iconMenu {
+  float: right;
+  padding-top: 15px;
+  margin-right: 10px;
+}
+.nav {
+  li {
+    float: left;
+    margin-right: 35px;
+    text-align: center;
+    padding: 5px 10px;
+    a {
+      text-decoration: none;
+      font: 700 14px/20px 'Helvetica Neue';
+      color: #fff;
+    }
+    &:hover {
+      transition: 0.5s;
+      color:#018ada;
+    }
+  }
+}
+.itemsMenu li {
+  display: inline;
+  padding-right: 35px;
+  width: 100%;
+  margin: 0 auto;
+  a {
+    padding: 5px 10px;
+    &:hover {
+      transition: 0.5s;
+      color:#018ada;
+    }
+
+  }
+}
+.iconMenu {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  &:hover {
+    color:#018ada;
+    transition: 0.5s;
+  }
+}
+.showitems {
+  display: block !important;
+  transition: 1s;
+}
+.iconMenu {
+  display: block;
+}
+.itemsMenu {
+  display: none;
+}
+
+.itemsMenu li {
+  display: block;
+  padding: 5px;
+}
+@media(min-width: 769px) {
+  /*.itemsMenu {
+    display: block;
+  }*/
+/*  .iconMenu {
+    display: none;
+  }*/
+  .itemsMenu li {
+    padding: 5px 10px;
+    width: auto;
+    float: right;
+    margin-top: 15px;
+  }
+}
+
+
+
+
+
+/*------------------------------------------------DASKTOP------------------------*/
+
+
+
+
+
+

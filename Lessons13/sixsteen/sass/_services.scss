@@ -1,0 +1,65 @@
+/*-----------------------------------SERVICES-------------------------*/
+.services{
+  background:#f7f7f7 ;
+  color: #454545;
+  p{
+    text-align: center;
+    font: 400 18px 'Droid Serif';
+
+  }
+}
+.services .features-list{
+  margin: 0 auto;
+  h4{
+    margin-bottom:10px ;
+    font:700 20px 'Source Sans Pro' ;
+    color:#acd373 ;
+  }
+  p{
+    font:400 18px 'Droid Serif' ;
+    text-align: left;
+  }
+
+  li{
+    margin-bottom: 40px;
+  }
+}
+.image-container{
+  display: block;
+  float: left;
+  margin-right: 10px;
+  width: 80px;
+  height:110px ;
+}
+
+.services .button {
+  display: block;
+  width: 140px;;
+  height:40px;
+  color: #acd373;
+  background: none;
+  border: 1px solid #acd373;
+  font:italic 18px/40px 'Droid Serif' ;
+  text-align: center;
+  margin: 30px auto 0;
+  &:hover {
+    color:#454545; ;
+    background:#acd373;
+    transition: 0.5s;
+
+  }
+}
+
+
+@media(min-width: 769px) {
+  .features-list li {
+    @include gallery(4 of 12);
+    transition: 2s;
+  }
+  .features-list li:nth-child(1),
+    .features-list li:nth-child(4) {
+    margin-left: 15px;
+  }
+}
+
+
