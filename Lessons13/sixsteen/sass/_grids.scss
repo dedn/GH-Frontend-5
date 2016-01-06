@@ -1,12 +1,11 @@
 // Requirements
 // ============
-
-
 @import "susy";
+
 $susy: (
         columns: 12,
         gutters: 1/4,
-        container:1170px ,
+        container:1170px,
         math: fluid,
         output: float,
         gutter-position: after,
@@ -16,5 +15,4 @@ $susy: (
                 output: background,
                 toggle: top right,
         )
-
 );

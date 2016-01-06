@@ -56,13 +56,13 @@
 
     }
   }
-  .blog-group:nth-of-type(2)  {
+  .blog-group:nth-of-type(2) {
     a {
       margin-top: 12px;
     }
   }
 
-  .blog-group:nth-of-type(3)  {
+  .blog-group:nth-of-type(3) {
     a {
       margin-top: 35px;
     }
@@ -123,7 +123,7 @@
 @media(min-width: 769px) {
   .blog .blog-group {
     float: left;
-    margin-right:20px ;
+    margin-right: 20px;
   }
 
-  }
+}

@@ -34,16 +34,15 @@ $(document).ready(function(){
         });
 
 
-/*
+
 $('.filter').ready(function() {
 
     $('.filter').bxSlider({
         responsive:'true',
         auto:'true',
-        pause:'4000',
-        pager: 'false',
+        pause:'10000',
+        pager: 'true',
         controls:'false'
 
     });
 })
-    */

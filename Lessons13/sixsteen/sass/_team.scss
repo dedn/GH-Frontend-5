@@ -1,101 +1,102 @@
 /*-------------------------------------TEAM----------------------------*/
-.team{
-  background:#acd373 ;
-  .title-white{
-    color:#f7f7f7;
-    @extend.title;
+.team {
+  background: #acd373;
+  .title-white {
+    color: #f7f7f7;
+    @extend .title;
   }
-  p{
-    color:#f7f7f7;
+  p {
+    color: #f7f7f7;
     text-align: center;
     font: 400 18px 'Droid Serif';;
   }
-  .row{
+  .row {
     text-align: center;
   }
 
 }
-.team-block-one{
+
+.team-block-one {
   position: relative;
-  width:270px;
+  width: 270px;
   max-width: 270px;
-  height:247px;
-  background:#f7f7f7 ;
+  height: 247px;
+  background: #f7f7f7;
   text-align: center;
   border-radius: 5px;
   margin: 0 auto 130px;
-  h4{
+  h4 {
     font: 700 20px 'Source Sans Pro';
     color: #acd373;
     padding: 135px 0 10px;
   }
-  span{
+  span {
     font: italic 16px 'Droid Serif';
     color: #787878;
   }
-  .social-block{
-    background:#ebebeb ;
+  .social-block {
+    background: #ebebeb;
     margin-top: 30px;
     width: 270px;
-    a{
+    a {
       display: inline-block;
       width: 28px;
       height: 28px;
-      background:#525252 ;
-      color:#ebebeb ;
-      line-height:28px ;
+      background: #525252;
+      color: #ebebeb;
+      line-height: 28px;
       border-radius: 50%;
       font-size: 19px;
-      margin:15px 10px 10px 0 ;
+      margin: 15px 10px 10px 0;
 
-      &:hover{
+      &:hover {
         transform: scale(1.1);
         transition: 0.3s;
 
       }
     }
   }
-  img{
-    border-radius:100%;
+  img {
+    border-radius: 100%;
   }
 }
-.team-block-one li:first-child{
+
+.team-block-one li:first-child {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.button-team{
+
+.button-team {
   display: block;
   width: 160px;;
-  height:40px;
-  color:#f2f2f2;
+  height: 40px;
+  color: #f2f2f2;
   background: none;
   border: 1px solid #f2f2f2;
 
-  font:italic 18px/40px 'Droid Serif' ;
+  font: italic 18px/40px 'Droid Serif';
   text-align: center;
   margin: 30px auto 0;
   &:hover {
-    color:#454545; ;
-    background:#f2f2f2;
+    color: #454545;;
+    background: #f2f2f2;
     transition: 0.5s;
 
   }
 }
-.team .circle-white{
+
+.team .circle-white {
   margin-bottom: 120px;
 }
 
 @media(min-width: 769px) {
   .team-block-one {
-    /*  @include gallery(6 of 12);*/
     @include gallery(6 of 12);
     transition: 2s;
-
-
   }
-  .clients li{
-    @include gallery(2 of 12);
+  .clients li {
+    @include gallery(4 of 12);
   }
 }
 
@@ -106,5 +107,8 @@
     @include push(1);
     transition: 2s;
 
+  }
+  .clients li {
+    @include gallery(2 of 12);
   }
 }

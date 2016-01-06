@@ -21,118 +21,131 @@
     <favorites_list name="singular" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.44962487">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="_portfolio.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/sass/_portfolio.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5613609">
-                  <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_footer.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sass/_footer.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-22.709677">
-                  <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/script.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_about.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sass/_about.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_testimonials.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sass/_testimonials.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-21.903225">
-                  <caret line="101" column="19" selection-start-line="100" selection-start-column="4" selection-end-line="101" selection-end-column="19" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.454435">
-                  <caret line="92" column="10" selection-start-line="92" selection-start-column="10" selection-end-line="92" selection-end-column="10" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="jquery.bxslider.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/jquery.bxslider.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="jquery.bxslider.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/jquery.bxslider.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="_portfolio.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/_portfolio.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.161291">
+              <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_footer.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/_footer.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.096774">
+              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_contact.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/_contact.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.4193548">
+              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_about.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sass/_about.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.7375456">
+              <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_blog.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/_blog.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.83871">
+              <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/_header.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.7096774">
+              <caret line="36" column="26" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_grids.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/_grids.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.0615387">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_team.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/_team.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.870968">
+              <caret line="111" column="22" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_services.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/_services.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.193548">
+              <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_reset.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/_reset.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sass/_reset.scss" />
         <option value="$PROJECT_DIR$/sass/_download-section.scss" />
         <option value="$PROJECT_DIR$/sass/_intro.scss" />
         <option value="$PROJECT_DIR$/sass/_clients.scss" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/sass/_header.scss" />
         <option value="$PROJECT_DIR$/sass/_services.scss" />
-        <option value="$PROJECT_DIR$/sass/_team.scss" />
-        <option value="$PROJECT_DIR$/sass/_testimonials.scss" />
-        <option value="$PROJECT_DIR$/sass/_contact.scss" />
         <option value="$PROJECT_DIR$/sass/style.scss" />
-        <option value="$PROJECT_DIR$/sass/_blog.scss" />
-        <option value="$PROJECT_DIR$/sass/_grids.scss" />
-        <option value="$PROJECT_DIR$/sass/_about.scss" />
-        <option value="$PROJECT_DIR$/sass/_footer.scss" />
         <option value="$PROJECT_DIR$/js/script.js" />
-        <option value="$PROJECT_DIR$/sass/_portfolio.scss" />
+        <option value="$PROJECT_DIR$/css/jquery.bxslider.css" />
+        <option value="$PROJECT_DIR$/sass/_contact.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/sass/_testimonials.scss" />
+        <option value="$PROJECT_DIR$/sass/_team.scss" />
+        <option value="$PROJECT_DIR$/sass/_reset.scss" />
+        <option value="$PROJECT_DIR$/sass/_portfolio.scss" />
+        <option value="$PROJECT_DIR$/sass/_grids.scss" />
+        <option value="$PROJECT_DIR$/sass/_footer.scss" />
+        <option value="$PROJECT_DIR$/sass/_blog.scss" />
+        <option value="$PROJECT_DIR$/sass/_about.scss" />
       </list>
     </option>
   </component>
@@ -148,7 +161,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="1938" />
+    <option name="width" value="1932" />
     <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -178,7 +191,7 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.SCSS" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -246,7 +259,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16398714" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -303,13 +316,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/susy/sass/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Strict/sass/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -491,13 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2014563">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/susy/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.21359223">
@@ -547,67 +546,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_services.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="26" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_team.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7063107">
-          <caret line="104" column="30" selection-start-line="104" selection-start-column="30" selection-end-line="104" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/mache/sass/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_grids.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2936893">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_contact.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51941746">
-          <caret line="114" column="16" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_blog.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5606796">
-          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83980584">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_about.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -621,58 +563,254 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.709677">
-          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/jquery.bxslider.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery.bxslider.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_testimonials.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.903225">
-          <caret line="101" column="19" selection-start-line="100" selection-start-column="4" selection-end-line="101" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jquery.bxslider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.553846">
+          <caret line="97" column="22" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-287.09677">
+          <caret line="1088" column="10" selection-start-line="1088" selection-start-column="10" selection-end-line="1088" selection-end-column="10" />
+          <folding>
+            <marker date="1452092092834" expanded="true" signature="324:358" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="399:497" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="815:863" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="909:935" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="979:999" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="1055:1077" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="1128:1144" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="1187:1240" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="1295:1371" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="1416:1444" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="1751:1781" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="1827:1856" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="1903:1932" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="1980:2007" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="2051:2085" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="2133:2160" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="2209:2237" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="2286:2317" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="2363:2395" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="2440:2473" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="2520:2554" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="2600:2635" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="2681:2715" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="2761:2797" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="2841:2859" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="4547:4710" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="4763:4886" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="4952:5032" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="5088:5150" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="5206:5324" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="5352:5954" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="5400:5428" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="5486:5505" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="5575:5630" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="5690:5758" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="5818:5952" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="6069:6087" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="6140:6165" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="6211:6371" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="6425:6484" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="6532:6594" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="6640:6723" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="6771:6894" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="6946:7005" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="7058:7136" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="7190:7214" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="7274:7297" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="7346:7400" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="7450:7500" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="7549:7570" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="7620:7640" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="7693:7730" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="7759:8059" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="7813:7838" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="7891:7915" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="7972:8057" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="8171:8221" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="8266:8378" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="8423:8504" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="8555:8760" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="8817:8881" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="8931:8974" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="9044:9072" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="9123:9169" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="9197:10279" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="9267:9355" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="9531:9618" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="9794:9869" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="9920:9947" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="9996:10023" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="10078:10110" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="10171:10196" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="10250:10277" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="10329:10411" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="10457:10626" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="10819:10863" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="10913:10970" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="11035:11056" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="11123:11203" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="11269:11324" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="11391:11417" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="11474:11564" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="11622:11827" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="11890:11954" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="11982:12925" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="12044:12108" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="12255:12342" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="12489:12564" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="12711:12786" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="12895:12923" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="13039:13065" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="13118:13139" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="13181:13256" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="13302:13327" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="13379:13548" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="13602:13684" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="13740:13796" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="13861:13923" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="13990:14180" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="14253:14301" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="14356:14382" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="14449:14523" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="14572:14777" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="14831:14895" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="14951:14978" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="15006:15068" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="15062:15068" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="16378:18847" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="16420:16548" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="16693:16780" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="16925:17000" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="17145:17220" placeholder="{...}" />
+            <marker date="1452092092834" expanded="true" signature="17365:17440" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="30.935484">
+          <caret line="421" column="17" selection-start-line="421" selection-start-column="17" selection-end-line="421" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.290323">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_testimonials.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.258064">
+          <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_team.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.870968">
+          <caret line="111" column="22" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_services.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.193548">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_reset.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_portfolio.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5613609">
-          <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+        <state vertical-scroll-proportion="-21.161291">
+          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/sass/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.454435">
-          <caret line="92" column="10" selection-start-line="92" selection-start-column="10" selection-end-line="92" selection-end-column="10" />
+        <state vertical-scroll-proportion="-0.7096774">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_grids.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0615387">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.096774">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_contact.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4193548">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_blog.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.83871">
+          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_about.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7375456">
+          <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
           <folding />
         </state>
       </provider>

@@ -49,12 +49,12 @@
 }
 
 @media(min-width: 769px) {
-    .who-we-are,
-    .iphone-image {
-      @include gallery(6 of 12);
-      transition: 2s;
-      padding-left: 15px;
-      }
+  .who-we-are,
+  .iphone-image {
+    @include gallery(6 of 12);
+    transition: 2s;
+    padding-left: 15px;
+  }
   .about {
     h3 {
       text-align: left;
@@ -70,18 +70,19 @@
       }
     }
   }
-  .about-title{
+  .about-title {
     text-align: left;
   }
 }
 
-#video_holder{
+#video_holder {
   position: relative;
   max-width: 100%;
   text-align: center;
   height: auto;
 }
-#overlay{
+
+#overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -91,6 +92,7 @@
   background: url(../images/play.png) 50% 50% no-repeat;
   transition: 0.2s;
 }
-#overlay.o{
+
+#overlay.o {
   background: none;
 }

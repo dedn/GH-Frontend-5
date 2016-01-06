@@ -8,7 +8,7 @@ html, body {
   height: 100%;
 }
 
-/* line 5, ../sass/_reset.scss */
+/* line 9, ../sass/_reset.scss */
 body {
   padding: 0;
   margin: 0;
@@ -17,7 +17,7 @@ body {
   color: #000;
 }
 
-/* line 6, ../sass/_reset.scss */
+/* line 17, ../sass/_reset.scss */
 div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
   padding: 0;
   margin: 0;
@@ -25,46 +25,46 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   list-style: none;
 }
 
-/* line 12, ../sass/_reset.scss */
+/* line 24, ../sass/_reset.scss */
 select, input, textarea {
   font-size: 12px;
   vertical-align: middle;
 }
 
-/* line 13, ../sass/_reset.scss */
+/* line 29, ../sass/_reset.scss */
 textarea {
   vertical-align: top;
 }
 
-/* line 14, ../sass/_reset.scss */
+/* line 33, ../sass/_reset.scss */
 :focus {
   outline: none;
 }
 
-/* line 15, ../sass/_reset.scss */
+/* line 37, ../sass/_reset.scss */
 input[type=submit] {
   cursor: pointer;
 }
 
-/* line 16, ../sass/_reset.scss */
+/* line 41, ../sass/_reset.scss */
 img, fieldset {
   border: 0;
 }
 
-/* line 17, ../sass/_reset.scss */
+/* line 45, ../sass/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 18, ../sass/_reset.scss */
+/* line 50, ../sass/_reset.scss */
 a:link, a:visited {
   font: 12px Tahoma, sans-serif;
   color: #000;
   text-decoration: none;
 }
 
-/* line 19, ../sass/_reset.scss */
+/* line 56, ../sass/_reset.scss */
 a:hover {
   text-decoration: none;
 }
@@ -72,77 +72,77 @@ a:hover {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
 /*----------------------------------------------------------------------------------*/
-/* line 23, ../sass/_reset.scss */
+/* line 63, ../sass/_reset.scss */
 .float-r {
   float: right !important;
 }
 
-/* line 24, ../sass/_reset.scss */
+/* line 67, ../sass/_reset.scss */
 .float-l {
   float: left !important;
 }
 
-/* line 25, ../sass/_reset.scss */
+/* line 71, ../sass/_reset.scss */
 .no-float {
   float: none !important;
 }
 
-/* line 26, ../sass/_reset.scss */
+/* line 75, ../sass/_reset.scss */
 .no-border {
   border: 0 !important;
 }
 
-/* line 27, ../sass/_reset.scss */
+/* line 79, ../sass/_reset.scss */
 .no-bg {
   background: none !important;
 }
 
-/* line 28, ../sass/_reset.scss */
+/* line 83, ../sass/_reset.scss */
 .no-margin {
   margin: 0 !important;
 }
 
-/* line 29, ../sass/_reset.scss */
+/* line 87, ../sass/_reset.scss */
 .no-padding {
   padding: 0 !important;
 }
 
-/* line 30, ../sass/_reset.scss */
+/* line 91, ../sass/_reset.scss */
 .no-display {
   display: none !important;
 }
 
-/* line 31, ../sass/_reset.scss */
+/* line 95, ../sass/_reset.scss */
 .display {
   display: block !important;
 }
 
-/* line 32, ../sass/_reset.scss */
+/* line 99, ../sass/_reset.scss */
 .inline {
   display: inline !important;
 }
 
-/* line 33, ../sass/_reset.scss */
+/* line 103, ../sass/_reset.scss */
 .overflow {
   overflow: hidden !important;
 }
 
-/* line 34, ../sass/_reset.scss */
+/* line 107, ../sass/_reset.scss */
 .align-r {
   text-align: right !important;
 }
 
-/* line 35, ../sass/_reset.scss */
+/* line 111, ../sass/_reset.scss */
 .align-l {
   text-align: left !important;
 }
 
-/* line 36, ../sass/_reset.scss */
+/* line 115, ../sass/_reset.scss */
 .align-c {
   text-align: center !important;
 }
 
-/* line 37, ../sass/_reset.scss */
+/* line 119, ../sass/_reset.scss */
 .clear {
   clear: both;
 }
@@ -464,7 +464,7 @@ a:hover {
   height: auto;
 }
 
-/* line 84, ../sass/_about.scss */
+/* line 85, ../sass/_about.scss */
 #overlay {
   position: absolute;
   top: 0;
@@ -476,7 +476,7 @@ a:hover {
   transition: 0.2s;
 }
 
-/* line 94, ../sass/_about.scss */
+/* line 96, ../sass/_about.scss */
 #overlay.o {
   background: none;
 }
@@ -594,7 +594,7 @@ a:hover {
   text-align: center;
 }
 
-/* line 18, ../sass/_team.scss */
+/* line 19, ../sass/_team.scss */
 .team-block-one {
   position: relative;
   width: 270px;
@@ -605,24 +605,24 @@ a:hover {
   border-radius: 5px;
   margin: 0 auto 130px;
 }
-/* line 27, ../sass/_team.scss */
+/* line 28, ../sass/_team.scss */
 .team-block-one h4 {
   font: 700 20px 'Source Sans Pro';
   color: #acd373;
   padding: 135px 0 10px;
 }
-/* line 32, ../sass/_team.scss */
+/* line 33, ../sass/_team.scss */
 .team-block-one span {
   font: italic 16px 'Droid Serif';
   color: #787878;
 }
-/* line 36, ../sass/_team.scss */
+/* line 37, ../sass/_team.scss */
 .team-block-one .social-block {
   background: #ebebeb;
   margin-top: 30px;
   width: 270px;
 }
-/* line 40, ../sass/_team.scss */
+/* line 41, ../sass/_team.scss */
 .team-block-one .social-block a {
   display: inline-block;
   width: 28px;
@@ -634,24 +634,24 @@ a:hover {
   font-size: 19px;
   margin: 15px 10px 10px 0;
 }
-/* line 51, ../sass/_team.scss */
+/* line 52, ../sass/_team.scss */
 .team-block-one .social-block a:hover {
   transform: scale(1.1);
   transition: 0.3s;
 }
-/* line 58, ../sass/_team.scss */
+/* line 59, ../sass/_team.scss */
 .team-block-one img {
   border-radius: 100%;
 }
 
-/* line 62, ../sass/_team.scss */
+/* line 64, ../sass/_team.scss */
 .team-block-one li:first-child {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-/* line 67, ../sass/_team.scss */
+/* line 70, ../sass/_team.scss */
 .button-team {
   display: block;
   width: 160px;
@@ -659,26 +659,25 @@ a:hover {
   color: #f2f2f2;
   background: none;
   border: 1px solid #f2f2f2;
-  font: italic 18px/40px "Droid Serif";
+  font: italic 18px/40px 'Droid Serif';
   text-align: center;
   margin: 30px auto 0;
 }
-/* line 78, ../sass/_team.scss */
+/* line 81, ../sass/_team.scss */
 .button-team:hover {
   color: #454545;
   background: #f2f2f2;
   transition: 0.5s;
 }
 
-/* line 85, ../sass/_team.scss */
+/* line 89, ../sass/_team.scss */
 .team .circle-white {
   margin-bottom: 120px;
 }
 
 @media (min-width: 769px) {
-  /* line 90, ../sass/_team.scss */
+  /* line 94, ../sass/_team.scss */
   .team-block-one {
-    /*  @include gallery(6 of 12);*/
     width: 49.15254%;
     float: left;
     transition: 2s;
@@ -697,7 +696,67 @@ a:hover {
     clear: none;
   }
 
-  /* line 97, ../sass/_team.scss */
+  /* line 98, ../sass/_team.scss */
+  .clients li {
+    width: 32.20339%;
+    float: left;
+  }
+  /* line 66, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .clients li:nth-child(3n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .clients li:nth-child(3n + 2) {
+    margin-left: 33.89831%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .clients li:nth-child(3n + 3) {
+    margin-left: 67.79661%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+@media (min-width: 961px) {
+  /* line 104, ../sass/_team.scss */
+  .team-block-one {
+    /*  @include gallery(6 of 12);*/
+    width: 23.72881%;
+    float: left;
+    margin-left: 8.47458%;
+    transition: 2s;
+  }
+  /* line 66, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .team-block-one:nth-child(4n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .team-block-one:nth-child(4n + 2) {
+    margin-left: 25.42373%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .team-block-one:nth-child(4n + 3) {
+    margin-left: 50.84746%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .team-block-one:nth-child(4n + 4) {
+    margin-left: 76.27119%;
+    margin-right: -100%;
+    clear: none;
+  }
+
+  /* line 111, ../sass/_team.scss */
   .clients li {
     width: 15.25424%;
     float: left;
@@ -740,41 +799,6 @@ a:hover {
     clear: none;
   }
 }
-@media (min-width: 961px) {
-  /* line 103, ../sass/_team.scss */
-  .team-block-one {
-    /*  @include gallery(6 of 12);*/
-    width: 23.72881%;
-    float: left;
-    margin-left: 8.47458%;
-    transition: 2s;
-  }
-  /* line 66, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
-  .team-block-one:nth-child(4n + 1) {
-    margin-left: 0;
-    margin-right: -100%;
-    clear: both;
-    margin-left: 0;
-  }
-  /* line 66, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
-  .team-block-one:nth-child(4n + 2) {
-    margin-left: 25.42373%;
-    margin-right: -100%;
-    clear: none;
-  }
-  /* line 66, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
-  .team-block-one:nth-child(4n + 3) {
-    margin-left: 50.84746%;
-    margin-right: -100%;
-    clear: none;
-  }
-  /* line 66, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
-  .team-block-one:nth-child(4n + 4) {
-    margin-left: 76.27119%;
-    margin-right: -100%;
-    clear: none;
-  }
-}
 /*----------------------------------PORTFOLIO---------------------------------*/
 /* line 2, ../sass/_portfolio.scss */
 .portfolio {
@@ -803,7 +827,7 @@ a:hover {
   padding-top: 10px;
   color: #454545;
 }
-/* line 25, ../sass/_portfolio.scss */
+/* line 24, ../sass/_portfolio.scss */
 .portfolio .portfolio-big span,
 .portfolio .portfolio-small span {
   font: italic 16px 'Droid Serif';
@@ -815,7 +839,7 @@ a:hover {
   width: 310px;
 }
 
-/* line 34, ../sass/_portfolio.scss */
+/* line 35, ../sass/_portfolio.scss */
 .portfolio-big li:last-child,
 .portfolio-small li:last-child {
   width: 310px;
@@ -825,13 +849,13 @@ a:hover {
   padding-bottom: 10px;
 }
 
-/* line 42, ../sass/_portfolio.scss */
+/* line 44, ../sass/_portfolio.scss */
 .portfolio-big li:first-child,
 .portfolio-small li:first-child {
   text-align: center;
 }
 
-/* line 46, ../sass/_portfolio.scss */
+/* line 49, ../sass/_portfolio.scss */
 .portfolio .button {
   display: block;
   width: 190px;
@@ -839,60 +863,60 @@ a:hover {
   color: #acd373;
   background: none;
   border: 1px solid #acd373;
-  font: italic 18px/40px "Droid Serif";
+  font: italic 18px/40px 'Droid Serif';
   text-align: center;
   margin: 30px auto 40px;
 }
-/* line 56, ../sass/_portfolio.scss */
+/* line 59, ../sass/_portfolio.scss */
 .portfolio .button:hover {
   color: #454545;
   background: #acd373;
   transition: 0.5s;
 }
 
-/* line 63, ../sass/_portfolio.scss */
+/* line 66, ../sass/_portfolio.scss */
 .clients {
   background: #ebebeb;
 }
-/* line 65, ../sass/_portfolio.scss */
+/* line 68, ../sass/_portfolio.scss */
 .clients li {
   margin: 0 auto 30px;
   text-align: center;
 }
-/* line 68, ../sass/_portfolio.scss */
+/* line 71, ../sass/_portfolio.scss */
 .clients li img {
   width: 200px;
 }
-/* line 70, ../sass/_portfolio.scss */
+/* line 73, ../sass/_portfolio.scss */
 .clients li img:hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
 
 @media (min-width: 600px) {
-  /* line 80, ../sass/_portfolio.scss */
+  /* line 82, ../sass/_portfolio.scss */
   .portfolio .portfolio-big img {
     width: 570px;
     margin-right: 15px;
   }
 
-  /* line 84, ../sass/_portfolio.scss */
+  /* line 86, ../sass/_portfolio.scss */
   .portfolio .portfolio-small img {
     width: 370px;
   }
 
-  /* line 87, ../sass/_portfolio.scss */
+  /* line 89, ../sass/_portfolio.scss */
   .portfolio-big li:last-child {
     width: 570px;
   }
 
-  /* line 90, ../sass/_portfolio.scss */
+  /* line 92, ../sass/_portfolio.scss */
   .portfolio-small li:last-child {
     width: 370px;
   }
 }
 @media (min-width: 1140px) {
-  /* line 97, ../sass/_portfolio.scss */
+  /* line 98, ../sass/_portfolio.scss */
   .portfolio-big {
     width: 49.15254%;
     float: left;
@@ -900,13 +924,13 @@ a:hover {
     transition: 2s;
   }
 
-  /* line 103, ../sass/_portfolio.scss */
+  /* line 102, ../sass/_portfolio.scss */
   .portfolio .last-big {
     float: right;
     margin-right: 0;
   }
 
-  /* line 107, ../sass/_portfolio.scss */
+  /* line 106, ../sass/_portfolio.scss */
   .portfolio .portfolio-small {
     width: 32.20339%;
     float: left;
@@ -914,13 +938,13 @@ a:hover {
     transition: 2s;
   }
 
-  /* line 112, ../sass/_portfolio.scss */
+  /* line 110, ../sass/_portfolio.scss */
   .portfolio .last-smal {
     float: right;
     margin-right: 0;
   }
 
-  /* line 115, ../sass/_portfolio.scss */
+  /* line 113, ../sass/_portfolio.scss */
   .row {
     margin: 0 auto;
     text-align: center;
@@ -935,16 +959,29 @@ a:hover {
 /* line 5, ../sass/_testimonials.scss */
 .testimonials h5 {
   color: #f7f7f7;
-  font: 400 30px "Source Sans Pro";
+  font: 400 30px 'Source Sans Pro';
   margin-bottom: 30px;
   text-align: center;
 }
-/* line 11, ../sass/_testimonials.scss */
+@media (min-width: 1024px) {
+  /* line 5, ../sass/_testimonials.scss */
+  .testimonials h5 {
+    text-align: left;
+  }
+}
+/* line 15, ../sass/_testimonials.scss */
 .testimonials p {
   font: 400 18px 'Source Sans Pro';
   margin-bottom: 30px;
+  text-align: center;
 }
-/* line 15, ../sass/_testimonials.scss */
+@media (min-width: 1024px) {
+  /* line 15, ../sass/_testimonials.scss */
+  .testimonials p {
+    text-align: left;
+  }
+}
+/* line 23, ../sass/_testimonials.scss */
 .testimonials .button-testimonials {
   display: block;
   width: 200px;
@@ -952,36 +989,50 @@ a:hover {
   color: #acd373;
   background: none;
   border: 1px solid #acd373;
-  font: italic 18px/40px "Droid Serif";
+  font: italic 18px/40px 'Droid Serif';
   text-align: center;
   margin: 30px auto 40px;
 }
-/* line 25, ../sass/_testimonials.scss */
+@media (min-width: 1024px) {
+  /* line 23, ../sass/_testimonials.scss */
+  .testimonials .button-testimonials {
+    margin: 30px 0 40px;
+  }
+}
+/* line 36, ../sass/_testimonials.scss */
 .testimonials .button-testimonials:hover {
   color: #454545;
   background: #acd373;
   transition: 0.5s;
 }
 
-/* line 33, ../sass/_testimonials.scss */
+/* line 45, ../sass/_testimonials.scss */
 .client-group-first {
   max-width: 310px;
   margin: 0 auto;
+  text-align: center;
 }
 
-/* line 38, ../sass/_testimonials.scss */
+/* line 51, ../sass/_testimonials.scss */
 .testimonials .client-group li:first-child {
   width: 310px;
   text-align: center;
   border: 1px solid #ebebeb;
   margin: 0 auto;
 }
-/* line 43, ../sass/_testimonials.scss */
+/* line 56, ../sass/_testimonials.scss */
 .testimonials .client-group li:first-child p {
-  font: 400 16px  'Droid Serif';
+  font: 400 16px 'Droid Serif';
+  padding: 15px 0 0 10px;
+}
+@media (min-width: 1024px) {
+  /* line 51, ../sass/_testimonials.scss */
+  .testimonials .client-group li:first-child {
+    text-align: left;
+  }
 }
 
-/* line 47, ../sass/_testimonials.scss */
+/* line 65, ../sass/_testimonials.scss */
 .fa-quote-right {
   float: right;
   font-size: 25px;
@@ -991,7 +1042,7 @@ a:hover {
   margin: -25px 20px 0 0;
 }
 
-/* line 55, ../sass/_testimonials.scss */
+/* line 74, ../sass/_testimonials.scss */
 .fa-caret-right {
   float: left;
   font-size: 25px;
@@ -1000,62 +1051,114 @@ a:hover {
   margin: 0px 20px 0 0;
 }
 
-/* line 64, ../sass/_testimonials.scss */
+/* line 83, ../sass/_testimonials.scss */
 .client-group li:last-child {
   padding-top: 30px;
   width: 310px;
   margin: 0 auto 100px;
 }
-/* line 68, ../sass/_testimonials.scss */
+@media (min-width: 1024px) {
+  /* line 83, ../sass/_testimonials.scss */
+  .client-group li:last-child {
+    width: 250px;
+  }
+}
+/* line 90, ../sass/_testimonials.scss */
 .client-group li:last-child img {
   float: left;
   margin-right: 20px;
 }
-/* line 72, ../sass/_testimonials.scss */
+/* line 94, ../sass/_testimonials.scss */
 .client-group li:last-child h4 {
   color: #acd373;
-  font: 700 18px "Source Sans Pro";
+  font: 700 18px 'Source Sans Pro';
 }
-/* line 77, ../sass/_testimonials.scss */
+@media (min-width: 1024px) {
+  /* line 94, ../sass/_testimonials.scss */
+  .client-group li:last-child h4 {
+    text-align: left;
+  }
+}
+/* line 102, ../sass/_testimonials.scss */
 .client-group li:last-child span {
   font: italic 18px 'Droid Serif';
   color: #f7f7f7;
   opacity: 0.85;
 }
-
-/* line 83, ../sass/_testimonials.scss */
-.slider {
-  margin: 0 auto;
-  text-align: center;
+@media (min-width: 1024px) {
+  /* line 102, ../sass/_testimonials.scss */
+  .client-group li:last-child span {
+    text-align: left;
+  }
 }
 
-/* line 87, ../sass/_testimonials.scss */
-.row {
-  text-align: center;
-  margin: 0 auto;
-}
-
-/* line 91, ../sass/_testimonials.scss */
-.client-group {
-  margin: 0 auto;
-  text-align: center;
+/* line 112, ../sass/_testimonials.scss */
+.triangle {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 25px 25px 0;
+  border-color: transparent #ffffff transparent transparent;
 }
 
 @media (min-width: 769px) {
-  /* line 98, ../sass/_testimonials.scss */
-  .client-group,
+  /* line 124, ../sass/_testimonials.scss */
+  .filter-block {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1.69492%;
+  }
+  /* line 127, ../sass/_testimonials.scss */
+  .filter-block .client-group {
+    width: 100%;
+    padding-right: 45%;
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 131, ../sass/_testimonials.scss */
+  .filter-block .client-group:last-child {
+    float: right;
+    margin-right: 0;
+  }
+  /* line 135, ../sass/_testimonials.scss */
+  .filter-block .client-group {
+    padding-left: 25px;
+  }
+}
+@media (min-width: 1140px) {
+  /* line 142, ../sass/_testimonials.scss */
   .client-group-first {
-    /*  @include gallery(6 of 12);*/
+    padding: 1.69492%;
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
     transition: 2s;
   }
+
+  /* line 147, ../sass/_testimonials.scss */
+  .filter-block {
+    width: 66.10169%;
+    float: right;
+    margin-right: 0;
+    padding: 1.69492%;
+  }
+  /* line 150, ../sass/_testimonials.scss */
+  .filter-block .client-group {
+    padding-right: 45%;
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
 }
 /*-----------------------------------------------CONTACT------------------------------*/
 /* line 2, ../sass/_contact.scss */
 .map {
-  background: url(../images/maps.jpg) center/cover no-repeat;
+  background: url(../images/map.jpg) center/cover no-repeat;
   height: 500px;
 }
 
@@ -1242,7 +1345,7 @@ textarea::-webkit-input-placeholder {
   }
 }
 /*---------------------------------------footer--------------------------------*/
-/* line 3, ../sass/_footer.scss */
+/* line 2, ../sass/_footer.scss */
 footer {
   padding: 15px 0;
   background-color: #9abd67;
@@ -1250,23 +1353,23 @@ footer {
   color: #f7f7f7;
   text-align: center;
 }
-/* line 9, ../sass/_footer.scss */
+/* line 8, ../sass/_footer.scss */
 footer .copyright {
   color: #f7f7f7;
   font: 400 18px 'Droid Serif';
   text-align: center;
 }
 
-/* line 17, ../sass/_footer.scss */
+/* line 16, ../sass/_footer.scss */
 .social-networks {
   margin-top: 20px;
   text-align: center;
 }
-/* line 20, ../sass/_footer.scss */
+/* line 19, ../sass/_footer.scss */
 .social-networks li {
   display: inline-block;
 }
-/* line 22, ../sass/_footer.scss */
+/* line 21, ../sass/_footer.scss */
 .social-networks li a {
   display: block;
   background: #e0e8d3;
@@ -1277,7 +1380,7 @@ footer .copyright {
   text-align: center;
   line-height: 41px;
 }
-/* line 31, ../sass/_footer.scss */
+/* line 30, ../sass/_footer.scss */
 .social-networks li a:hover {
   transform: scale(1.1);
   transition: 0.2s;
@@ -1293,12 +1396,12 @@ footer .copyright {
     transition: 2s;
   }
 
-  /* line 47, ../sass/_footer.scss */
+  /* line 46, ../sass/_footer.scss */
   .copyright {
     margin-top: 25px;
   }
 
-  /* line 50, ../sass/_footer.scss */
+  /* line 49, ../sass/_footer.scss */
   .social-networks {
     float: right;
     margin-right: 0;
