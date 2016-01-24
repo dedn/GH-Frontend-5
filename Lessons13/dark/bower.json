@@ -1,0 +1,23 @@
+{
+  "name": "dark3",
+  "authors": [
+    "dedn <dedn61@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-touchswipe": "~1.6.15",
+    "Slidebars": "~0.10.3",
+    "bxslider": "*"
+  }
+}
