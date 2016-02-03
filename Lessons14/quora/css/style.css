@@ -210,7 +210,7 @@ a:hover {
 @media (min-width: 1320px) {
   /* line 39, ../sass/_header.scss */
   .hero {
-    min-height: 940px;
+    min-height: 1030px;
   }
 }
 /*-------------------------NAV---------------------------------*/
