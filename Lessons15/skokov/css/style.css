@@ -1,0 +1,2163 @@
+/*---------------------------------HEADER-----------------------------------*/
+/* line 3, ../sass/_header.scss */
+.hero, .hero-blog {
+  position: relative;
+  min-height: 2400px;
+  padding: 0 5px 5px 5px;
+  background: url("../images/hero-bg.jpg") fixed center/cover no-repeat;
+}
+/* line 9, ../sass/_header.scss */
+.hero .hero-body, .hero-blog .hero-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+/* line 16, ../sass/_header.scss */
+.hero .hero-body .hero-title, .hero-blog .hero-body .hero-title {
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 30px;
+}
+/* line 20, ../sass/_header.scss */
+.hero .hero-body .hero-title span, .hero-blog .hero-body .hero-title span {
+  font: 400 35px "Century Gothic", sans-serif;
+  text-transform: uppercase;
+  color: #000;
+  background: #ffeb00;
+}
+/* line 27, ../sass/_header.scss */
+.hero .hero-body p, .hero-blog .hero-body p {
+  text-align: center;
+  display: inline;
+  font: 400 22px/33px "Century Gothic";
+  margin: 20px 0 100px;
+  color: #fff;
+  background: #3f3f44;
+}
+/* line 35, ../sass/_header.scss */
+.hero .hero-body .img-box, .hero-blog .hero-body .img-box {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/* line 43, ../sass/_header.scss */
+.hero .hero-body .order-btn, .hero-blog .hero-body .order-btn {
+  display: block;
+  margin: 20px auto;
+  width: 190px;
+  height: 40px;
+  border-bottom: 1px solid #ffea00;
+  background: #000;
+  color: #fff;
+  font: 400 24px/40px 'Century Gothic';
+  text-align: center;
+}
+/* line 53, ../sass/_header.scss */
+.hero .hero-body .order-btn:hover, .hero-blog .hero-body .order-btn:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+}
+/* line 60, ../sass/_header.scss */
+.hero img, .hero-blog img {
+  max-width: 100%;
+  padding: 1px;
+}
+
+/* line 66, ../sass/_header.scss */
+.hero .arrow-down, .hero-blog .arrow-down {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  display: block;
+  color: #f2f2f2;
+  font-size: 20px;
+}
+
+@media (min-width: 769px) {
+  /* line 77, ../sass/_header.scss */
+  .hero, .hero-blog {
+    min-height: 1100px;
+  }
+  /* line 79, ../sass/_header.scss */
+  .hero .hero-body, .hero-blog .hero-body {
+    top: 60%;
+  }
+  /* line 81, ../sass/_header.scss */
+  .hero .hero-body .hero-title, .hero-blog .hero-body .hero-title {
+    float: left;
+    text-align: left;
+  }
+  /* line 84, ../sass/_header.scss */
+  .hero .hero-body .hero-title span, .hero-blog .hero-body .hero-title span {
+    font: 400 70px/87px "Century Gothic", sans-serif;
+  }
+  /* line 88, ../sass/_header.scss */
+  .hero .hero-body p, .hero-blog .hero-body p {
+    float: left;
+    font: 400 24px/33px "Century Gothic";
+    margin: 20px 40px  -16px 0;
+  }
+  /* line 94, ../sass/_header.scss */
+  .hero .hero-body .text-block, .hero-blog .hero-body .text-block {
+    transform: translate(10%, -6%);
+    padding: gutter;
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 99, ../sass/_header.scss */
+  .hero .hero-body .img-box, .hero-blog .hero-body .img-box {
+    transform: translate(-17%, 0);
+    padding: gutter;
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+    justify-content: center;
+  }
+  /* line 105, ../sass/_header.scss */
+  .hero .hero-body .deko, .hero-blog .hero-body .deko {
+    transform: translate(99%, 0%);
+  }
+  /* line 109, ../sass/_header.scss */
+  .hero .order-btn, .hero-blog .order-btn {
+    position: absolute;
+    bottom: -100px;
+    left: 47%;
+  }
+}
+/*-------------------------NAV---------------------------------*/
+/* line 122, ../sass/_header.scss */
+#hero .logo {
+  float: left;
+}
+/* line 124, ../sass/_header.scss */
+#hero .logo img {
+  padding-left: 10px;
+}
+
+/* line 129, ../sass/_header.scss */
+#navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  background: #f6f6f6;
+  box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.06);
+}
+
+/* line 139, ../sass/_header.scss */
+#navbar.default {
+  position: fixed;
+  top: 0;
+  transition-duration: 2s;
+}
+
+/* line 146, ../sass/_header.scss */
+.iconMenu {
+  float: right;
+  padding-top: 15px;
+  margin-right: 10px;
+}
+
+/* line 153, ../sass/_header.scss */
+.nav li {
+  float: left;
+  margin-right: 35px;
+  text-align: center;
+  padding: 5px 10px;
+}
+/* line 158, ../sass/_header.scss */
+.nav li a {
+  text-decoration: none;
+  font: 300 16px 'Source Code Pro', sans-serif;
+  color: #000;
+  text-transform: uppercase;
+}
+/* line 164, ../sass/_header.scss */
+.nav li:hover {
+  transition: 0.5s;
+  background-color: #ffea00;
+}
+
+/* line 171, ../sass/_header.scss */
+.itemsMenu li {
+  display: inline;
+  padding-right: 35px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 176, ../sass/_header.scss */
+.itemsMenu li a {
+  padding: 5px 10px;
+}
+/* line 178, ../sass/_header.scss */
+.itemsMenu li a:hover {
+  transition: 0.5s;
+}
+
+/* line 186, ../sass/_header.scss */
+.iconMenu {
+  color: #000;
+  cursor: pointer;
+  display: none;
+}
+
+/* line 195, ../sass/_header.scss */
+.showitems {
+  display: block !important;
+  transition: 1s;
+}
+
+/* line 200, ../sass/_header.scss */
+.iconMenu {
+  display: block;
+}
+
+/* line 204, ../sass/_header.scss */
+.itemsMenu {
+  display: none;
+}
+
+/* line 208, ../sass/_header.scss */
+.itemsMenu li {
+  display: block;
+  padding: 5px;
+}
+
+@media (min-width: 1024px) {
+  /* line 214, ../sass/_header.scss */
+  .itemsMenu {
+    display: block;
+  }
+
+  /* line 217, ../sass/_header.scss */
+  .iconMenu {
+    display: none;
+  }
+
+  /* line 220, ../sass/_header.scss */
+  .itemsMenu li {
+    padding: 5px 10px;
+    width: auto;
+    float: right;
+    margin-top: 15px;
+    margin-right: 40px;
+  }
+  /* line 226, ../sass/_header.scss */
+  .itemsMenu li a {
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    padding: 5px 0;
+  }
+  /* line 231, ../sass/_header.scss */
+  .itemsMenu li a:hover {
+    transition: 0.5s;
+  }
+
+  /* line 238, ../sass/_header.scss */
+  #navbar {
+    padding: 15px 0;
+  }
+}
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 4, ../sass/_reset.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 5, ../sass/_reset.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font: 20px 'Open sans', sans-serif;
+  background: #fff;
+}
+
+/* line 6, ../sass/_reset.scss */
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
+/* line 12, ../sass/_reset.scss */
+select, input, textarea {
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+/* line 13, ../sass/_reset.scss */
+textarea {
+  vertical-align: top;
+}
+
+/* line 14, ../sass/_reset.scss */
+:focus {
+  outline: none;
+}
+
+/* line 15, ../sass/_reset.scss */
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 16, ../sass/_reset.scss */
+img, fieldset {
+  border: 0;
+}
+
+/* line 17, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 18, ../sass/_reset.scss */
+a:link, a:visited {
+  font: 12px Tahoma, sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 19, ../sass/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 23, ../sass/_reset.scss */
+.float-r {
+  float: right !important;
+}
+
+/* line 24, ../sass/_reset.scss */
+.float-l {
+  float: left !important;
+}
+
+/* line 25, ../sass/_reset.scss */
+.no-float {
+  float: none !important;
+}
+
+/* line 26, ../sass/_reset.scss */
+.no-border {
+  border: 0 !important;
+}
+
+/* line 27, ../sass/_reset.scss */
+.no-bg {
+  background: none !important;
+}
+
+/* line 28, ../sass/_reset.scss */
+.no-margin {
+  margin: 0 !important;
+}
+
+/* line 29, ../sass/_reset.scss */
+.no-padding {
+  padding: 0 !important;
+}
+
+/* line 30, ../sass/_reset.scss */
+.no-display {
+  display: none !important;
+}
+
+/* line 31, ../sass/_reset.scss */
+.display {
+  display: block !important;
+}
+
+/* line 32, ../sass/_reset.scss */
+.inline {
+  display: inline !important;
+}
+
+/* line 33, ../sass/_reset.scss */
+.overflow {
+  overflow: hidden !important;
+}
+
+/* line 34, ../sass/_reset.scss */
+.align-r {
+  text-align: right !important;
+}
+
+/* line 35, ../sass/_reset.scss */
+.align-l {
+  text-align: left !important;
+}
+
+/* line 36, ../sass/_reset.scss */
+.align-c {
+  text-align: center !important;
+}
+
+/* line 37, ../sass/_reset.scss */
+.clear {
+  clear: both;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../font/gothic.woff"), url("../font/gothic.eot");
+}
+/* line 1, ../sass/_style_blog.scss */
+.hero-blog {
+  min-height: 300px;
+  background: url("../images/header-blog-bg.jpg") fixed center/cover no-repeat;
+}
+/* line 5, ../sass/_style_blog.scss */
+.hero-blog h2 {
+  width: 300px;
+  height: 70px;
+  background-color: #424146;
+  color: #ffea00;
+  font: 400 35px/70px 'Century Gothic';
+  text-align: left;
+  padding-left: 20px;
+}
+
+@media (min-width: 769px) {
+  /* line 16, ../sass/_style_blog.scss */
+  .hero-blog {
+    min-height: 500px;
+  }
+}
+/* line 20, ../sass/_style_blog.scss */
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 25, ../sass/_style_blog.scss */
+.container {
+  max-width: 1340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 29, ../sass/_style_blog.scss */
+a:hover, a:focus, input:hover {
+  transition: 0.2s;
+}
+
+/**/
+/* line 35, ../sass/_style_blog.scss */
+.blog-main img {
+  max-width: 100%;
+}
+
+/* line 104, ../sass/_style_blog.scss */
+.col-first {
+  max-width: 550px;
+}
+/* line 106, ../sass/_style_blog.scss */
+.col-first .first-post {
+  margin-bottom: 30px;
+}
+/* line 63, ../sass/_style_blog.scss */
+.col-first .first-post .post-header {
+  background-color: #ffea00;
+  height: 70px;
+  margin-bottom: 40px;
+}
+/* line 67, ../sass/_style_blog.scss */
+.col-first .first-post .post-header p {
+  font: italic 400 21px/21px 'Century Gothic',sans-serif;
+  color: #000;
+}
+/* line 70, ../sass/_style_blog.scss */
+.col-first .first-post .post-header p span {
+  display: block;
+  text-align: right;
+  font: 400 11px/0px 'Century Gothic',sans-serif;
+}
+/* line 78, ../sass/_style_blog.scss */
+.col-first .first-post .post-text-block {
+  background: #ffea00;
+  max-width: 550px;
+  padding: 25px;
+}
+/* line 82, ../sass/_style_blog.scss */
+.col-first .first-post .post-text-block h4 {
+  font: 400 23px/30px 'Century Gothic',sans-serif;
+  color: #000;
+}
+/* line 86, ../sass/_style_blog.scss */
+.col-first .first-post .post-text-block p {
+  font: 400 14px/20px 'Century Gothic',sans-serif;
+  color: #5e5e5e;
+  margin: 25px 0px;
+}
+/* line 91, ../sass/_style_blog.scss */
+.col-first .first-post .post-text-block .fa {
+  font-size: 10px;
+  margin-right: 5px;
+}
+/* line 95, ../sass/_style_blog.scss */
+.col-first .first-post .post-text-block span {
+  font: 400 12px/20px 'Century Gothic',sans-serif;
+}
+/* line 99, ../sass/_style_blog.scss */
+.col-first .first-post .post-img-block {
+  background: #ffea00;
+}
+
+/* line 112, ../sass/_style_blog.scss */
+.col-first {
+  max-width: 550px;
+  margin: 30px auto;
+}
+/* line 115, ../sass/_style_blog.scss */
+.col-first .second-post {
+  margin-bottom: 30px;
+}
+/* line 63, ../sass/_style_blog.scss */
+.col-first .second-post .post-header {
+  background-color: #ffea00;
+  height: 70px;
+  margin-bottom: 40px;
+}
+/* line 67, ../sass/_style_blog.scss */
+.col-first .second-post .post-header p {
+  font: italic 400 21px/21px 'Century Gothic',sans-serif;
+  color: #000;
+}
+/* line 70, ../sass/_style_blog.scss */
+.col-first .second-post .post-header p span {
+  display: block;
+  text-align: right;
+  font: 400 11px/0px 'Century Gothic',sans-serif;
+}
+/* line 78, ../sass/_style_blog.scss */
+.col-first .second-post .post-text-block {
+  background: #ffea00;
+  max-width: 550px;
+  padding: 25px;
+}
+/* line 82, ../sass/_style_blog.scss */
+.col-first .second-post .post-text-block h4 {
+  font: 400 23px/30px 'Century Gothic',sans-serif;
+  color: #000;
+}
+/* line 86, ../sass/_style_blog.scss */
+.col-first .second-post .post-text-block p {
+  font: 400 14px/20px 'Century Gothic',sans-serif;
+  color: #5e5e5e;
+  margin: 25px 0px;
+}
+/* line 91, ../sass/_style_blog.scss */
+.col-first .second-post .post-text-block .fa {
+  font-size: 10px;
+  margin-right: 5px;
+}
+/* line 95, ../sass/_style_blog.scss */
+.col-first .second-post .post-text-block span {
+  font: 400 12px/20px 'Century Gothic',sans-serif;
+}
+/* line 99, ../sass/_style_blog.scss */
+.col-first .second-post .post-img-block {
+  background: #ffea00;
+}
+
+/* line 120, ../sass/_style_blog.scss */
+.col-first {
+  max-width: 550px;
+  margin: 30px auto;
+}
+/* line 123, ../sass/_style_blog.scss */
+.col-first .third-post {
+  margin-bottom: 30px;
+}
+/* line 63, ../sass/_style_blog.scss */
+.col-first .third-post .post-header {
+  background-color: #ffea00;
+  height: 70px;
+  margin-bottom: 40px;
+}
+/* line 67, ../sass/_style_blog.scss */
+.col-first .third-post .post-header p {
+  font: italic 400 21px/21px 'Century Gothic',sans-serif;
+  color: #000;
+}
+/* line 70, ../sass/_style_blog.scss */
+.col-first .third-post .post-header p span {
+  display: block;
+  text-align: right;
+  font: 400 11px/0px 'Century Gothic',sans-serif;
+}
+/* line 78, ../sass/_style_blog.scss */
+.col-first .third-post .post-text-block {
+  background: #ffea00;
+  max-width: 550px;
+  padding: 25px;
+}
+/* line 82, ../sass/_style_blog.scss */
+.col-first .third-post .post-text-block h4 {
+  font: 400 23px/30px 'Century Gothic',sans-serif;
+  color: #000;
+}
+/* line 86, ../sass/_style_blog.scss */
+.col-first .third-post .post-text-block p {
+  font: 400 14px/20px 'Century Gothic',sans-serif;
+  color: #5e5e5e;
+  margin: 25px 0px;
+}
+/* line 91, ../sass/_style_blog.scss */
+.col-first .third-post .post-text-block .fa {
+  font-size: 10px;
+  margin-right: 5px;
+}
+/* line 95, ../sass/_style_blog.scss */
+.col-first .third-post .post-text-block span {
+  font: 400 12px/20px 'Century Gothic',sans-serif;
+}
+/* line 99, ../sass/_style_blog.scss */
+.col-first .third-post .post-img-block {
+  background: #ffea00;
+}
+
+/*-------------------------COL-twoo-------------------------*/
+/* line 129, ../sass/_style_blog.scss */
+.col-two {
+  max-width: 550px;
+  margin: 30px auto;
+}
+/* line 132, ../sass/_style_blog.scss */
+.col-two .first-post,
+.col-two .second-post,
+.col-two .third-post,
+.col-two .fourth-post {
+  margin-bottom: 30px;
+}
+/* line 63, ../sass/_style_blog.scss */
+.col-two .first-post .post-header,
+.col-two .second-post .post-header,
+.col-two .third-post .post-header,
+.col-two .fourth-post .post-header {
+  background-color: #ffea00;
+  height: 70px;
+  margin-bottom: 40px;
+}
+/* line 67, ../sass/_style_blog.scss */
+.col-two .first-post .post-header p,
+.col-two .second-post .post-header p,
+.col-two .third-post .post-header p,
+.col-two .fourth-post .post-header p {
+  font: italic 400 21px/21px 'Century Gothic',sans-serif;
+  color: #000;
+}
+/* line 70, ../sass/_style_blog.scss */
+.col-two .first-post .post-header p span,
+.col-two .second-post .post-header p span,
+.col-two .third-post .post-header p span,
+.col-two .fourth-post .post-header p span {
+  display: block;
+  text-align: right;
+  font: 400 11px/0px 'Century Gothic',sans-serif;
+}
+/* line 78, ../sass/_style_blog.scss */
+.col-two .first-post .post-text-block,
+.col-two .second-post .post-text-block,
+.col-two .third-post .post-text-block,
+.col-two .fourth-post .post-text-block {
+  background: #ffea00;
+  max-width: 550px;
+  padding: 25px;
+}
+/* line 82, ../sass/_style_blog.scss */
+.col-two .first-post .post-text-block h4,
+.col-two .second-post .post-text-block h4,
+.col-two .third-post .post-text-block h4,
+.col-two .fourth-post .post-text-block h4 {
+  font: 400 23px/30px 'Century Gothic',sans-serif;
+  color: #000;
+}
+/* line 86, ../sass/_style_blog.scss */
+.col-two .first-post .post-text-block p,
+.col-two .second-post .post-text-block p,
+.col-two .third-post .post-text-block p,
+.col-two .fourth-post .post-text-block p {
+  font: 400 14px/20px 'Century Gothic',sans-serif;
+  color: #5e5e5e;
+  margin: 25px 0px;
+}
+/* line 91, ../sass/_style_blog.scss */
+.col-two .first-post .post-text-block .fa,
+.col-two .second-post .post-text-block .fa,
+.col-two .third-post .post-text-block .fa,
+.col-two .fourth-post .post-text-block .fa {
+  font-size: 10px;
+  margin-right: 5px;
+}
+/* line 95, ../sass/_style_blog.scss */
+.col-two .first-post .post-text-block span,
+.col-two .second-post .post-text-block span,
+.col-two .third-post .post-text-block span,
+.col-two .fourth-post .post-text-block span {
+  font: 400 12px/20px 'Century Gothic',sans-serif;
+}
+/* line 99, ../sass/_style_blog.scss */
+.col-two .first-post .post-img-block,
+.col-two .second-post .post-img-block,
+.col-two .third-post .post-img-block,
+.col-two .fourth-post .post-img-block {
+  background: #ffea00;
+}
+
+/*--------------------COL-THIRD-------------------------*/
+/* line 140, ../sass/_style_blog.scss */
+.col-third {
+  max-width: 471px;
+  margin: 0 auto;
+}
+
+/* line 144, ../sass/_style_blog.scss */
+.search-box {
+  background-color: #424147;
+  height: 70px;
+}
+/* line 147, ../sass/_style_blog.scss */
+.search-box .search-form {
+  margin: 0 auto;
+  max-width: 320px;
+  position: relative;
+  line-height: 70px;
+}
+/* line 153, ../sass/_style_blog.scss */
+.search-box .search-form input[type="text"] {
+  height: 28px;
+  width: 320px;
+  border-radius: 15px;
+  border: 1px solid #454545;
+  background-color: #f6f6f6;
+  background: linear-gradient(to bottom, #f6f6f6 0%, #f6f6f6 100%);
+  font: 400 18px/28px 'Century Gothic';
+  color: #737373;
+}
+/* line 162, ../sass/_style_blog.scss */
+.search-box .search-form input[type="text"]:focus {
+  box-shadow: 0px 0px 5px white;
+}
+/* line 167, ../sass/_style_blog.scss */
+.search-box .search-form input[type="submit"] {
+  position: absolute;
+  height: 22px;
+  width: 23px;
+  top: 25px;
+  right: 35px;
+  border: none;
+  background: url("../images/search-icon.png") center no-repeat transparent;
+  cursor: pointer;
+}
+/* line 176, ../sass/_style_blog.scss */
+.search-box .search-form input[type="submit"]:hover {
+  transform: scale(1.1);
+}
+/* line 180, ../sass/_style_blog.scss */
+.search-box .search-form ::-webkit-input-placeholder {
+  color: #737373;
+}
+/* line 183, ../sass/_style_blog.scss */
+.search-box .search-form ::-moz-placeholder {
+  color: #737373;
+}
+/* line 186, ../sass/_style_blog.scss */
+.search-box .search-form :-moz-placeholder {
+  color: #737373;
+}
+/* line 189, ../sass/_style_blog.scss */
+.search-box .search-form :-ms-input-placeholder {
+  color: #737373;
+}
+
+/* line 195, ../sass/_style_blog.scss */
+.categories {
+  background: #403f46;
+  padding: 35px 0 0 35px;
+  margin: 30px auto;
+}
+/* line 200, ../sass/_style_blog.scss */
+.categories h5 {
+  color: #ffea00;
+  font: 400 20px/21px "Century Gothic";
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+/* line 206, ../sass/_style_blog.scss */
+.categories-col1,
+.categories-col2 {
+  display: inline-block;
+  margin-right: 35px;
+}
+/* line 41, ../sass/_style_blog.scss */
+.categories-col1 .fa,
+.categories-col2 .fa {
+  width: 31px;
+  height: 31px;
+  background: #ffeb00;
+  text-align: center;
+  line-height: 31px;
+  margin-right: 15px;
+}
+/* line 49, ../sass/_style_blog.scss */
+.categories-col1 a,
+.categories-col2 a {
+  font: 400 16px/21px 'Century Gothic';
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 211, ../sass/_style_blog.scss */
+.categories-col1 li,
+.categories-col2 li {
+  margin-bottom: 15px;
+}
+
+/* line 217, ../sass/_style_blog.scss */
+.arhive {
+  background: #403f46;
+  padding: 35px 0 0 35px;
+  margin: 30px auto;
+}
+/* line 222, ../sass/_style_blog.scss */
+.arhive h5 {
+  color: #ffea00;
+  font: 400 20px/21px "Century Gothic";
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+/* line 229, ../sass/_style_blog.scss */
+.arhive-col1,
+.arhive-col2 {
+  display: inline-block;
+  margin-right: 20px;
+}
+/* line 41, ../sass/_style_blog.scss */
+.arhive-col1 .fa,
+.arhive-col2 .fa {
+  width: 31px;
+  height: 31px;
+  background: #ffeb00;
+  text-align: center;
+  line-height: 31px;
+  margin-right: 15px;
+}
+/* line 49, ../sass/_style_blog.scss */
+.arhive-col1 a,
+.arhive-col2 a {
+  font: 400 16px/21px 'Century Gothic';
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 234, ../sass/_style_blog.scss */
+.arhive-col1 li,
+.arhive-col2 li {
+  margin-bottom: 15px;
+}
+
+/* line 238, ../sass/_style_blog.scss */
+.arhive-col2,
+.categories-col2 {
+  margin-right: 0;
+}
+
+/* line 244, ../sass/_style_blog.scss */
+.popular-post-main {
+  max-width: 100%;
+  background: #403f46;
+  padding: 35px 5px 0 35px;
+  margin: 30px auto;
+}
+/* line 250, ../sass/_style_blog.scss */
+.popular-post-main h5 {
+  color: #ffea00;
+  font: 400 20px/21px "Century Gothic";
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+/* line 256, ../sass/_style_blog.scss */
+.popular-post-block img {
+  float: left;
+  margin-bottom: 25px;
+  margin-right: 7px;
+}
+/* line 261, ../sass/_style_blog.scss */
+.popular-post-block p {
+  font: 400 16px/20px 'Century Gothic';
+  color: #fff;
+}
+/* line 265, ../sass/_style_blog.scss */
+.popular-post-block a {
+  float: right;
+  font: 400 12px/20px 'Century Gothic';
+  color: #ffea00;
+}
+
+/* line 271, ../sass/_style_blog.scss */
+.tags {
+  max-width: 100%;
+  background: #403f46;
+  padding: 35px 5px 0 35px;
+  margin: 30px auto;
+}
+/* line 277, ../sass/_style_blog.scss */
+.tags h5 {
+  color: #ffea00;
+  font: 400 20px/21px "Century Gothic";
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+/* line 281, ../sass/_style_blog.scss */
+.tags .tags-list {
+  margin: 0 auto;
+  text-align: left;
+}
+/* line 284, ../sass/_style_blog.scss */
+.tags .tags-list li {
+  float: left;
+  margin: 3px 3px 3px 0;
+  padding: 6px 9px;
+  background-color: #ffea00;
+}
+/* line 289, ../sass/_style_blog.scss */
+.tags .tags-list li a {
+  color: #424147;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+/* line 302, ../sass/_style_blog.scss */
+.blog-main .container {
+  max-width: 1630px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+.blog-main .container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 769px) {
+  /* line 305, ../sass/_style_blog.scss */
+  .blog-main .container .col-first {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 37.5%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 309, ../sass/_style_blog.scss */
+  .blog-main .container .col-two {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 37.5%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 313, ../sass/_style_blog.scss */
+  .blog-main .container .col-third {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+/* line 2, ../sass/_style_blog_active.scss */
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 8, ../sass/_style_blog_active.scss */
+.container {
+  max-width: 1340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 12, ../sass/_style_blog_active.scss */
+a:hover, a:focus, input:hover {
+  transition: 0.2s;
+}
+
+/**/
+/* line 42, ../sass/_style_blog_active.scss */
+.blog-main-active {
+  background: #f6f6f6;
+  color: #000;
+}
+/* line 45, ../sass/_style_blog_active.scss */
+.blog-main-active img {
+  max-width: 100%;
+}
+
+/* line 50, ../sass/_style_blog_active.scss */
+.left-col {
+  max-width: 1000px;
+}
+/* line 52, ../sass/_style_blog_active.scss */
+.left-col .first-item {
+  margin: 30px auto;
+}
+/* line 54, ../sass/_style_blog_active.scss */
+.left-col .first-item p {
+  height: 70px;
+  background: #ffeb00;
+  font: 400 20px/20px 'Century Gothic';
+  padding: 30px 0 0 30px;
+  margin-top: -5px;
+}
+@media (min-width: 769px) {
+  /* line 54, ../sass/_style_blog_active.scss */
+  .left-col .first-item p {
+    font: 400 30px/30px 'Century Gothic';
+  }
+}
+/* line 64, ../sass/_style_blog_active.scss */
+.left-col .first-item .actions {
+  display: block;
+  float: right;
+  margin-top: 5px;
+  margin-right: 30px;
+}
+/* line 69, ../sass/_style_blog_active.scss */
+.left-col .first-item .actions .user {
+  font: 400 12px/20px 'Century Gothic';
+}
+/* line 72, ../sass/_style_blog_active.scss */
+.left-col .first-item .actions .like {
+  color: #5e5e5e;
+  font: 400 12px/20px 'Century Gothic';
+  margin-right: 30px;
+}
+/* line 80, ../sass/_style_blog_active.scss */
+.left-col .item-text {
+  padding: 0 30px;
+  margin: 55px 0 30px 0;
+  font: 400 15px/30px "Century Gothic";
+  color: #424147;
+}
+/* line 87, ../sass/_style_blog_active.scss */
+.left-col .second-item {
+  text-align: center;
+}
+/* line 89, ../sass/_style_blog_active.scss */
+.left-col .second-item .item-text {
+  margin-top: 30px;
+  text-align: left;
+}
+
+/* line 96, ../sass/_style_blog_active.scss */
+.share-post {
+  margin: 70px 0 50px 0;
+}
+/* line 98, ../sass/_style_blog_active.scss */
+.share-post .share-button {
+  float: left;
+  display: block;
+  width: 190px;
+  height: 30px;
+  font: 400 18px/30px 'Century Gothic';
+  color: #ffeb00;
+  background-color: #424147;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  text-align: center;
+}
+/* line 101, ../sass/_style_blog_active.scss */
+.share-post .share-button:hover {
+  background: #f6f6f6;
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+  color: #424147;
+}
+/* line 107, ../sass/_style_blog_active.scss */
+.share-post .share-icon {
+  float: right;
+}
+/* line 109, ../sass/_style_blog_active.scss */
+.share-post .share-icon li {
+  display: inline-block;
+  margin-right: 25px;
+}
+/* line 112, ../sass/_style_blog_active.scss */
+.share-post .share-icon li:nth-last-child {
+  margin-right: 0px;
+}
+/* line 115, ../sass/_style_blog_active.scss */
+.share-post .share-icon li a {
+  display: block;
+  width: 80px;
+  height: 30px;
+  background: #ffeb00;
+  font: 400 18px/30px "Century Gothic";
+  color: #424147;
+}
+/* line 122, ../sass/_style_blog_active.scss */
+.share-post .share-icon li a:hover {
+  background: #f6f6f6;
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+}
+/* line 127, ../sass/_style_blog_active.scss */
+.share-post .share-icon li .fa {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: #000000;
+  color: #fff;
+  float: left;
+}
+/* line 138, ../sass/_style_blog_active.scss */
+.share-post:after {
+  position: relative;
+  top: 40px;
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #cacaca;
+}
+
+/* line 145, ../sass/_style_blog_active.scss */
+.related-posts .title-block {
+  display: block;
+  width: 190px;
+  height: 30px;
+  font: 400 18px/30px 'Century Gothic';
+  color: #ffeb00;
+  background-color: #424147;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  text-align: center;
+  text-align: center;
+  margin: 40px 0 25px 0;
+}
+/* line 150, ../sass/_style_blog_active.scss */
+.related-posts li {
+  max-width: 300px;
+  height: 250px;
+  margin: 30px auto;
+  padding: 1.69492%;
+}
+@media (min-width: 769px) {
+  /* line 150, ../sass/_style_blog_active.scss */
+  .related-posts li {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+/* line 158, ../sass/_style_blog_active.scss */
+.related-posts li p {
+  background: #ffeb00;
+  font: 400 13px/17px "Century Gothic";
+  height: 40px;
+  padding: 10px 0 0 10px;
+  margin-top: -5px;
+}
+/* line 166, ../sass/_style_blog_active.scss */
+.related-posts:after {
+  position: relative;
+  top: 40px;
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #cacaca;
+}
+
+/*-------------------------comments-block-------------------------*/
+/* line 172, ../sass/_style_blog_active.scss */
+.comments-block {
+  margin: 90px 0 0 0;
+}
+/* line 174, ../sass/_style_blog_active.scss */
+.comments-block .title-block {
+  display: block;
+  width: 190px;
+  height: 30px;
+  font: 400 18px/30px 'Century Gothic';
+  color: #ffeb00;
+  background-color: #424147;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+/* line 178, ../sass/_style_blog_active.scss */
+.comments-block li {
+  float: left;
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 40px;
+}
+/* line 183, ../sass/_style_blog_active.scss */
+.comments-block li a {
+  color: #000;
+}
+/* line 185, ../sass/_style_blog_active.scss */
+.comments-block li a:hover {
+  text-decoration: underline;
+}
+/* line 190, ../sass/_style_blog_active.scss */
+.comments-block li .avatar {
+  float: left;
+  margin-right: 15px;
+}
+/* line 195, ../sass/_style_blog_active.scss */
+.comments-block li .reply {
+  display: block;
+  margin-bottom: 20px;
+  color: #000;
+  font: 400 16px/21px "Century Gothic";
+}
+/* line 200, ../sass/_style_blog_active.scss */
+.comments-block li .reply:hover {
+  text-decoration: underline;
+}
+/* line 205, ../sass/_style_blog_active.scss */
+.comments-block li p {
+  max-width: 870px;
+  margin-left: 65px;
+  color: #424147;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* line 214, ../sass/_style_blog_active.scss */
+.comments-block li .comments-plus {
+  margin-left: 65px;
+  margin-top: 20px;
+}
+/* line 218, ../sass/_style_blog_active.scss */
+.comments-block li .comments-plus li {
+  margin-bottom: 0;
+}
+/* line 221, ../sass/_style_blog_active.scss */
+.comments-block li .comments-plus li .second-plus {
+  margin: 20px 0 0 65px;
+}
+/* line 224, ../sass/_style_blog_active.scss */
+.comments-block li .comments-plus li .second-plus li {
+  margin-bottom: 0;
+}
+/* line 231, ../sass/_style_blog_active.scss */
+.comments-block:after {
+  position: relative;
+  top: 40px;
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #cacaca;
+}
+
+/* line 236, ../sass/_style_blog_active.scss */
+.contact {
+  margin-top: 90px;
+  background: #f6f6f6;
+}
+/* line 239, ../sass/_style_blog_active.scss */
+.contact h3 {
+  width: 190px;
+  height: 30px;
+  font: 400 18px/30px 'Century Gothic';
+  color: #ffeb00;
+  background-color: #424147;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+/* line 249, ../sass/_style_blog_active.scss */
+.contact .blog-form {
+  max-width: 940px;
+  overflow: hidden;
+}
+/* line 253, ../sass/_style_blog_active.scss */
+.contact .blog-form .name,
+.contact .blog-form .email,
+.contact .blog-form .comments {
+  width: 100%;
+  height: 50px;
+}
+/* line 259, ../sass/_style_blog_active.scss */
+.contact .blog-form .name,
+.contact .blog-form .email,
+.contact .blog-form .comments {
+  padding-left: 21px;
+  color: #424147;
+  font: 400 15px/50px 'Century Gothic';
+  border: none;
+}
+/* line 268, ../sass/_style_blog_active.scss */
+.contact .blog-form .name {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+/* line 273, ../sass/_style_blog_active.scss */
+.contact .blog-form .email {
+  float: left;
+  margin-bottom: 20px;
+}
+/* line 278, ../sass/_style_blog_active.scss */
+.contact .blog-form .comments {
+  max-width: 940px;
+  width: 100%;
+  height: 171px;
+  line-height: 30px;
+}
+/* line 285, ../sass/_style_blog_active.scss */
+.contact .blog-form .blog-submit {
+  float: right;
+  margin: 20px 0 10px;
+  width: 151px;
+  height: 35px;
+  border: none;
+  font: 400 15px/38px 'Century Gothic';
+  color: #fff;
+  background: #000;
+  cursor: pointer;
+  border-bottom: 3px solid #ffea00;
+}
+/* line 296, ../sass/_style_blog_active.scss */
+.contact .blog-form .blog-submit:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+}
+
+@media (min-width: 769px) {
+  /* line 309, ../sass/_style_blog_active.scss */
+  .contact .blog-form .email {
+    float: right;
+  }
+  /* line 312, ../sass/_style_blog_active.scss */
+  .contact .blog-form .email,
+  .contact .blog-form .name {
+    width: 46%;
+  }
+}
+/*--------------------COL-THIRD-------------------------*/
+/* line 321, ../sass/_style_blog_active.scss */
+.col-right {
+  max-width: 471px;
+  margin: 0 auto;
+}
+
+/* line 326, ../sass/_style_blog_active.scss */
+.search-box {
+  background-color: #424147;
+  height: 70px;
+}
+/* line 329, ../sass/_style_blog_active.scss */
+.search-box .search-form {
+  margin: 0 auto;
+  max-width: 320px;
+  position: relative;
+  line-height: 70px;
+}
+/* line 335, ../sass/_style_blog_active.scss */
+.search-box .search-form input[type="text"] {
+  height: 28px;
+  width: 320px;
+  border-radius: 15px;
+  border: 1px solid #454545;
+  background-color: #f6f6f6;
+  background: linear-gradient(to bottom, #f6f6f6 0%, #f6f6f6 100%);
+  font: 400 18px/28px 'Century Gothic';
+  color: #737373;
+}
+/* line 344, ../sass/_style_blog_active.scss */
+.search-box .search-form input[type="text"]:focus {
+  box-shadow: 0px 0px 5px white;
+}
+/* line 349, ../sass/_style_blog_active.scss */
+.search-box .search-form input[type="submit"] {
+  position: absolute;
+  height: 22px;
+  width: 23px;
+  top: 25px;
+  right: 35px;
+  border: none;
+  background: url("../images/search-icon.png") center no-repeat transparent;
+  cursor: pointer;
+}
+/* line 358, ../sass/_style_blog_active.scss */
+.search-box .search-form input[type="submit"]:hover {
+  transform: scale(1.1);
+}
+/* line 362, ../sass/_style_blog_active.scss */
+.search-box .search-form ::-webkit-input-placeholder {
+  color: #737373;
+}
+/* line 365, ../sass/_style_blog_active.scss */
+.search-box .search-form ::-moz-placeholder {
+  color: #737373;
+}
+/* line 368, ../sass/_style_blog_active.scss */
+.search-box .search-form :-moz-placeholder {
+  color: #737373;
+}
+/* line 371, ../sass/_style_blog_active.scss */
+.search-box .search-form :-ms-input-placeholder {
+  color: #737373;
+}
+
+/* line 378, ../sass/_style_blog_active.scss */
+.categories {
+  background: #403f46;
+  padding: 35px 0 0 35px;
+  margin: 30px auto;
+}
+/* line 383, ../sass/_style_blog_active.scss */
+.categories h5 {
+  color: #ffea00;
+  font: 400 20px/21px "Century Gothic";
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+/* line 389, ../sass/_style_blog_active.scss */
+.categories-col1,
+.categories-col2 {
+  display: inline-block;
+  margin-right: 35px;
+}
+/* line 41, ../sass/_style_blog.scss */
+.categories-col1 .fa,
+.categories-col2 .fa {
+  width: 31px;
+  height: 31px;
+  background: #ffeb00;
+  text-align: center;
+  line-height: 31px;
+  margin-right: 15px;
+}
+/* line 49, ../sass/_style_blog.scss */
+.categories-col1 a,
+.categories-col2 a {
+  font: 400 16px/21px 'Century Gothic';
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 394, ../sass/_style_blog_active.scss */
+.categories-col1 li,
+.categories-col2 li {
+  margin-bottom: 15px;
+}
+
+/* line 399, ../sass/_style_blog_active.scss */
+.arhive {
+  background: #403f46;
+  padding: 35px 0 0 35px;
+  margin: 30px auto;
+}
+/* line 404, ../sass/_style_blog_active.scss */
+.arhive h5 {
+  color: #ffea00;
+  font: 400 20px/21px "Century Gothic";
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+/* line 411, ../sass/_style_blog_active.scss */
+.arhive-col1,
+.arhive-col2 {
+  display: inline-block;
+  margin-right: 20px;
+}
+/* line 41, ../sass/_style_blog.scss */
+.arhive-col1 .fa,
+.arhive-col2 .fa {
+  width: 31px;
+  height: 31px;
+  background: #ffeb00;
+  text-align: center;
+  line-height: 31px;
+  margin-right: 15px;
+}
+/* line 49, ../sass/_style_blog.scss */
+.arhive-col1 a,
+.arhive-col2 a {
+  font: 400 16px/21px 'Century Gothic';
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 416, ../sass/_style_blog_active.scss */
+.arhive-col1 li,
+.arhive-col2 li {
+  margin-bottom: 15px;
+}
+
+/* line 421, ../sass/_style_blog_active.scss */
+.arhive-col2,
+.categories-col2 {
+  margin-right: 0;
+}
+
+/* line 426, ../sass/_style_blog_active.scss */
+.popular-post-main {
+  max-width: 100%;
+  background: #403f46;
+  padding: 35px 5px 0 35px;
+  margin: 30px auto;
+}
+/* line 432, ../sass/_style_blog_active.scss */
+.popular-post-main h5 {
+  color: #ffea00;
+  font: 400 20px/21px "Century Gothic";
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+/* line 439, ../sass/_style_blog_active.scss */
+.popular-post-block img {
+  float: left;
+  margin-bottom: 25px;
+  margin-right: 7px;
+}
+/* line 444, ../sass/_style_blog_active.scss */
+.popular-post-block p {
+  font: 400 16px/20px 'Century Gothic';
+  color: #fff;
+}
+/* line 448, ../sass/_style_blog_active.scss */
+.popular-post-block a {
+  float: right;
+  font: 400 12px/20px 'Century Gothic';
+  color: #ffea00;
+}
+
+/* line 455, ../sass/_style_blog_active.scss */
+.tags {
+  max-width: 100%;
+  background: #403f46;
+  padding: 35px 5px 0 35px;
+  margin: 30px auto;
+}
+/* line 461, ../sass/_style_blog_active.scss */
+.tags h5 {
+  color: #ffea00;
+  font: 400 20px/21px "Century Gothic";
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+/* line 465, ../sass/_style_blog_active.scss */
+.tags .tags-list {
+  margin: 0 auto;
+  text-align: left;
+}
+/* line 468, ../sass/_style_blog_active.scss */
+.tags .tags-list li {
+  float: left;
+  margin: 3px 3px 3px 0;
+  padding: 6px 9px;
+  background-color: #ffea00;
+}
+/* line 473, ../sass/_style_blog_active.scss */
+.tags .tags-list li a {
+  color: #424147;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 769px) {
+  /* line 486, ../sass/_style_blog_active.scss */
+  .col-right {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+    margin-top: 30px;
+  }
+
+  /* line 490, ../sass/_style_blog_active.scss */
+  .left-col {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+/* line 10, ../sass/style.scss */
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 16, ../sass/style.scss */
+.container {
+  max-width: 1340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 20, ../sass/style.scss */
+a:hover, a:focus, input:hover {
+  transition: 0.2s;
+}
+
+/*-----------------------------*/
+/* line 69, ../sass/style.scss */
+.gallery {
+  text-align: center;
+  background: #f6f6f6;
+}
+/* line 72, ../sass/style.scss */
+.gallery .gallery-title {
+  color: #424147;
+  font: 400 35px/35px "Century Gothic";
+  margin: 20px auto;
+  text-transform: uppercase;
+}
+/* line 79, ../sass/style.scss */
+.gallery .gallery-item {
+  position: relative;
+  margin: 30px auto;
+  max-width: 250px;
+  height: 285px;
+}
+/* line 84, ../sass/style.scss */
+.gallery .gallery-item .down-block {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: 70px;
+  background: #3f3f44;
+  font: 300 20px/23px "Source Code Pro";
+  padding: 15px 0 0 15px;
+  margin-top: -5px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: left;
+}
+/* line 96, ../sass/style.scss */
+.gallery .gallery-item .down-block:before {
+  position: absolute;
+  content: " ";
+  display: block;
+  right: 20px;
+  top: -19px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 11px 19.1px 11px;
+  border-color: transparent transparent #414146 transparent;
+}
+/* line 111, ../sass/style.scss */
+.gallery .gallery-item .lower-signature {
+  float: right;
+  margin-right: 20px;
+  font: 400 10px/17px "Century Gothic";
+  text-transform: lowercase;
+}
+/* line 116, ../sass/style.scss */
+.gallery .gallery-item .lower-signature span {
+  color: #ffeb00;
+}
+/* line 123, ../sass/style.scss */
+.gallery .gallery-rollover {
+  position: absolute;
+  width: 250px;
+  height: 295px;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  background: #ffeb00;
+}
+/* line 131, ../sass/style.scss */
+.gallery .gallery-rollover img {
+  text-align: center;
+  margin: 40px auto;
+}
+/* line 135, ../sass/style.scss */
+.gallery .gallery-rollover span {
+  display: block;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+/* line 140, ../sass/style.scss */
+.gallery .gallery-rollover p {
+  max-width: 100%;
+  height: 70px;
+  background: #3f3f44;
+  font: 400 13px/70px "Century Gothic";
+  padding: 15px 0 0 15px;
+  text-transform: lowercase;
+  color: #fff;
+  text-align: center;
+}
+/* line 152, ../sass/style.scss */
+.gallery .gallery-rollover:hover {
+  opacity: 1;
+}
+
+@media (min-width: 640px) {
+  /* line 164, ../sass/style.scss */
+  .gallery-item {
+    width: 49.15254%;
+    float: left;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .gallery-item:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .gallery-item:nth-child(2n + 2) {
+    margin-left: 50.84746%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 172, ../sass/style.scss */
+  .gallery-item {
+    width: 23.72881%;
+    float: left;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .gallery-item:nth-child(4n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .gallery-item:nth-child(4n + 2) {
+    margin-left: 25.42373%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .gallery-item:nth-child(4n + 3) {
+    margin-left: 50.84746%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .gallery-item:nth-child(4n + 4) {
+    margin-left: 76.27119%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+/*----------------------------------------------------gallery-----------------------------------------------------*/
+/* line 178, ../sass/style.scss */
+.services {
+  background: #f6f6f6;
+  padding: 30px 0 0 0;
+}
+
+/* line 185, ../sass/style.scss */
+.isotope img {
+  margin-top: 10px;
+}
+
+/* line 191, ../sass/style.scss */
+.services {
+  min-height: 1400px;
+}
+
+/* line 195, ../sass/style.scss */
+.title-line {
+  text-align: center;
+}
+/* line 28, ../sass/style.scss */
+.title-line h3 {
+  position: relative;
+  width: 160px;
+  height: 31px;
+  margin: 0 auto;
+  background-color: #424147;
+  font: 400 18px/30px "Century Gothic";
+  color: #ffea00;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 38, ../sass/style.scss */
+.title-line h3:after {
+  position: absolute;
+  top: 15px;
+  right: -180px;
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #cacaca;
+}
+/* line 48, ../sass/style.scss */
+.title-line h3:before {
+  position: absolute;
+  top: 15px;
+  left: -180px;
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #cacaca;
+}
+/* line 60, ../sass/style.scss */
+.title-line p {
+  margin-top: 30px;
+  font: 400 16px/21px "Century Gothic";
+  color: #424146;
+}
+
+/*-----------------------------CLIENTS-----------------------------*/
+/* line 202, ../sass/style.scss */
+.clients {
+  background: #f6f6f6;
+  padding: 50px 0;
+}
+/* line 205, ../sass/style.scss */
+.clients .title-line {
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* line 28, ../sass/style.scss */
+.clients .title-line h3 {
+  position: relative;
+  width: 160px;
+  height: 31px;
+  margin: 0 auto;
+  background-color: #424147;
+  font: 400 18px/30px "Century Gothic";
+  color: #ffea00;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 38, ../sass/style.scss */
+.clients .title-line h3:after {
+  position: absolute;
+  top: 15px;
+  right: -180px;
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #cacaca;
+}
+/* line 48, ../sass/style.scss */
+.clients .title-line h3:before {
+  position: absolute;
+  top: 15px;
+  left: -180px;
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #cacaca;
+}
+/* line 60, ../sass/style.scss */
+.clients .title-line p {
+  margin-top: 30px;
+  font: 400 16px/21px "Century Gothic";
+  color: #424146;
+}
+
+/*---------------------------footer--------------------------------*/
+/* line 212, ../sass/style.scss */
+footer {
+  padding: 50px 5px 0 5px;
+  background: #3f3f44;
+}
+/* line 215, ../sass/style.scss */
+footer h4 {
+  font: 400 18px/32px "Century Gothic";
+  color: #fff;
+  margin-bottom: 30px;
+}
+/* line 221, ../sass/style.scss */
+footer ul:first-of-type {
+  max-width: 410px;
+  margin: 20px auto;
+}
+/* line 224, ../sass/style.scss */
+footer ul:first-of-type li:nth-child(2) {
+  margin-bottom: 30px;
+  font: 400 13px/21px "Century Gothic";
+  text-align: left;
+  color: #fff;
+}
+/* line 231, ../sass/style.scss */
+footer ul:first-of-type li:nth-child(3) a {
+  display: block;
+  margin: 20px 0 20px 0px;
+  width: 121px;
+  height: 37px;
+  border-bottom: 1px solid #ffea00;
+  background: #000;
+  color: #fff;
+  font: 400 15px/37px 'Century Gothic';
+  text-align: center;
+}
+/* line 241, ../sass/style.scss */
+footer ul:first-of-type li:nth-child(3) a:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+}
+/* line 250, ../sass/style.scss */
+footer ul:nth-of-type(2) {
+  max-width: 435px;
+  margin: 20px auto;
+}
+/* line 253, ../sass/style.scss */
+footer ul:nth-of-type(2) li:not(.social-block) {
+  height: 80px;
+}
+/* line 255, ../sass/style.scss */
+footer ul:nth-of-type(2) li:not(.social-block) .fa {
+  color: #fff;
+  float: left;
+  margin-right: 20px;
+  height: 50px;
+  font-size: 30px;
+  padding-top: 10px;
+}
+/* line 262, ../sass/style.scss */
+footer ul:nth-of-type(2) li:not(.social-block) .fa:hover {
+  text-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+}
+/* line 266, ../sass/style.scss */
+footer ul:nth-of-type(2) li:not(.social-block) p {
+  font: 400 13px/21px "Century Gothic";
+  color: #fff;
+}
+/* line 269, ../sass/style.scss */
+footer ul:nth-of-type(2) li:not(.social-block) p span {
+  color: #ffea00;
+}
+/* line 274, ../sass/style.scss */
+footer ul:nth-of-type(2) li:not(.social-block) a {
+  font: 400 8px/21px "Century Gothic";
+  color: #ffea00;
+}
+/* line 280, ../sass/style.scss */
+footer ul:nth-of-type(2) .social-block h4 {
+  float: left;
+  margin-right: 10px;
+}
+/* line 284, ../sass/style.scss */
+footer ul:nth-of-type(2) .social-block span {
+  display: block;
+}
+/* line 286, ../sass/style.scss */
+footer ul:nth-of-type(2) .social-block span a {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background: #000;
+  text-align: center;
+  line-height: 38px;
+  color: #fff;
+  margin-right: -2px;
+}
+/* line 295, ../sass/style.scss */
+footer ul:nth-of-type(2) .social-block span a:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+}
+/* line 305, ../sass/style.scss */
+footer ul:nth-of-type(3) {
+  max-width: 320px;
+  margin: 20px auto;
+}
+/* line 308, ../sass/style.scss */
+footer ul:nth-of-type(3) li {
+  font: 400 13px/21px "Century Gothic";
+  color: #fff;
+  margin-bottom: 30px;
+}
+/* line 312, ../sass/style.scss */
+footer ul:nth-of-type(3) li .fa {
+  float: left;
+  margin-right: 15px;
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  background: #000;
+  line-height: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+/* line 322, ../sass/style.scss */
+footer ul:nth-of-type(3) li .fa:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+}
+/* line 328, ../sass/style.scss */
+footer ul:nth-of-type(3) li .tel {
+  display: block;
+  margin-left: 90px;
+}
+/* line 333, ../sass/style.scss */
+footer ul:nth-of-type(3) form {
+  position: relative;
+  width: 260px;
+  height: 28px;
+}
+/* line 337, ../sass/style.scss */
+footer ul:nth-of-type(3) form input[type="text"] {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ffea00;
+  background: none;
+}
+/* line 343, ../sass/style.scss */
+footer ul:nth-of-type(3) form input[type="button"] {
+  border: none;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  background-image: url(../images/email-icon.jpg);
+}
+/* line 351, ../sass/style.scss */
+footer ul:nth-of-type(3) form input[type="button"]:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+/* line 358, ../sass/style.scss */
+footer .down-nav-block {
+  background: #000;
+  margin: 0 auto;
+}
+/* line 362, ../sass/style.scss */
+footer .down-nav-block .down-nav li {
+  text-align: center;
+}
+/* line 364, ../sass/style.scss */
+footer .down-nav-block .down-nav li a {
+  font: 300 16px/32px "Code";
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 372, ../sass/style.scss */
+footer .down-nav-block p {
+  font: 400 14px/32px "Century Gothic";
+  color: #fff;
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  /* line 383, ../sass/style.scss */
+  footer ul {
+    padding: 1.69492%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 388, ../sass/style.scss */
+  footer ul:nth-of-type(1) {
+    margin-left: 8.47458%;
+  }
+
+  /* line 395, ../sass/style.scss */
+  .down-nav-block {
+    height: 70px;
+    background: #000;
+  }
+  /* line 398, ../sass/style.scss */
+  .down-nav-block p {
+    float: left;
+    margin-top: 23px;
+  }
+  /* line 402, ../sass/style.scss */
+  .down-nav-block .down-nav {
+    float: right;
+  }
+  /* line 404, ../sass/style.scss */
+  .down-nav-block .down-nav li {
+    display: inline-block;
+    margin-right: 45px;
+    margin-top: 23px;
+  }
+}

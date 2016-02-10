@@ -1,0 +1,513 @@
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.container {
+  @include container;
+}
+
+a:hover, a:focus, input:hover {
+  transition: 0.2s;
+}
+
+$dark-bg: #403f46;
+$yellow: #ffeb00;
+
+@mixin share-post {
+  display: block;
+  width: 190px;
+  height: 30px;
+  font: 400 18px/30px 'Century Gothic';
+  color: $yellow;
+  background-color: #424147;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+@mixin after-line {
+  position: relative;
+  top: 40px;
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #cacaca;
+}
+
+/**/
+.blog-main-active {
+  background: #f6f6f6;
+  color: #000;
+  img {
+    max-width: 100%;
+  }
+}
+
+.left-col {
+  max-width: 1000px;
+  .first-item {
+    margin: 30px auto;
+    p {
+      height: 70px;
+      background: $yellow;
+      font: 400 20px/20px 'Century Gothic';
+      padding: 30px 0 0 30px;
+      margin-top: -5px;
+      @media(min-width: 769px) {
+        font: 400 30px/30px 'Century Gothic';
+      }
+    }
+    .actions {
+      display: block;
+      float: right;
+      margin-top: 5px;
+      margin-right: 30px;
+      .user {
+        font: 400 12px/20px 'Century Gothic';
+      }
+      .like {
+        color: #5e5e5e;
+        font: 400 12px/20px 'Century Gothic';
+        margin-right: 30px;
+      }
+
+    }
+  }
+  .item-text {
+    padding: 0 30px;
+    margin: 55px 0 30px 0;
+    font: 400 15px/30px "Century Gothic";
+    color: #424147;
+
+  }
+  .second-item {
+    text-align: center;
+    .item-text {
+      margin-top: 30px;
+      text-align: left;
+    }
+  }
+}
+
+.share-post {
+  margin: 70px 0 50px 0;
+  .share-button {
+    float: left;
+    @include share-post;
+    &:hover {
+      background: #f6f6f6;
+      box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+      color: #424147;
+    }
+  }
+  .share-icon {
+    float: right;
+    li {
+      display: inline-block;
+      margin-right: 25px;
+      &:nth-last-child {
+        margin-right: 0px;
+      }
+      a {
+        display: block;
+        width: 80px;
+        height: 30px;
+        background: $yellow;
+        font: 400 18px/30px "Century Gothic";
+        color: #424147;
+        &:hover {
+          background: #f6f6f6;
+          box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+        }
+      }
+      .fa {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        background: #000000;
+        color: #fff;
+        float: left;
+      }
+    }
+  }
+  &:after {
+    @include after-line;
+  }
+}
+
+.related-posts {
+
+  .title-block {
+    @include share-post;
+    text-align: center;
+    margin: 40px 0 25px 0;
+  }
+  li {
+    max-width: 300px;
+    height: 250px;
+    margin: 30px auto;
+    padding: gutter();
+    @media(min-width: 769px) {
+      @include span(4 of 12 inside);
+    }
+    p {
+      background: $yellow;
+      font: 400 13px/17px "Century Gothic";
+      height: 40px;
+      padding: 10px 0 0 10px;
+      margin-top: -5px;
+    }
+  }
+  &:after {
+    @include after-line;
+  }
+}
+
+/*-------------------------comments-block-------------------------*/
+.comments-block {
+  margin: 90px 0 0 0;
+  .title-block {
+    @include share-post;
+    margin-bottom: 15px;
+  }
+  li {
+    float: left;
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 40px;
+    a {
+      color: #000;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .avatar {
+      float: left;
+      margin-right: 15px;
+    }
+
+    .reply {
+      display: block;
+      margin-bottom: 20px;
+      color: #000;
+      font: 400 16px/21px "Century Gothic";
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      max-width: 870px;
+      margin-left: 65px;
+      color: #424147;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+
+    .comments-plus {
+      margin-left: 65px;
+      margin-top: 20px;
+
+      li {
+        margin-bottom: 0;
+
+        .second-plus {
+          margin: 20px 0 0 65px;
+
+          li {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  &:after {
+    @include after-line;
+  }
+}
+
+.contact {
+  margin-top: 90px;
+  background: #f6f6f6;
+  h3 {
+    width: 190px;
+    height: 30px;
+    font: 400 18px/30px 'Century Gothic';
+    color: $yellow;
+    background-color: #424147;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+
+  }
+  .blog-form {
+    max-width: 940px;
+    overflow: hidden;
+
+    .name,
+    .email,
+    .comments {
+      width: 100%;
+      height: 50px;
+    }
+    .name,
+    .email,
+    .comments {
+      padding-left: 21px;
+      color: #424147;
+      font: 400 15px/50px 'Century Gothic';
+      border: none;
+    }
+
+    .name {
+      float: left;
+      margin: 0 20px 20px 0;
+    }
+
+    .email {
+      float: left;
+      margin-bottom: 20px;
+    }
+
+    .comments {
+      max-width: 940px;
+      width: 100%;
+      height: 171px;
+      line-height: 30px;
+    }
+
+    .blog-submit {
+      float: right;
+      margin: 20px 0 10px;
+      width: 151px;
+      height: 35px;
+      border: none;
+      font: 400 15px/38px 'Century Gothic';
+      color: #fff;
+      background: #000;
+      cursor: pointer;
+      border-bottom: 3px solid #ffea00;
+      &:hover {
+        background: #fff;
+        color: #000;
+        box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+      }
+
+    }
+  }
+}
+
+@media(min-width: 769px) {
+  .contact {
+    .blog-form {
+      .email {
+        float: right;
+      }
+      .email,
+      .name {
+        width: 46%;
+      }
+    }
+  }
+}
+
+/*--------------------COL-THIRD-------------------------*/
+.col-right {
+  max-width: 471px;
+  margin: 0 auto;
+}
+
+.search-box {
+  background-color: #424147;
+  height: 70px;
+  .search-form {
+    margin: 0 auto;
+    max-width: 320px;
+    position: relative;
+    line-height: 70px;
+
+    input[type="text"] {
+      height: 28px;
+      width: 320px;
+      border-radius: 15px;
+      border: 1px solid #454545;
+      background-color: #f6f6f6;
+      background: linear-gradient(to bottom, #f6f6f6 0%, #f6f6f6 100%);
+      font: 400 18px/28px 'Century Gothic';
+      color: #737373;
+      &:focus {
+        box-shadow: 0px 0px 5px rgba(255, 255, 255, 1.5);
+
+      }
+    }
+    input[type="submit"] {
+      position: absolute;
+      height: 22px;
+      width: 23px;
+      top: 25px;
+      right: 35px;
+      border: none;
+      background: url("../images/search-icon.png") center no-repeat transparent;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    ::-webkit-input-placeholder {
+      color: #737373;
+    }
+    ::-moz-placeholder {
+      color: #737373;
+    }
+    :-moz-placeholder {
+      color: #737373;
+    }
+    :-ms-input-placeholder {
+      color: #737373;
+    }
+
+  }
+}
+
+.categories {
+
+  background: $dark-bg;
+  padding: 35px 0 0 35px;
+  margin: 30px auto;
+  h5 {
+    @include h5-col3;
+    margin-bottom: 35px;
+  }
+}
+
+.categories-col1,
+.categories-col2 {
+  display: inline-block;
+  margin-right: 35px;
+  @include col-third-nav;
+  li {
+    margin-bottom: 15px;
+  }
+}
+
+.arhive {
+
+  background: $dark-bg;
+  padding: 35px 0 0 35px;
+  margin: 30px auto;
+  h5 {
+    @include h5-col3;
+    margin-bottom: 35px;
+
+  }
+}
+
+.arhive-col1,
+.arhive-col2 {
+  display: inline-block;
+  margin-right: 20px;
+  @include col-third-nav;
+  li {
+    margin-bottom: 15px;
+  }
+}
+
+.arhive-col2,
+.categories-col2 {
+  margin-right: 0;
+}
+
+.popular-post-main {
+  max-width: 100%;
+
+  background: $dark-bg;
+  padding: 35px 5px 0 35px;
+  margin: 30px auto;
+  h5 {
+    @include h5-col3;
+    margin-bottom: 35px;
+  }
+}
+
+.popular-post-block {
+  img {
+    float: left;
+    margin-bottom: 25px;
+    margin-right: 7px;
+  }
+  p {
+    font: 400 16px/20px 'Century Gothic';
+    color: #fff;
+  }
+  a {
+    float: right;
+    font: 400 12px/20px 'Century Gothic';
+    color: #ffea00;
+  }
+}
+
+.tags {
+  max-width: 100%;
+
+  background: $dark-bg;
+  padding: 35px 5px 0 35px;
+  margin: 30px auto;
+  h5 {
+    @include h5-col3;
+    margin-bottom: 35px;
+  }
+  .tags-list {
+    margin: 0 auto;
+    text-align: left;
+    li {
+      float: left;
+      margin: 3px 3px 3px 0;
+      padding: 6px 9px;
+      background-color: #ffea00;
+      a {
+        color: #424147;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media(min-width: 769px) {
+  .col-right {
+    @include span(4 of 12 last);
+    margin-top: 30px;
+  }
+  .left-col {
+    @include span(8 of 12);
+  }
+}
+
+//.blog-main {
+//  .container {
+//    @include container(1630px);
+//    @media(min-width: 769px) {
+//      .col-first {
+//
+//        @include span(4.5 of 12 inside);
+//      }
+//      .col-two {
+//
+//        @include span(4.5 of 12 inside);
+//      }
+//      .col-third {
+//
+//        @include span(3 of 12 inside);
+//      }
+//    }
+//  }
+//}

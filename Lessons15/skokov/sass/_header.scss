@@ -1,0 +1,241 @@
+/*---------------------------------HEADER-----------------------------------*/
+
+.hero {
+  position: relative;
+  min-height: 2400px;
+  padding: 0 5px 5px 5px;
+  background: url("../images/hero-bg.jpg") fixed center/cover no-repeat;
+
+  .hero-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    .hero-title {
+      text-align: center;
+      margin-top: 20%;
+      margin-bottom: 30px;
+      span {
+        font: 400 35px "Century Gothic", sans-serif;
+        text-transform: uppercase;
+        color: #000;
+        background: #ffeb00;
+      }
+    }
+    p {
+      text-align: center;
+      display: inline;
+      font: 400 22px/33px "Century Gothic";
+      margin: 20px 0 100px;
+      color: #fff;
+      background: #3f3f44;
+    }
+    .img-box {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around ;
+
+    }
+    .order-btn {
+      display: block;
+      margin: 20px auto;
+      width: 190px;
+      height: 40px;
+      border-bottom: 1px solid #ffea00;
+      background: #000;
+      color: #fff;
+      font: 400 24px/40px 'Century Gothic';
+      text-align: center;
+      &:hover {
+        background: #fff;
+        color: #000;
+        box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22)
+      }
+    }
+  }
+  img {
+    max-width: 100%;
+    padding: 1px;
+  }
+}
+
+.hero .arrow-down {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  display: block;
+  color: #f2f2f2;
+  font-size: 20px;
+}
+
+@media(min-width: 769px) {
+  .hero {
+    min-height: 1100px;
+    .hero-body {
+      top: 60%;
+      .hero-title {
+        float: left;
+        text-align: left;
+        span {
+          font: 400 70px/87px "Century Gothic", sans-serif;
+        }
+      }
+      p {
+
+        float: left;
+        font: 400 24px/33px "Century Gothic";
+        margin: 20px 40px  -16px 0;
+      }
+      .text-block{
+        transform: translate(10%, -6%);
+        padding: gutter;
+       @include span(6 of 12);
+      }
+      .img-box{
+        transform: translate(-17%, 0);
+        padding: gutter;
+        @include span(6 of 12 last);
+        justify-content: center;
+      }
+        .deko{
+          transform: translate(99%, 0%);
+        }
+      }
+      .order-btn{
+        position: absolute;
+        bottom: -100px;
+        left: 47%;
+      }
+    }
+  }
+
+
+
+
+/*-------------------------NAV---------------------------------*/
+
+#hero .logo {
+  float: left;
+  img {
+    padding-left: 10px;
+  }
+}
+
+#navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  background: #f6f6f6;
+  box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.06);
+}
+
+#navbar.default {
+  position: fixed;
+  top: 0;
+  transition-duration: 2s;
+
+}
+
+.iconMenu {
+  float: right;
+  padding-top: 15px;
+  margin-right: 10px;
+}
+
+.nav {
+  li {
+    float: left;
+    margin-right: 35px;
+    text-align: center;
+    padding: 5px 10px;
+    a {
+      text-decoration: none;
+      font: 300 16px 'Source Code Pro', sans-serif;
+      color: #000;
+      text-transform: uppercase;
+    }
+    &:hover {
+      transition: 0.5s;
+      background-color: #ffea00;
+    }
+  }
+}
+
+.itemsMenu li {
+  display: inline;
+  padding-right: 35px;
+  width: 100%;
+  margin: 0 auto;
+  a {
+    padding: 5px 10px;
+    &:hover {
+      transition: 0.5s;
+
+    }
+
+  }
+}
+
+.iconMenu {
+  color: #000;
+  cursor: pointer;
+  display: none;
+  &:hover {
+
+  }
+}
+
+.showitems {
+  display: block !important;
+  transition: 1s;
+}
+
+.iconMenu {
+  display: block;
+}
+
+.itemsMenu {
+  display: none;
+}
+
+.itemsMenu li {
+  display: block;
+  padding: 5px;
+}
+
+@media(min-width: 1024px) {
+  .itemsMenu {
+    display: block;
+  }
+  .iconMenu {
+    display: none;
+  }
+  .itemsMenu li {
+    padding: 5px 10px;
+    width: auto;
+    float: right;
+    margin-top: 15px;
+    margin-right: 40px;
+    a {
+      display: block;
+      height: 70px;
+      line-height: 70px;
+      padding: 5px 0;
+      &:hover {
+        transition: 0.5s;
+
+      }
+
+    }
+  }
+  #navbar {
+    padding: 15px 0;
+  }
+}
