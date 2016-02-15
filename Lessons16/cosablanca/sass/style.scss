@@ -1,0 +1,574 @@
+// Screen
+// ======
+@import "fonts";
+@import "grids";
+@import "header";
+@import "reset";
+/*---------------------GLOBAL STYLE------------------------*/
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.container {
+  @include container;
+}
+a:hover, a:focus, input:hover {
+  transition: 0.2s;
+}
+.About, .selection, .quote, footer {
+  background: #fff;
+}
+/*--------------------------MIXIN-------------------------*/
+@mixin line-down {
+  width: 86px;
+  height: 2px;
+  content: " ";
+  display: block;
+  background: #222;
+  margin: 55px auto 45px;
+}
+@mixin main-btn {
+  display: block;
+  margin: 0 auto;
+  max-width: 430px;
+  height: 100px;
+  background: none;
+  color: #fff;
+  font: 700 30px/100px "Amble Bold";
+  text-align: center;
+  border: 3px solid white;
+  &:hover {
+    transition: 0.5s ease-in-out;
+    background: #e29158;
+    cursor: pointer;
+    border: 3px solid #e29158;
+    box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22)
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+/*--------------------------HEADER-SECTION-STYLE-------------------------*/
+.title {
+  font: 400 30px/60px 'BIG JOHN';
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto 75px;
+  &:after {
+    @include line-down;
+  }
+}
+.main-text-block {
+  max-width: 740px;
+  margin: 110px auto;
+  text-align: center;
+  font: 300 22px/36px 'Amble Light';
+}
+/*--------------------------Introduction-------------------------*/
+.introduction {
+  background: #fff;
+  padding: 120px 0 120px;
+  .intro-srcond-block {
+    padding: 200px 0 0 0;
+    height: 300px;
+    background: url("../images/introdaction-bg.jpg") fixed center/cover no-repeat;
+  }
+  .intro-btn {
+    @include main-btn;
+  }
+}
+/*--------------------------PORTFOLIO-------------------------*/
+.portfolio {
+  padding-bottom: 80px;
+  background: #fff;
+  .controls {
+    margin: 80px auto 85px;
+    text-align: center;
+    .filter {
+      background: none;
+      border: none;
+      font: 400 18px/36px 'Slim Joe';
+      cursor: pointer;
+    }
+    .on {
+      font: 400 18px/36px 'BIG JOHN';
+      transition: 0.2s;
+    }
+  }
+  img {
+    max-width: 100%;
+  }
+  .container2 {
+    text-align: center;
+  }
+}
+.container2 {
+  .mix {
+    display: none;
+  }
+}
+.container2 {
+  .mix {
+    position: relative;
+    max-width: 370px;
+    max-height: 420px;
+    .rolover {
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.75);
+      text-align: center;
+      outline: 8px solid #000;
+      outline-offset: -8px;
+      &:hover {
+        opacity: 1;
+      }
+      p {
+        margin: 160px auto 0;
+
+        a {
+          font: 18px/60px 'BIG JOHN';
+          color: #fff;
+          &:hover {
+            color: #d87843;
+            text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65)
+          }
+        }
+      }
+      span {
+        display: block;
+
+        a {
+          font: 18px/60px 'Amble Regular';
+          color: #fff;
+          &:hover {
+            color: #d87843;
+            text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65)
+          }
+        }
+      }
+      &:after {
+        margin: 30px auto 0;
+        content: " ";
+        display: block;
+        width: 48px;
+        height: 2px;
+        background-color: #d87843;
+      }
+    }
+  }
+}
+.portfolio .portfolio-btn {
+  @include main-btn;
+  max-width: 370px;
+  height: 60px;
+  margin: 80px auto 0;
+  font: 24px/60px 'Amble Bold';
+  color: #222;
+  border-color: #222;
+}
+/*--------------------------COTACT------------------------*/
+.contact {
+  padding: 200px 0 0 0;
+  height: 300px;
+  background: url("../images/contact-bg.jpg") center/cover no-repeat;
+}
+.contact-btn {
+  @include main-btn;
+}
+/*--------------------------Clients------------------------*/
+.clients {
+  padding-top: 120px;
+  background: #f4f4f4;
+  height: 380px;
+  .title {
+    margin-top: 0;
+  }
+  .slide {
+    transition: all .5s ease;
+    &:hover {
+      transform: scale(0.8) rotate(10deg);
+      cursor: pointer;
+    }
+  }
+}
+/*--------------------------About us------------------------*/
+.About {
+  padding: 100px 0 80px;
+}
+.team-group {
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+.grid-team {
+  margin: 0 auto 30px;
+  position: relative;
+  max-width: 270px;
+  max-height: 360px;
+  .team-layer {
+    position: absolute;
+    left: 31%;
+    bottom: 0;
+    text-align: center;
+    span {
+      display: block;
+    }
+    .name {
+      font: 24px/36px 'BIG JOHN';
+      color: #fff;
+    }
+    .position {
+      font: 18px/36px 'Amble Bold';
+      color: #fff;
+    }
+  }
+  .link {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: all .5s ease;
+    &:hover {
+      transform: rotate(360deg);
+      cursor: pointer;
+    }
+  }
+}
+.team-rollover {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  text-align: center;
+  border: 1px solid #222;
+  span {
+    display: block;
+    font: 24px/36px 'BIG JOHN';
+    margin: 100px auto 35px;
+    &:after {
+      margin: 30px auto 0;
+      content: " ";
+      display: block;
+      width: 48px;
+      height: 2px;
+      background-color: #222;
+    }
+  }
+  a {
+    @include main-btn;
+    max-width: 183px;
+    height: 60px;
+    margin: 0px auto;
+    font: 24px/60px 'Amble Bold';
+    color: #222;
+    border-color: #222;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
+@media(min-width: 540px) {
+  .grid-team {
+    @include gallery(6 of 12);
+  }
+}
+@media(min-width: 960px) {
+  .grid-team {
+    @include gallery(3 of 12);
+  }
+}
+/*--------------------------VODIO-------------------------*/
+.presentation {
+  height: 250px;
+  padding: 250px 0 0 0;
+  .bg-presentation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 600px;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+.video-controls {
+  position: relative;
+  height: 100px;
+  .play-video {
+    display: none;
+  }
+  .fa {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80%;
+    cursor: pointer;
+    opacity: .5;
+    transition: all .5s ease;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+/*--------------------------selection-------------------------*/
+.selection {
+  padding: 120px 0 100px;
+}
+.selection-block {
+  li {
+    margin: 30px auto;
+    text-align: center;
+    max-width: 337px;
+    span {
+      display: block;
+      font: 24px/24px 'Amble Regular';
+      margin: 40px auto 60px;
+      a {
+        font: 24px/24px 'Amble Regular';
+        &:hover {
+          color: #d87843;
+          text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65);
+        }
+      }
+    }
+    p {
+      font: 16px/30px 'Amble Regular';
+    }
+    img {
+      transition: all .5s ease;
+      &:hover {
+
+        transform: scale(0.8) rotate(360deg);
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media(min-width: 769px) {
+  .selection-block {
+    li {
+      @include gallery(4 of 12);
+    }
+    .excellence-first {
+      margin-top: -2px;
+    }
+  }
+}
+/*--------------------------selection-------------------------*/
+.quote {
+  padding: 200px 0 0 0;
+  height: 300px;
+  background: url("../images/quote-bg.jpg") center/cover no-repeat;
+}
+.contact-btn {
+  @include main-btn;
+}
+/*--------------------------contact-us-------------------------*/
+.contact-us {
+  background: #fff;
+  padding-top: 120px;
+}
+.contact-info {
+  text-align: center;
+  padding: 0 5px 30px;
+  background: #f2f2f2;
+  h4 {
+    font: 24px/60px 'BIG JOHN';
+    margin: 0 auto 40px;
+  }
+  p {
+    font: italic 22px/40px 'Amble Light';
+    margin-bottom: 30px;
+  }
+  .social-block {
+    display: block;
+    a {
+      display: inline-block;
+      margin-right: 25px;
+    }
+    .fa-facebook {
+      &:hover {
+        color: #3b5998;
+        transform: scale(1.8) rotate(360deg);
+      }
+      &:active {
+        transform: scale(1.3);
+      }
+    }
+    .fa-twitter {
+      &:hover {
+        color: #00aced;
+        transform: scale(1.8) rotate(360deg);
+      }
+      &:active {
+        transform: scale(1.3);
+      }
+    }
+    .fa-linkedin {
+      &:hover {
+        color: #007bb6;
+        transform: scale(1.8) rotate(360deg);
+      }
+      &:active {
+        transform: scale(1.3);
+      }
+    }
+    .fa-vimeo {
+      &:hover {
+        color: #aad450;
+        transform: scale(1.8) rotate(360deg);
+      }
+      &:active {
+        transform: scale(1.3);
+      }
+    }
+    .fa-behance {
+
+      &:hover {
+        color: #3b5998;
+        transform: scale(1.8) rotate(360deg);
+      }
+      &:active {
+        transform: scale(1.3);
+      }
+    }
+    .fa {
+      transition: all .5s ease;
+    }
+  }
+}
+.contact-form {
+  padding: 30px 5px;
+  margin: 0 auto;
+  background: #e4e4e4;
+  input {
+    display: block;
+    width: 300px;
+    height: 35px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #afafaf;
+    margin: 0px auto 30px;
+    transition: all .5s ease;
+    &:focus {
+      border-bottom: 2px solid #d87843;
+    }
+    &:hover {
+      transform: rotate(1deg);
+    }
+  }
+  textarea {
+    width: 100%;
+    height: 55px;
+    max-width: 670px;
+    background: #e4e4e4;
+    border: none;
+    border-bottom: 2px solid #afafaf;
+    transition: all .5s ease;
+    &:focus {
+      border-bottom: 2px solid #d87843;
+    }
+    &:hover {
+      transform: rotate(1deg);
+    }
+  }
+  input[type=button] {
+    @include main-btn;
+    color: #222;
+    border-color: #222;
+    width: 183px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    margin-top: 40px;
+
+  }
+}
+@media(min-width: 769px) {
+  .contact-info {
+    position: relative;
+    min-height: 380px;
+    padding: 65px 0 25px 0;
+    text-align: left;
+    @include span(4 of 12 inside);
+    &:before {
+      position: absolute;
+      content: " ";
+      display: block;
+      height: 100%;
+      width: 228%;
+      top: 0;
+      left: -886px;
+      background: #f2f2f2;
+    }
+  }
+  .contact-grid-right {
+
+    @include span(8 of 12 inside);
+  }
+  input[type=text] {
+    float: left;
+    max-width: 45%;
+  }
+  input[type=email] {
+    max-width: 45%;
+  }
+  .contact-form {
+    position: relative;
+    min-height: 407px;
+    padding: 100px 20px 0 100px;
+    &:after {
+      position: absolute;
+      content: " ";
+      display: block;
+      height: 100%;
+      width: 129%;
+      top: 0;
+      right: -1000px;
+      background: #e4e4e4;
+    }
+  }
+  input[type=button] {
+    float: right;
+
+  }
+}
+/*--------------------------footer-------------------------*/
+footer {
+  background-color: #222;
+  .container {
+    padding: 100px 5px;
+    .footer-logo-block {
+      max-width: 380px;
+      color: #fff;
+      margin: 0 auto 70px;
+      img {
+        max-width: 100%;
+      }
+    }
+    p {
+      text-align: center;
+      display: block;
+      font: 16px/40px "Amble Regular";
+      color: #e4e4e4;
+      a {
+        color: #d87843;
+        font: 16px/40px "Amble Bold";
+        &:hover {
+          text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65)
+        }
+      }
+    }
+  }
+}

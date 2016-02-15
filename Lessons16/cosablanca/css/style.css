@@ -1,0 +1,1234 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("../font/AvenirLTStd-Light.woff");
+}
+@font-face {
+  font-family: "BIG JOHN";
+  src: url("../font/BIG JOHN.otf");
+}
+@font-face {
+  font-family: "Amble Bold";
+  src: url("../font/Amble-Bold.ttf");
+}
+@font-face {
+  font-family: "Amble Light";
+  src: url("../font/Amble-Light.ttf");
+}
+@font-face {
+  font-family: "Amble Regular";
+  src: url("../font/Amble-Regular.ttf");
+}
+@font-face {
+  font-family: "Slim Joe";
+  src: url("../font/Slim%20Joe.otf");
+}
+/*---------------------------------HEADER-----------------------------------*/
+/* line 3, ../sass/_header.scss */
+.hero {
+  position: relative;
+  min-height: 900px;
+  padding: 0 5px 5px 5px;
+  background: url("../images/hero-bg.jpg") fixed center/cover no-repeat, linear-gradient(to left, #bb4343 0%, #efab4b 100%);
+  color: #f7f7f7;
+}
+/* line 9, ../sass/_header.scss */
+.hero .hero-body {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+/* line 16, ../sass/_header.scss */
+.hero .hero-body .hero-title {
+  font: 400 48px/60px "BIG JOHN", sans-serif;
+  text-transform: uppercase;
+}
+/* line 19, ../sass/_header.scss */
+.hero .hero-body .hero-title:after {
+  width: 86px;
+  height: 2px;
+  content: " ";
+  display: block;
+  background: #fff;
+  margin: 55px auto 45px;
+}
+/* line 28, ../sass/_header.scss */
+.hero .hero-body p {
+  font: 400 22px/30px 'Amble Regular';
+  color: #fffefe;
+  margin: 20px 0 50px;
+}
+/* line 34, ../sass/_header.scss */
+.hero .arrow-down {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+/* line 38, ../sass/_header.scss */
+.hero .arrow-down:hover {
+  transform: scale(1.3);
+}
+
+@media (min-width: 769px) {
+  /* line 45, ../sass/_header.scss */
+  .hero {
+    min-height: 900px;
+  }
+  /* line 47, ../sass/_header.scss */
+  .hero .hero-body {
+    top: 70%;
+  }
+  /* line 49, ../sass/_header.scss */
+  .hero .hero-body .hero-title {
+    font: 400 48px/60px "BIG JOHN", sans-serif;
+  }
+  /* line 52, ../sass/_header.scss */
+  .hero .hero-body p {
+    font: 400 22px/30px 'Amble Regular';
+    color: #fffefe;
+    margin: 20px 0 100px;
+  }
+}
+/*-------------------------NAV---------------------------------*/
+/* line 63, ../sass/_header.scss */
+#navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+/* line 71, ../sass/_header.scss */
+#navbar.default {
+  position: fixed;
+  top: 0;
+  transition-duration: 2s;
+}
+/* line 75, ../sass/_header.scss */
+#navbar.default .iconMenu {
+  color: #d87843;
+}
+
+/* line 80, ../sass/_header.scss */
+.iconMenu {
+  float: left;
+  padding-top: 15px;
+  margin-left: 50px;
+}
+
+/* line 87, ../sass/_header.scss */
+.nav li {
+  float: left;
+  margin-right: 35px;
+  text-align: center;
+  padding: 5px 10px;
+}
+/* line 93, ../sass/_header.scss */
+.nav li a {
+  text-decoration: none;
+  font: 900 18px 'Amble Regular', sans-serif;
+  color: #d87843;
+  text-transform: uppercase;
+}
+/* line 99, ../sass/_header.scss */
+.nav li:hover {
+  text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65);
+  transform: scale(1.1);
+}
+
+/* line 106, ../sass/_header.scss */
+.itemsMenu li {
+  display: inline;
+  padding-right: 35px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 111, ../sass/_header.scss */
+.itemsMenu li a {
+  padding: 5px 10px;
+}
+/* line 113, ../sass/_header.scss */
+.itemsMenu li a:hover {
+  transition: 0.5s;
+}
+
+/* line 119, ../sass/_header.scss */
+.iconMenu {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+/* line 125, ../sass/_header.scss */
+.showitems {
+  display: block !important;
+  transition: 1s;
+}
+
+/* line 130, ../sass/_header.scss */
+.iconMenu {
+  display: block;
+}
+
+/* line 134, ../sass/_header.scss */
+.itemsMenu {
+  position: absolute;
+  z-index: -1;
+  display: none;
+}
+
+/* line 140, ../sass/_header.scss */
+.itemsMenu li {
+  display: block;
+  padding: 5px;
+}
+
+@media (min-width: 1024px) {
+  /* line 146, ../sass/_header.scss */
+  .itemsMenu {
+    position: relative;
+    z-index: 1;
+  }
+  /* line 149, ../sass/_header.scss */
+  .itemsMenu li {
+    padding: 5px 10px;
+    width: auto;
+    float: right;
+    margin-top: 15px;
+  }
+  /* line 154, ../sass/_header.scss */
+  .itemsMenu li a {
+    text-decoration: none;
+    font: 900 18px 'Amble Regular', sans-serif;
+    color: #d87843;
+    text-transform: uppercase;
+  }
+}
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 4, ../sass/_reset.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 5, ../sass/_reset.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font: 20px 'Open sans', sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+/* line 6, ../sass/_reset.scss */
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
+/* line 12, ../sass/_reset.scss */
+select, input, textarea {
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+/* line 13, ../sass/_reset.scss */
+textarea {
+  vertical-align: top;
+}
+
+/* line 14, ../sass/_reset.scss */
+:focus {
+  outline: none;
+}
+
+/* line 15, ../sass/_reset.scss */
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 16, ../sass/_reset.scss */
+img, fieldset {
+  border: 0;
+}
+
+/* line 17, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 18, ../sass/_reset.scss */
+a:link, a:visited {
+  font: 12px Tahoma, sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 19, ../sass/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 23, ../sass/_reset.scss */
+.float-r {
+  float: right !important;
+}
+
+/* line 24, ../sass/_reset.scss */
+.float-l {
+  float: left !important;
+}
+
+/* line 25, ../sass/_reset.scss */
+.no-float {
+  float: none !important;
+}
+
+/* line 26, ../sass/_reset.scss */
+.no-border {
+  border: 0 !important;
+}
+
+/* line 27, ../sass/_reset.scss */
+.no-bg {
+  background: none !important;
+}
+
+/* line 28, ../sass/_reset.scss */
+.no-margin {
+  margin: 0 !important;
+}
+
+/* line 29, ../sass/_reset.scss */
+.no-padding {
+  padding: 0 !important;
+}
+
+/* line 30, ../sass/_reset.scss */
+.no-display {
+  display: none !important;
+}
+
+/* line 31, ../sass/_reset.scss */
+.display {
+  display: block !important;
+}
+
+/* line 32, ../sass/_reset.scss */
+.inline {
+  display: inline !important;
+}
+
+/* line 33, ../sass/_reset.scss */
+.overflow {
+  overflow: hidden !important;
+}
+
+/* line 34, ../sass/_reset.scss */
+.align-r {
+  text-align: right !important;
+}
+
+/* line 35, ../sass/_reset.scss */
+.align-l {
+  text-align: left !important;
+}
+
+/* line 36, ../sass/_reset.scss */
+.align-c {
+  text-align: center !important;
+}
+
+/* line 37, ../sass/_reset.scss */
+.clear {
+  clear: both;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*---------------------GLOBAL STYLE------------------------*/
+/* line 8, ../sass/style.scss */
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 13, ../sass/style.scss */
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 16, ../sass/style.scss */
+a:hover, a:focus, input:hover {
+  transition: 0.2s;
+}
+
+/* line 19, ../sass/style.scss */
+.About, .selection, .quote, footer {
+  background: #fff;
+}
+
+/*--------------------------MIXIN-------------------------*/
+/*--------------------------HEADER-SECTION-STYLE-------------------------*/
+/* line 53, ../sass/style.scss */
+.title {
+  font: 400 30px/60px 'BIG JOHN';
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto 75px;
+}
+/* line 58, ../sass/style.scss */
+.title:after {
+  width: 86px;
+  height: 2px;
+  content: " ";
+  display: block;
+  background: #222;
+  margin: 55px auto 45px;
+}
+
+/* line 62, ../sass/style.scss */
+.main-text-block {
+  max-width: 740px;
+  margin: 110px auto;
+  text-align: center;
+  font: 300 22px/36px 'Amble Light';
+}
+
+/*--------------------------Introduction-------------------------*/
+/* line 69, ../sass/style.scss */
+.introduction {
+  background: #fff;
+  padding: 120px 0 120px;
+}
+/* line 72, ../sass/style.scss */
+.introduction .intro-srcond-block {
+  padding: 200px 0 0 0;
+  height: 300px;
+  background: url("../images/introdaction-bg.jpg") fixed center/cover no-repeat;
+}
+/* line 77, ../sass/style.scss */
+.introduction .intro-btn {
+  display: block;
+  margin: 0 auto;
+  max-width: 430px;
+  height: 100px;
+  background: none;
+  color: #fff;
+  font: 700 30px/100px "Amble Bold";
+  text-align: center;
+  border: 3px solid white;
+}
+/* line 41, ../sass/style.scss */
+.introduction .intro-btn:hover {
+  transition: 0.5s ease-in-out;
+  background: #e29158;
+  cursor: pointer;
+  border: 3px solid #e29158;
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+}
+/* line 48, ../sass/style.scss */
+.introduction .intro-btn:active {
+  transform: scale(0.9);
+}
+
+/*--------------------------PORTFOLIO-------------------------*/
+/* line 82, ../sass/style.scss */
+.portfolio {
+  padding-bottom: 80px;
+  background: #fff;
+}
+/* line 85, ../sass/style.scss */
+.portfolio .controls {
+  margin: 80px auto 85px;
+  text-align: center;
+}
+/* line 88, ../sass/style.scss */
+.portfolio .controls .filter {
+  background: none;
+  border: none;
+  font: 400 18px/36px 'Slim Joe';
+  cursor: pointer;
+}
+/* line 94, ../sass/style.scss */
+.portfolio .controls .on {
+  font: 400 18px/36px 'BIG JOHN';
+  transition: 0.2s;
+}
+/* line 99, ../sass/style.scss */
+.portfolio img {
+  max-width: 100%;
+}
+/* line 102, ../sass/style.scss */
+.portfolio .container2 {
+  text-align: center;
+}
+
+/* line 107, ../sass/style.scss */
+.container2 .mix {
+  display: none;
+}
+
+/* line 112, ../sass/style.scss */
+.container2 .mix {
+  position: relative;
+  max-width: 370px;
+  max-height: 420px;
+}
+/* line 116, ../sass/style.scss */
+.container2 .mix .rolover {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  outline: 8px solid #000;
+  outline-offset: -8px;
+}
+/* line 127, ../sass/style.scss */
+.container2 .mix .rolover:hover {
+  opacity: 1;
+}
+/* line 130, ../sass/style.scss */
+.container2 .mix .rolover p {
+  margin: 160px auto 0;
+}
+/* line 133, ../sass/style.scss */
+.container2 .mix .rolover p a {
+  font: 18px/60px 'BIG JOHN';
+  color: #fff;
+}
+/* line 136, ../sass/style.scss */
+.container2 .mix .rolover p a:hover {
+  color: #d87843;
+  text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65);
+}
+/* line 142, ../sass/style.scss */
+.container2 .mix .rolover span {
+  display: block;
+}
+/* line 145, ../sass/style.scss */
+.container2 .mix .rolover span a {
+  font: 18px/60px 'Amble Regular';
+  color: #fff;
+}
+/* line 148, ../sass/style.scss */
+.container2 .mix .rolover span a:hover {
+  color: #d87843;
+  text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65);
+}
+/* line 154, ../sass/style.scss */
+.container2 .mix .rolover:after {
+  margin: 30px auto 0;
+  content: " ";
+  display: block;
+  width: 48px;
+  height: 2px;
+  background-color: #d87843;
+}
+
+/* line 165, ../sass/style.scss */
+.portfolio .portfolio-btn {
+  display: block;
+  margin: 0 auto;
+  max-width: 430px;
+  height: 100px;
+  background: none;
+  color: #fff;
+  font: 700 30px/100px "Amble Bold";
+  text-align: center;
+  border: 3px solid white;
+  max-width: 370px;
+  height: 60px;
+  margin: 80px auto 0;
+  font: 24px/60px 'Amble Bold';
+  color: #222;
+  border-color: #222;
+}
+/* line 41, ../sass/style.scss */
+.portfolio .portfolio-btn:hover {
+  transition: 0.5s ease-in-out;
+  background: #e29158;
+  cursor: pointer;
+  border: 3px solid #e29158;
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+}
+/* line 48, ../sass/style.scss */
+.portfolio .portfolio-btn:active {
+  transform: scale(0.9);
+}
+
+/*--------------------------COTACT------------------------*/
+/* line 175, ../sass/style.scss */
+.contact {
+  padding: 200px 0 0 0;
+  height: 300px;
+  background: url("../images/contact-bg.jpg") center/cover no-repeat;
+}
+
+/* line 180, ../sass/style.scss */
+.contact-btn {
+  display: block;
+  margin: 0 auto;
+  max-width: 430px;
+  height: 100px;
+  background: none;
+  color: #fff;
+  font: 700 30px/100px "Amble Bold";
+  text-align: center;
+  border: 3px solid white;
+}
+/* line 41, ../sass/style.scss */
+.contact-btn:hover {
+  transition: 0.5s ease-in-out;
+  background: #e29158;
+  cursor: pointer;
+  border: 3px solid #e29158;
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+}
+/* line 48, ../sass/style.scss */
+.contact-btn:active {
+  transform: scale(0.9);
+}
+
+/*--------------------------Clients------------------------*/
+/* line 184, ../sass/style.scss */
+.clients {
+  padding-top: 120px;
+  background: #f4f4f4;
+  height: 380px;
+}
+/* line 188, ../sass/style.scss */
+.clients .title {
+  margin-top: 0;
+}
+/* line 191, ../sass/style.scss */
+.clients .slide {
+  transition: all .5s ease;
+}
+/* line 193, ../sass/style.scss */
+.clients .slide:hover {
+  transform: scale(0.8) rotate(10deg);
+  cursor: pointer;
+}
+
+/*--------------------------About us------------------------*/
+/* line 200, ../sass/style.scss */
+.About {
+  padding: 100px 0 80px;
+}
+
+/* line 203, ../sass/style.scss */
+.team-group {
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 208, ../sass/style.scss */
+.grid-team {
+  margin: 0 auto 30px;
+  position: relative;
+  max-width: 270px;
+  max-height: 360px;
+}
+/* line 213, ../sass/style.scss */
+.grid-team .team-layer {
+  position: absolute;
+  left: 31%;
+  bottom: 0;
+  text-align: center;
+}
+/* line 218, ../sass/style.scss */
+.grid-team .team-layer span {
+  display: block;
+}
+/* line 221, ../sass/style.scss */
+.grid-team .team-layer .name {
+  font: 24px/36px 'BIG JOHN';
+  color: #fff;
+}
+/* line 225, ../sass/style.scss */
+.grid-team .team-layer .position {
+  font: 18px/36px 'Amble Bold';
+  color: #fff;
+}
+/* line 230, ../sass/style.scss */
+.grid-team .link {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transition: all .5s ease;
+}
+/* line 235, ../sass/style.scss */
+.grid-team .link:hover {
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+
+/* line 241, ../sass/style.scss */
+.team-rollover {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  text-align: center;
+  border: 1px solid #222;
+}
+/* line 251, ../sass/style.scss */
+.team-rollover span {
+  display: block;
+  font: 24px/36px 'BIG JOHN';
+  margin: 100px auto 35px;
+}
+/* line 255, ../sass/style.scss */
+.team-rollover span:after {
+  margin: 30px auto 0;
+  content: " ";
+  display: block;
+  width: 48px;
+  height: 2px;
+  background-color: #222;
+}
+/* line 264, ../sass/style.scss */
+.team-rollover a {
+  display: block;
+  margin: 0 auto;
+  max-width: 430px;
+  height: 100px;
+  background: none;
+  color: #fff;
+  font: 700 30px/100px "Amble Bold";
+  text-align: center;
+  border: 3px solid white;
+  max-width: 183px;
+  height: 60px;
+  margin: 0px auto;
+  font: 24px/60px 'Amble Bold';
+  color: #222;
+  border-color: #222;
+}
+/* line 41, ../sass/style.scss */
+.team-rollover a:hover {
+  transition: 0.5s ease-in-out;
+  background: #e29158;
+  cursor: pointer;
+  border: 3px solid #e29158;
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+}
+/* line 48, ../sass/style.scss */
+.team-rollover a:active {
+  transform: scale(0.9);
+}
+/* line 273, ../sass/style.scss */
+.team-rollover:hover {
+  opacity: 1;
+}
+
+@media (min-width: 540px) {
+  /* line 278, ../sass/style.scss */
+  .grid-team {
+    width: 49.15254%;
+    float: left;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .grid-team:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .grid-team:nth-child(2n + 2) {
+    margin-left: 50.84746%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+@media (min-width: 960px) {
+  /* line 283, ../sass/style.scss */
+  .grid-team {
+    width: 23.72881%;
+    float: left;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .grid-team:nth-child(4n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .grid-team:nth-child(4n + 2) {
+    margin-left: 25.42373%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .grid-team:nth-child(4n + 3) {
+    margin-left: 50.84746%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .grid-team:nth-child(4n + 4) {
+    margin-left: 76.27119%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+/*--------------------------VODIO-------------------------*/
+/* line 288, ../sass/style.scss */
+.presentation {
+  height: 250px;
+  padding: 250px 0 0 0;
+}
+/* line 291, ../sass/style.scss */
+.presentation .bg-presentation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 600px;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* line 304, ../sass/style.scss */
+.video-controls {
+  position: relative;
+  height: 100px;
+}
+/* line 307, ../sass/style.scss */
+.video-controls .play-video {
+  display: none;
+}
+/* line 310, ../sass/style.scss */
+.video-controls .fa {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 80%;
+  cursor: pointer;
+  opacity: .5;
+  transition: all .5s ease;
+}
+/* line 319, ../sass/style.scss */
+.video-controls .fa:hover {
+  opacity: 1;
+}
+
+/*--------------------------selection-------------------------*/
+/* line 325, ../sass/style.scss */
+.selection {
+  padding: 120px 0 100px;
+}
+
+/* line 329, ../sass/style.scss */
+.selection-block li {
+  margin: 30px auto;
+  text-align: center;
+  max-width: 337px;
+}
+/* line 333, ../sass/style.scss */
+.selection-block li span {
+  display: block;
+  font: 24px/24px 'Amble Regular';
+  margin: 40px auto 60px;
+}
+/* line 337, ../sass/style.scss */
+.selection-block li span a {
+  font: 24px/24px 'Amble Regular';
+}
+/* line 339, ../sass/style.scss */
+.selection-block li span a:hover {
+  color: #d87843;
+  text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65);
+}
+/* line 345, ../sass/style.scss */
+.selection-block li p {
+  font: 16px/30px 'Amble Regular';
+}
+/* line 348, ../sass/style.scss */
+.selection-block li img {
+  transition: all .5s ease;
+}
+/* line 350, ../sass/style.scss */
+.selection-block li img:hover {
+  transform: scale(0.8) rotate(360deg);
+  cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  /* line 360, ../sass/style.scss */
+  .selection-block li {
+    width: 32.20339%;
+    float: left;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .selection-block li:nth-child(3n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .selection-block li:nth-child(3n + 2) {
+    margin-left: 33.89831%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .selection-block li:nth-child(3n + 3) {
+    margin-left: 67.79661%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 363, ../sass/style.scss */
+  .selection-block .excellence-first {
+    margin-top: -2px;
+  }
+}
+/*--------------------------selection-------------------------*/
+/* line 369, ../sass/style.scss */
+.quote {
+  padding: 200px 0 0 0;
+  height: 300px;
+  background: url("../images/quote-bg.jpg") center/cover no-repeat;
+}
+
+/* line 374, ../sass/style.scss */
+.contact-btn {
+  display: block;
+  margin: 0 auto;
+  max-width: 430px;
+  height: 100px;
+  background: none;
+  color: #fff;
+  font: 700 30px/100px "Amble Bold";
+  text-align: center;
+  border: 3px solid white;
+}
+/* line 41, ../sass/style.scss */
+.contact-btn:hover {
+  transition: 0.5s ease-in-out;
+  background: #e29158;
+  cursor: pointer;
+  border: 3px solid #e29158;
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+}
+/* line 48, ../sass/style.scss */
+.contact-btn:active {
+  transform: scale(0.9);
+}
+
+/*--------------------------contact-us-------------------------*/
+/* line 378, ../sass/style.scss */
+.contact-us {
+  background: #fff;
+  padding-top: 120px;
+}
+
+/* line 382, ../sass/style.scss */
+.contact-info {
+  text-align: center;
+  padding: 0 5px 30px;
+  background: #f2f2f2;
+}
+/* line 386, ../sass/style.scss */
+.contact-info h4 {
+  font: 24px/60px 'BIG JOHN';
+  margin: 0 auto 40px;
+}
+/* line 390, ../sass/style.scss */
+.contact-info p {
+  font: italic 22px/40px 'Amble Light';
+  margin-bottom: 30px;
+}
+/* line 394, ../sass/style.scss */
+.contact-info .social-block {
+  display: block;
+}
+/* line 396, ../sass/style.scss */
+.contact-info .social-block a {
+  display: inline-block;
+  margin-right: 25px;
+}
+/* line 401, ../sass/style.scss */
+.contact-info .social-block .fa-facebook:hover {
+  color: #3b5998;
+  transform: scale(1.8) rotate(360deg);
+}
+/* line 405, ../sass/style.scss */
+.contact-info .social-block .fa-facebook:active {
+  transform: scale(1.3);
+}
+/* line 410, ../sass/style.scss */
+.contact-info .social-block .fa-twitter:hover {
+  color: #00aced;
+  transform: scale(1.8) rotate(360deg);
+}
+/* line 414, ../sass/style.scss */
+.contact-info .social-block .fa-twitter:active {
+  transform: scale(1.3);
+}
+/* line 419, ../sass/style.scss */
+.contact-info .social-block .fa-linkedin:hover {
+  color: #007bb6;
+  transform: scale(1.8) rotate(360deg);
+}
+/* line 423, ../sass/style.scss */
+.contact-info .social-block .fa-linkedin:active {
+  transform: scale(1.3);
+}
+/* line 428, ../sass/style.scss */
+.contact-info .social-block .fa-vimeo:hover {
+  color: #aad450;
+  transform: scale(1.8) rotate(360deg);
+}
+/* line 432, ../sass/style.scss */
+.contact-info .social-block .fa-vimeo:active {
+  transform: scale(1.3);
+}
+/* line 438, ../sass/style.scss */
+.contact-info .social-block .fa-behance:hover {
+  color: #3b5998;
+  transform: scale(1.8) rotate(360deg);
+}
+/* line 442, ../sass/style.scss */
+.contact-info .social-block .fa-behance:active {
+  transform: scale(1.3);
+}
+/* line 446, ../sass/style.scss */
+.contact-info .social-block .fa {
+  transition: all .5s ease;
+}
+
+/* line 451, ../sass/style.scss */
+.contact-form {
+  padding: 30px 5px;
+  margin: 0 auto;
+  background: #e4e4e4;
+}
+/* line 455, ../sass/style.scss */
+.contact-form input {
+  display: block;
+  width: 300px;
+  height: 35px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #afafaf;
+  margin: 0px auto 30px;
+  transition: all .5s ease;
+}
+/* line 464, ../sass/style.scss */
+.contact-form input:focus {
+  border-bottom: 2px solid #d87843;
+}
+/* line 467, ../sass/style.scss */
+.contact-form input:hover {
+  transform: rotate(1deg);
+}
+/* line 471, ../sass/style.scss */
+.contact-form textarea {
+  width: 100%;
+  height: 55px;
+  max-width: 670px;
+  background: #e4e4e4;
+  border: none;
+  border-bottom: 2px solid #afafaf;
+  transition: all .5s ease;
+}
+/* line 479, ../sass/style.scss */
+.contact-form textarea:focus {
+  border-bottom: 2px solid #d87843;
+}
+/* line 482, ../sass/style.scss */
+.contact-form textarea:hover {
+  transform: rotate(1deg);
+}
+/* line 486, ../sass/style.scss */
+.contact-form input[type=button] {
+  display: block;
+  margin: 0 auto;
+  max-width: 430px;
+  height: 100px;
+  background: none;
+  color: #fff;
+  font: 700 30px/100px "Amble Bold";
+  text-align: center;
+  border: 3px solid white;
+  color: #222;
+  border-color: #222;
+  width: 183px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  margin-top: 40px;
+}
+/* line 41, ../sass/style.scss */
+.contact-form input[type=button]:hover {
+  transition: 0.5s ease-in-out;
+  background: #e29158;
+  cursor: pointer;
+  border: 3px solid #e29158;
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+}
+/* line 48, ../sass/style.scss */
+.contact-form input[type=button]:active {
+  transform: scale(0.9);
+}
+
+@media (min-width: 769px) {
+  /* line 499, ../sass/style.scss */
+  .contact-info {
+    position: relative;
+    min-height: 380px;
+    padding: 65px 0 25px 0;
+    text-align: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 505, ../sass/style.scss */
+  .contact-info:before {
+    position: absolute;
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 228%;
+    top: 0;
+    left: -886px;
+    background: #f2f2f2;
+  }
+
+  /* line 516, ../sass/style.scss */
+  .contact-grid-right {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 520, ../sass/style.scss */
+  input[type=text] {
+    float: left;
+    max-width: 45%;
+  }
+
+  /* line 524, ../sass/style.scss */
+  input[type=email] {
+    max-width: 45%;
+  }
+
+  /* line 527, ../sass/style.scss */
+  .contact-form {
+    position: relative;
+    min-height: 407px;
+    padding: 100px 20px 0 100px;
+  }
+  /* line 531, ../sass/style.scss */
+  .contact-form:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 129%;
+    top: 0;
+    right: -1000px;
+    background: #e4e4e4;
+  }
+
+  /* line 542, ../sass/style.scss */
+  input[type=button] {
+    float: right;
+  }
+}
+/*--------------------------contact-us-------------------------*/
+/* line 548, ../sass/style.scss */
+footer {
+  background-color: #222;
+}
+/* line 550, ../sass/style.scss */
+footer .container {
+  padding: 100px 5px;
+}
+/* line 552, ../sass/style.scss */
+footer .container .footer-logo-block {
+  max-width: 380px;
+  color: #fff;
+  margin: 0 auto 70px;
+}
+/* line 556, ../sass/style.scss */
+footer .container .footer-logo-block img {
+  max-width: 100%;
+}
+/* line 560, ../sass/style.scss */
+footer .container p {
+  text-align: center;
+  display: block;
+  font: 16px/40px "Amble Regular";
+  color: #e4e4e4;
+}
+/* line 565, ../sass/style.scss */
+footer .container p a {
+  color: #d87843;
+  font: 16px/40px "Amble Bold";
+}
+/* line 568, ../sass/style.scss */
+footer .container p a:hover {
+  text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65);
+}
