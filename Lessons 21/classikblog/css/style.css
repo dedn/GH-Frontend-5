@@ -1,0 +1,700 @@
+/*---------------------------------HEADER-----------------------------------*/
+/* line 3, ../sass/_header.scss */
+.hero {
+  position: relative;
+  padding: 0 5px 5px 5px;
+}
+
+/*-------------------------NAV---------------------------------*/
+/* line 11, ../sass/_header.scss */
+#hero .logo {
+  float: left;
+  padding: 5px;
+}
+/* line 14, ../sass/_header.scss */
+#hero .logo a {
+  font: 24px "Proxima Nova Extrabold", sans-serif;
+  color: #fff;
+}
+
+/* line 19, ../sass/_header.scss */
+#navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: #000;
+}
+
+/* line 28, ../sass/_header.scss */
+#navbar.default {
+  position: fixed;
+  top: 0;
+  transition-duration: 2s;
+}
+
+/* line 33, ../sass/_header.scss */
+.iconMenu {
+  float: right;
+  padding-top: 15px;
+  margin-right: 10px;
+}
+
+/* line 39, ../sass/_header.scss */
+.nav li {
+  float: left;
+  margin-right: 30px;
+  text-align: center;
+  padding: 5px 10px;
+}
+/* line 45, ../sass/_header.scss */
+.nav li a {
+  text-decoration: none;
+  font: 400 16px 'Proxima Nova Regular', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 50, ../sass/_header.scss */
+.nav li a:hover {
+  transition: 0.2s;
+  border-bottom: 1px solid #fff;
+}
+
+/* line 60, ../sass/_header.scss */
+.itemsMenu li {
+  display: inline;
+  padding-right: 35px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 65, ../sass/_header.scss */
+.itemsMenu li a {
+  padding: 5px 10px;
+}
+/* line 67, ../sass/_header.scss */
+.itemsMenu li a:hover {
+  transition: 0.5s;
+}
+
+/* line 74, ../sass/_header.scss */
+.iconMenu {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+/* line 82, ../sass/_header.scss */
+.showitems {
+  display: block !important;
+  transition: 1s;
+}
+
+/* line 86, ../sass/_header.scss */
+.iconMenu {
+  display: block;
+}
+
+/* line 90, ../sass/_header.scss */
+.itemsMenu {
+  display: none;
+}
+
+/* line 93, ../sass/_header.scss */
+.itemsMenu li {
+  display: block;
+  padding: 5px;
+}
+
+@media (min-width: 1024px) {
+  /* line 98, ../sass/_header.scss */
+  .itemsMenu {
+    display: block;
+    float: right;
+  }
+
+  /* line 102, ../sass/_header.scss */
+  .iconMenu {
+    display: none;
+  }
+
+  /* line 105, ../sass/_header.scss */
+  .itemsMenu li {
+    padding: 15px 10px;
+    width: auto;
+  }
+}
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 4, ../sass/_reset.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 5, ../sass/_reset.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font: 20px 'Open sans', sans-serif;
+  background: #fff;
+}
+
+/* line 6, ../sass/_reset.scss */
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
+/* line 12, ../sass/_reset.scss */
+select, input, textarea {
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+/* line 13, ../sass/_reset.scss */
+textarea {
+  vertical-align: top;
+}
+
+/* line 14, ../sass/_reset.scss */
+:focus {
+  outline: none;
+}
+
+/* line 15, ../sass/_reset.scss */
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 16, ../sass/_reset.scss */
+img, fieldset {
+  border: 0;
+}
+
+/* line 17, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 18, ../sass/_reset.scss */
+a:link, a:visited {
+  font: 12px Tahoma, sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 19, ../sass/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 23, ../sass/_reset.scss */
+.float-r {
+  float: right !important;
+}
+
+/* line 24, ../sass/_reset.scss */
+.float-l {
+  float: left !important;
+}
+
+/* line 25, ../sass/_reset.scss */
+.no-float {
+  float: none !important;
+}
+
+/* line 26, ../sass/_reset.scss */
+.no-border {
+  border: 0 !important;
+}
+
+/* line 27, ../sass/_reset.scss */
+.no-bg {
+  background: none !important;
+}
+
+/* line 28, ../sass/_reset.scss */
+.no-margin {
+  margin: 0 !important;
+}
+
+/* line 29, ../sass/_reset.scss */
+.no-padding {
+  padding: 0 !important;
+}
+
+/* line 30, ../sass/_reset.scss */
+.no-display {
+  display: none !important;
+}
+
+/* line 31, ../sass/_reset.scss */
+.display {
+  display: block !important;
+}
+
+/* line 32, ../sass/_reset.scss */
+.inline {
+  display: inline !important;
+}
+
+/* line 33, ../sass/_reset.scss */
+.overflow {
+  overflow: hidden !important;
+}
+
+/* line 34, ../sass/_reset.scss */
+.align-r {
+  text-align: right !important;
+}
+
+/* line 35, ../sass/_reset.scss */
+.align-l {
+  text-align: left !important;
+}
+
+/* line 36, ../sass/_reset.scss */
+.align-c {
+  text-align: center !important;
+}
+
+/* line 37, ../sass/_reset.scss */
+.clear {
+  clear: both;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+@font-face {
+  font-family: "Proxima Nova Extrabold";
+  src: url("../font/Proxima%20Nova/Proxima%20Nova%20Extrabold.otf");
+}
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url("../font/Proxima%20Nova/Proxima%20Nova%20Regular.otf");
+}
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: url("../font/Proxima%20Nova/Proxima%20Nova%20Semibold.otf");
+}
+@font-face {
+  font-family: "NexaBold";
+  src: url("../font/NexaBold/Nexa%20Bold.otf");
+}
+/* line 8, ../sass/style.scss */
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 14, ../sass/style.scss */
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../PROGRAM/Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 18, ../sass/style.scss */
+a:hover, a:focus, input:hover {
+  transition: 0.2s;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* line 26, ../sass/style.scss */
+.filter {
+  background: rgba(247, 247, 247, 0.84);
+  height: 60px;
+  border: 1px solid #ccc;
+  margin-top: 48px;
+}
+/* line 31, ../sass/style.scss */
+.filter .filter-meny {
+  float: right;
+}
+/* line 34, ../sass/style.scss */
+.filter a {
+  display: inline-block;
+  font: 16px/60px "Proxima Nova Regular", sans-serif;
+  color: #555;
+  margin-right: 30px;
+}
+/* line 39, ../sass/style.scss */
+.filter a:hover {
+  border-bottom: 1px solid #000;
+}
+
+/* line 45, ../sass/style.scss */
+.post {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+}
+
+/* line 51, ../sass/style.scss */
+.main-post-title {
+  padding: 100px 0 25px;
+}
+/* line 53, ../sass/style.scss */
+.main-post-title a {
+  font: 48px "Proxima Nova Extrabold", sans-serif;
+  color: #111;
+  text-align: center;
+}
+
+/* line 61, ../sass/style.scss */
+.post-title {
+  font: 600 28px "Proxima Nova Extrabold", sans-serif;
+  color: #111;
+  margin: 0 0 30px 0;
+}
+
+/* line 67, ../sass/style.scss */
+.date-post {
+  margin-bottom: 60px;
+  display: block;
+  text-align: center;
+  color: #555;
+  font: 600 16px "Proxima Nova Regular", sans-serif;
+}
+
+/* line 75, ../sass/style.scss */
+.post-img {
+  display: block;
+  margin: 0 auto 30px;
+}
+
+/* line 80, ../sass/style.scss */
+.description {
+  font: 400 16px/20px "Proxima Nova Regular", sans-serif;
+  color: #111;
+  margin: 0 0 30px 0;
+}
+
+/* line 86, ../sass/style.scss */
+.share-block {
+  text-align: center;
+  margin: 75px auto 50px;
+}
+/* line 89, ../sass/style.scss */
+.share-block h5 {
+  margin: 15px auto;
+  font: 600 16px/20px "Proxima Nova Regular", sans-serif;
+  color: #111;
+}
+/* line 94, ../sass/style.scss */
+.share-block a {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 20px;
+}
+/* line 98, ../sass/style.scss */
+.share-block a .counter {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  background: #000;
+  padding: 2px 5px;
+  font: 400 11px "Proxima Nova Regular", sans-serif;
+  border-radius: 2px;
+  margin-left: 10px;
+}
+/* line 107, ../sass/style.scss */
+.share-block a .counter:before {
+  position: absolute;
+  left: -6px;
+  top: 4px;
+  content: " ";
+  display: block;
+  clear: both;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 7px 4px 0;
+  border-color: transparent #000000 transparent transparent;
+}
+/* line 123, ../sass/style.scss */
+.share-block a .fa-twitter:hover {
+  color: #00aced;
+}
+/* line 129, ../sass/style.scss */
+.share-block a .fa-facebook:hover {
+  color: #3b5998;
+}
+/* line 134, ../sass/style.scss */
+.share-block a .fa-linkedin:hover {
+  color: #007bb6;
+}
+
+/* line 142, ../sass/style.scss */
+.comments {
+  padding: 50px 0 50px 0;
+}
+
+/* line 147, ../sass/style.scss */
+.comments-block img {
+  max-width: 70px;
+  height: 70px;
+  margin-right: 25px;
+  float: left;
+  border-radius: 50%;
+}
+/* line 154, ../sass/style.scss */
+.comments-block span {
+  display: block;
+}
+/* line 156, ../sass/style.scss */
+.comments-block span h4 {
+  font: 600 24px "Proxima Nova Regular", sans-serif;
+  color: #111;
+  margin: 15px 0 20px 0;
+}
+/* line 161, ../sass/style.scss */
+.comments-block span .date-comment {
+  margin-bottom: 15px;
+  display: block;
+  color: #555;
+  font: 600 14px "Proxima Nova Regular", sans-serif;
+}
+/* line 168, ../sass/style.scss */
+.comments-block span .description-comment {
+  font: 400 16px/20px "Proxima Nova Regular", sans-serif;
+  color: #111;
+  margin: 0 0 30px 95px;
+}
+/* line 174, ../sass/style.scss */
+.comments-block span a {
+  display: block;
+  color: #555;
+  font: 600 16px "Proxima Nova Regular", sans-serif;
+}
+/* line 178, ../sass/style.scss */
+.comments-block span a:hover {
+  color: #000;
+}
+
+/* line 187, ../sass/style.scss */
+.right-blok-comments {
+  margin-left: 75px;
+}
+
+/* line 191, ../sass/style.scss */
+.comment-form {
+  max-width: 640px;
+}
+/* line 193, ../sass/style.scss */
+.comment-form input {
+  width: 285px;
+  height: 37px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin-bottom: 25px;
+}
+/* line 201, ../sass/style.scss */
+.comment-form label {
+  display: block;
+  margin-bottom: 15px;
+  font: 600 18px/50px "Proxima Nova Regular", sans-serif;
+  color: #111;
+  cursor: pointer;
+}
+/* line 210, ../sass/style.scss */
+.comment-form textarea {
+  width: 635px;
+  height: 165px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+/* line 219, ../sass/style.scss */
+.comment-form input:focus,
+.comment-form textarea:focus {
+  transition: 0.2s;
+  border: 1px solid #000;
+  box-shadow: 1.5px 1.6px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* line 229, ../sass/style.scss */
+footer .container {
+  border-top: 1px solid #ccc;
+  padding: 15px 0;
+}
+/* line 233, ../sass/style.scss */
+footer .footer-nav {
+  margin-top: 10px;
+}
+/* line 235, ../sass/style.scss */
+footer .footer-nav li {
+  display: inline-block;
+  margin-right: 30px;
+}
+/* line 238, ../sass/style.scss */
+footer .footer-nav li a {
+  color: #555;
+  font: 600 14px/22px "Proxima Nova Regular", sans-serif;
+}
+/* line 241, ../sass/style.scss */
+footer .footer-nav li a:hover {
+  color: #000;
+}
+/* line 247, ../sass/style.scss */
+footer .social-block {
+  display: block;
+}
+/* line 249, ../sass/style.scss */
+footer .social-block a {
+  display: inline-block;
+  margin-right: 25px;
+  background-color: #111;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+}
+/* line 261, ../sass/style.scss */
+footer .social-block .fa-facebook:hover {
+  color: #3b5998;
+}
+/* line 266, ../sass/style.scss */
+footer .social-block .fa-twitter:hover {
+  color: #00aced;
+}
+/* line 272, ../sass/style.scss */
+footer .social-block .fa-pinterest-p:hover {
+  color: #dd4b39;
+}
+/* line 278, ../sass/style.scss */
+footer .social-block .fa-google-plus:hover {
+  color: #dd4b39;
+}
+/* line 285, ../sass/style.scss */
+footer .copyright {
+  margin-top: 10px;
+  display: block;
+  color: #555;
+  font: 600 14px/22px "Proxima Nova Regular", sans-serif;
+}
+
+@media (min-width: 769px) {
+  /* line 296, ../sass/style.scss */
+  .grid-footer {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+/*------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------*/
+/* line 305, ../sass/style.scss */
+.team {
+  border-top: 1px solid #ccc;
+}
+/* line 307, ../sass/style.scss */
+.team ul {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* line 318, ../sass/style.scss */
+.team-list {
+  text-align: center;
+  max-width: 220px;
+  margin: 0 80px 75px 80px;
+}
+/* line 322, ../sass/style.scss */
+.team-list .team-img {
+  max-width: 220px;
+  max-height: 220px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+/* line 327, ../sass/style.scss */
+.team-list .team-img:hover {
+  transition: all 2s ease-in-out;
+  transform: translate(0px, -5px);
+}
+/* line 332, ../sass/style.scss */
+.team-list .team-name {
+  display: block;
+  font: 600 18px/50px 'Proxima Nova Regular';
+  color: #111;
+}
+/* line 338, ../sass/style.scss */
+.team-list .team-professinal {
+  display: block;
+  margin-bottom: 30px;
+  font: 600 16px/40px 'Proxima Nova Regular';
+  color: #555;
+}
+/* line 345, ../sass/style.scss */
+.team-list .team-descriptional {
+  font: 400 16px 'Proxima Nova Regular';
+  color: #111;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------*/
+/* line 355, ../sass/style.scss */
+.post .read-more {
+  display: block;
+  height: 22px;
+  font: 600 16px/20px 'Proxima Nova Regular';
+  color: #111;
+}
+/* line 360, ../sass/style.scss */
+.post .read-more:hover {
+  color: #000;
+}
+/* line 363, ../sass/style.scss */
+.post .read-more img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+/* line 366, ../sass/style.scss */
+.post .read-more img:hover {
+  transform: scale(1.1);
+}
+

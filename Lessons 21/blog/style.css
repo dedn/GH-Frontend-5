@@ -1,0 +1,553 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@font-face {
+  font-family: 'Eurofurenceregular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Eurofurenceregular"), url("../font/eurofurence.ttf") format("truetype");
+}
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 4, ../sass/_reset.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 5, ../sass/_reset.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font: 22px 'Lato', sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+/* line 6, ../sass/_reset.scss */
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
+/* line 12, ../sass/_reset.scss */
+select, input, textarea {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* line 13, ../sass/_reset.scss */
+textarea {
+  vertical-align: top;
+}
+
+/* line 14, ../sass/_reset.scss */
+:focus {
+  outline: none;
+}
+
+/* line 15, ../sass/_reset.scss */
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 16, ../sass/_reset.scss */
+img, fieldset {
+  border: 0;
+}
+
+/* line 17, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 18, ../sass/_reset.scss */
+a:link, a:visited {
+  font: 22px 'Lato', sans-serif;
+  color: #4C8BBF;
+  text-decoration: none;
+}
+
+/* line 19, ../sass/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/_header.scss */
+#navbar {
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  min-height: 130px;
+  background-color: #292929;
+  box-shadow: inset 0 -6px 0 #1e1e1e;
+}
+/* line 10, ../sass/_header.scss */
+#navbar h1 {
+  float: left;
+  margin-top: 32px;
+}
+/* line 13, ../sass/_header.scss */
+#navbar h1 a {
+  color: white;
+  font-family: Eurofurenceregular;
+  font-size: 40px;
+  transition: 0.2s;
+}
+/* line 18, ../sass/_header.scss */
+#navbar h1 a:hover {
+  opacity: 0.6;
+}
+/* line 22, ../sass/_header.scss */
+#navbar h1 span {
+  color: #58c93a;
+}
+/* line 26, ../sass/_header.scss */
+#navbar nav {
+  float: right;
+  max-width: 150px;
+  margin-top: 42px;
+}
+@media screen and (min-width: 670px) {
+  /* line 26, ../sass/_header.scss */
+  #navbar nav {
+    max-width: 535px;
+    margin-top: 0;
+  }
+}
+/* line 35, ../sass/_header.scss */
+#navbar .iconMenu {
+  clear: both;
+  float: right;
+  color: #fff;
+  cursor: pointer;
+}
+@media screen and (min-width: 670px) {
+  /* line 35, ../sass/_header.scss */
+  #navbar .iconMenu {
+    display: none;
+  }
+}
+/* line 45, ../sass/_header.scss */
+#navbar .itemsMenu li {
+  float: left;
+  width: 100%;
+  display: inline;
+  margin: 0 0 10px 0;
+  text-align: right;
+}
+@media screen and (min-width: 670px) {
+  /* line 45, ../sass/_header.scss */
+  #navbar .itemsMenu li {
+    display: inline-block;
+    width: 130px;
+    margin: 0;
+    box-shadow: -1px 0 0 #1d1d1d;
+    text-align: center;
+  }
+  /* line 57, ../sass/_header.scss */
+  #navbar .itemsMenu li:last-child {
+    margin-right: 0;
+    box-shadow: -1px 0 0 #1d1d1d, inset -1px 0 0 #1d1d1d;
+  }
+}
+/* line 62, ../sass/_header.scss */
+#navbar .itemsMenu li a {
+  display: inline-block;
+  text-shadow: 0 1px 0 #1e1e1e;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+@media screen and (min-width: 670px) {
+  /* line 62, ../sass/_header.scss */
+  #navbar .itemsMenu li a {
+    width: 100%;
+    padding-bottom: 51px;
+    margin-top: 51px;
+  }
+}
+/* line 73, ../sass/_header.scss */
+#navbar .itemsMenu li a:hover {
+  transition: 0.2s;
+  border-bottom: 3px solid #58c93a;
+  color: #58c93a;
+}
+
+/* line 82, ../sass/_header.scss */
+.showitems {
+  display: block !important;
+  transition: 1s;
+}
+
+/* line 87, ../sass/_header.scss */
+.iconMenu {
+  display: block;
+}
+
+/* line 91, ../sass/_header.scss */
+.itemsMenu {
+  display: none;
+}
+@media screen and (min-width: 670px) {
+  /* line 91, ../sass/_header.scss */
+  .itemsMenu {
+    display: block;
+  }
+}
+
+/* line 98, ../sass/_header.scss */
+.itemsMenu li {
+  display: block;
+}
+
+/* line 21, ../../../PROGRAM/Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 16, ../sass/style.scss */
+.container,
+.wrapper {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+/* line 12, ../../../PROGRAM/Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.container:after,
+.wrapper:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 23, ../sass/style.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 27, ../sass/style.scss */
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/*-----------------------------------BLOG-----------------------------------*/
+/* line 34, ../sass/style.scss */
+a:hover, a:focus, input:hover {
+  transition: 0.2s;
+}
+
+/* line 38, ../sass/style.scss */
+.post-title {
+  margin: 20px 0 60px 20px;
+}
+/* line 40, ../sass/style.scss */
+.post-title a {
+  color: #4f4e4e;
+  font: 700 28px/30px 'Lato', sans-serif;
+}
+
+/*-----------------------------------BLOG-----------------------------------*/
+/* line 48, ../sass/style.scss */
+.blog-section {
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+  background: #fff;
+  border-left: 1px solid #e1e0e0;
+}
+
+/* line 54, ../sass/style.scss */
+.posts {
+  padding: 30px 35px 0 0;
+  text-align: left;
+}
+
+/* line 59, ../sass/style.scss */
+.posts:nth-of-type(1) {
+  padding: 80px 35px 0 0;
+}
+
+/* line 63, ../sass/style.scss */
+.description {
+  margin: 0 0 30px 20px;
+  color: #606060;
+  font: 400 16px/20px 'Lato', sans-serif;
+}
+
+/* line 69, ../sass/style.scss */
+.post-btn {
+  display: block;
+  width: 186px;
+  height: 40px;
+  margin: 20px 0 40px 20px;
+  border: 2px solid #c2c2c2;
+  color: #c2c1c1;
+  border-radius: 20px;
+  background-color: white;
+  font: 700 16px/36px 'Lato', sans-serif;
+  text-align: center;
+}
+/* line 80, ../sass/style.scss */
+.post-btn:hover {
+  background-color: #c2c1c1;
+  color: #fff;
+  cursor: pointer;
+}
+/* line 85, ../sass/style.scss */
+.post-btn:active {
+  transform: scale(0.95);
+}
+
+/*-----------------------------------pagination----------------------------------*/
+/* line 92, ../sass/style.scss */
+.pagination .container {
+  border: 1px solid #e1e0e0;
+  padding: 30px 15px;
+}
+/* line 95, ../sass/style.scss */
+.pagination .container .previous {
+  float: left;
+  font: 700 18px/18px 'Lato';
+  text-transform: uppercase;
+  color: #818181;
+}
+/* line 100, ../sass/style.scss */
+.pagination .container .previous img {
+  transform: translate(-4px, -2px);
+}
+/* line 102, ../sass/style.scss */
+.pagination .container .previous img:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: 0.3s;
+}
+/* line 107, ../sass/style.scss */
+.pagination .container .previous img:active {
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+/* line 115, ../sass/style.scss */
+.pagination .container .next {
+  float: right;
+  font: 700 18px/18px 'Lato';
+  text-transform: uppercase;
+  color: #818181;
+}
+/* line 120, ../sass/style.scss */
+.pagination .container .next img {
+  transform: translate(4px, -2px);
+}
+/* line 122, ../sass/style.scss */
+.pagination .container .next img:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: 0.3s;
+}
+/* line 128, ../sass/style.scss */
+.pagination .container .next img:active {
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+
+/*-----------------------------------RIGHT-BAR-----------------------------------*/
+/* line 139, ../sass/style.scss */
+.right-bar {
+  width: 23.72881%;
+  float: right;
+  margin-right: 0;
+  padding: 80px 0;
+  border-right: 1px solid #e1e0e0;
+  min-height: 1355px;
+}
+
+/* line 146, ../sass/style.scss */
+.bar-title {
+  margin: 0 0 20px 0;
+  padding-left: 20px;
+  background-color: #f8f8f8;
+  box-shadow: inset 3px 0 0 #58c93a;
+  height: 50px;
+  font: 700 16px/50px 'Lato';
+  text-transform: uppercase;
+  color: #6c6969;
+}
+
+/* line 158, ../sass/style.scss */
+.widget p {
+  padding: 0 20px;
+  margin: 20px 0 30px 0;
+  color: #737373;
+  font: 400 16px/20px 'lato';
+}
+/* line 165, ../sass/style.scss */
+.widget .search-form {
+  position: relative;
+  margin-bottom: 80px;
+}
+/* line 169, ../sass/style.scss */
+.widget .search-form input[type="text"] {
+  height: 50px;
+  width: 100%;
+  padding-left: 20px;
+  border: 1px solid #e1e0e0;
+  background: #fff;
+  font: 400 12px/25px 'Lato';
+  color: #b9b9b9;
+}
+/* line 177, ../sass/style.scss */
+.widget .search-form input[type="text"]:focus {
+  box-shadow: 0px 0px 5px white;
+}
+/* line 183, ../sass/style.scss */
+.widget .search-form ::-webkit-input-placeholder {
+  color: #b9b9b9;
+}
+/* line 186, ../sass/style.scss */
+.widget .search-form ::-moz-placeholder {
+  color: #b9b9b9;
+}
+/* line 189, ../sass/style.scss */
+.widget .search-form :-moz-placeholder {
+  color: #b9b9b9;
+}
+/* line 192, ../sass/style.scss */
+.widget .search-form :-ms-input-placeholder {
+  color: #b9b9b9;
+}
+/* line 196, ../sass/style.scss */
+.widget .email {
+  position: relative;
+  margin-bottom: 80px;
+}
+/* line 200, ../sass/style.scss */
+.widget .email input[type="email"] {
+  height: 50px;
+  width: 100%;
+  padding-left: 20px;
+  border: 1px solid #e1e0e0;
+  background: #fff;
+  font: 400 12px/25px 'Lato';
+  color: #b9b9b9;
+}
+/* line 208, ../sass/style.scss */
+.widget .email input[type="email"]:focus {
+  box-shadow: 0px 0px 5px white;
+}
+/* line 213, ../sass/style.scss */
+.widget .email input[type="button"] {
+  position: absolute;
+  height: 50px;
+  width: 24px;
+  top: 0;
+  right: 20px;
+  border: none;
+  background: url("../images/send.png") center no-repeat transparent;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+/* line 223, ../sass/style.scss */
+.widget .email input[type="button"]:hover {
+  transform: scale(1.1) rotate(360deg);
+  cursor: pointer;
+}
+/* line 227, ../sass/style.scss */
+.widget .email input[type="button"]:active {
+  transform: scale(0.9);
+}
+/* line 231, ../sass/style.scss */
+.widget .email ::-webkit-input-placeholder {
+  color: #b9b9b9;
+}
+/* line 234, ../sass/style.scss */
+.widget .email ::-moz-placeholder {
+  color: #b9b9b9;
+}
+/* line 237, ../sass/style.scss */
+.widget .email :-moz-placeholder {
+  color: #b9b9b9;
+}
+/* line 240, ../sass/style.scss */
+.widget .email :-ms-input-placeholder {
+  color: #b9b9b9;
+}
+
+/*-----------------------------------FOOTER-----------------------------------*/
+/* line 248, ../sass/style.scss */
+footer {
+  background: #f8f8f8;
+  text-align: center;
+  padding: 80px 0;
+}
+
+/* line 254, ../sass/style.scss */
+.footer-title a{
+  font: 400 40px 'Eurofurenceregular';
+  color: #292929;
+}
+/* line 257, ../sass/style.scss */
+.footer-title span {
+  color: #58c93a;
+}
+
+/* line 262, ../sass/style.scss */
+.signature {
+  font: 400 13px/20px 'Lato';
+  color: #a6a6a6;
+  margin: 30px auto 40px;
+}
+/* line 266, ../sass/style.scss */
+.signature a {
+  color: #939292;
+  font: 700 13px/20px 'Lato';
+}
+/* line 269, ../sass/style.scss */
+.signature a:hover {
+  color: #58c93a;
+}
+
+/* line 275, ../sass/style.scss */
+.social-block {
+  display: block;
+}
+/* line 277, ../sass/style.scss */
+.social-block a {
+  display: inline-block;
+  margin-right: 20px;
+}
+/* line 283, ../sass/style.scss */
+.social-block .fa-facebook:hover {
+  background-color: #516fad;
+}
+/* line 289, ../sass/style.scss */
+.social-block .fa-twitter:hover {
+  background: #00aced;
+}
+/* line 296, ../sass/style.scss */
+.social-block .fa-behance:hover {
+  background: #3b5998;
+}
+/* line 302, ../sass/style.scss */
+.social-block .fa-dribbble:hover {
+  background: #cb2027;
+}
+/* line 307, ../sass/style.scss */
+.social-block .fa {
+  display: inline-block;
+  transition: all .5s ease;
+  background-color: #e5e5e5;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+}

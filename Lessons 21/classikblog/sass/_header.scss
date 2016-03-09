@@ -1,0 +1,109 @@
+/*---------------------------------HEADER-----------------------------------*/
+
+.hero {
+  position: relative;
+  padding: 0 5px 5px 5px;
+  }
+
+
+/*-------------------------NAV---------------------------------*/
+
+#hero .logo {
+  float: left;
+  padding: 5px;
+ a{
+   font:24px "Proxima Nova Extrabold", sans-serif;
+   color:#fff;
+ }
+}
+#navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: #000;
+ }
+
+#navbar.default {
+  position: fixed;
+  top: 0;
+  transition-duration: 2s;
+}
+.iconMenu {
+  float: right;
+  padding-top: 15px;
+  margin-right: 10px;
+}
+.nav {
+  li {
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+    padding: 5px 10px;
+
+    a {
+      text-decoration: none;
+      font: 400 16px 'Proxima Nova Regular', sans-serif;
+      color: #fff;
+      text-transform: uppercase;
+      &:hover {
+        transition: 0.2s;
+        border-bottom: 1px solid #fff;
+
+      }
+    }
+
+  }
+}
+
+.itemsMenu li {
+  display: inline;
+  padding-right: 35px;
+  width: 100%;
+  margin: 0 auto;
+  a {
+    padding: 5px 10px;
+    &:hover {
+      transition: 0.5s;
+
+    }
+
+  }
+}
+.iconMenu {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  &:hover {
+
+  }
+}
+.showitems {
+  display: block !important;
+  transition: 1s;
+}
+.iconMenu {
+  display: block;
+}
+
+.itemsMenu {
+  display: none;
+}
+.itemsMenu li {
+  display: block;
+  padding: 5px;
+}
+@media(min-width: 1024px) {
+  .itemsMenu {
+    display: block;
+    float: right;
+  }
+  .iconMenu {
+    display: none;
+  }
+  .itemsMenu li {
+    padding: 15px 10px;
+    width: auto;
+  }
+}
