@@ -1,0 +1,277 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 4, ../sass/_reset.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 5, ../sass/_reset.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font: 20px 'Open sans', sans-serif;
+  background: #fff;
+}
+
+/* line 6, ../sass/_reset.scss */
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
+/* line 12, ../sass/_reset.scss */
+select, input, textarea {
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+/* line 13, ../sass/_reset.scss */
+textarea {
+  vertical-align: top;
+}
+
+/* line 14, ../sass/_reset.scss */
+:focus {
+  outline: none;
+}
+
+/* line 15, ../sass/_reset.scss */
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 16, ../sass/_reset.scss */
+img, fieldset {
+  border: 0;
+}
+
+/* line 17, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 18, ../sass/_reset.scss */
+a:link, a:visited {
+  font: 12px Tahoma, sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 19, ../sass/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 23, ../sass/_reset.scss */
+.float-r {
+  float: right !important;
+}
+
+/* line 24, ../sass/_reset.scss */
+.float-l {
+  float: left !important;
+}
+
+/* line 25, ../sass/_reset.scss */
+.no-float {
+  float: none !important;
+}
+
+/* line 26, ../sass/_reset.scss */
+.no-border {
+  border: 0 !important;
+}
+
+/* line 27, ../sass/_reset.scss */
+.no-bg {
+  background: none !important;
+}
+
+/* line 28, ../sass/_reset.scss */
+.no-margin {
+  margin: 0 !important;
+}
+
+/* line 29, ../sass/_reset.scss */
+.no-padding {
+  padding: 0 !important;
+}
+
+/* line 30, ../sass/_reset.scss */
+.no-display {
+  display: none !important;
+}
+
+/* line 31, ../sass/_reset.scss */
+.display {
+  display: block !important;
+}
+
+/* line 32, ../sass/_reset.scss */
+.inline {
+  display: inline !important;
+}
+
+/* line 33, ../sass/_reset.scss */
+.overflow {
+  overflow: hidden !important;
+}
+
+/* line 34, ../sass/_reset.scss */
+.align-r {
+  text-align: right !important;
+}
+
+/* line 35, ../sass/_reset.scss */
+.align-l {
+  text-align: left !important;
+}
+
+/* line 36, ../sass/_reset.scss */
+.align-c {
+  text-align: center !important;
+}
+
+/* line 37, ../sass/_reset.scss */
+.clear {
+  clear: both;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 7, ../sass/style.scss */
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 13, ../sass/style.scss */
+a:hover, a:focus, input:hover, input:focus, button:hover, button:active {
+  transition: all .1s ease;
+}
+
+/* line 17, ../sass/style.scss */
+body {
+  background-color: #E6E8E6;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.07) 50%, transparent 50%), linear-gradient(90deg, rgba(255, 255, 255, 0.13) 50%, transparent 50%), linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.17) 50%), linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.19) 50%);
+  background-size: 13px, 29px, 37px, 53px;
+}
+
+/* line 26, ../sass/style.scss */
+.wrapper {
+  width: 420px;
+  margin: 200px auto 0;
+}
+
+/* line 31, ../sass/style.scss */
+.title {
+  margin: 15px 0;
+  font: 400 30px 'Arial';
+}
+
+/* line 35, ../sass/style.scss */
+#task {
+  float: left;
+  margin-right: 15px;
+  border: none;
+  padding: 0 5px;
+  background: white;
+  height: 30px;
+  width: 300px;
+}
+/* line 43, ../sass/style.scss */
+#task:hover {
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.1);
+}
+/* line 46, ../sass/style.scss */
+#task:focus {
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+
+/* line 53, ../sass/style.scss */
+#add {
+  display: block;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 80px;
+  height: 30px;
+  font-weight: bold;
+  color: #333;
+  background: #DBEDD5;
+  border: none;
+  cursor: pointer;
+}
+/* line 65, ../sass/style.scss */
+#add:hover {
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+}
+/* line 69, ../sass/style.scss */
+#add:active {
+  transform: scale(0.95);
+}
+
+/* line 77, ../sass/style.scss */
+#todos li {
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  width: 305px;
+  height: 25px;
+  background: #fff;
+  font-size: 12px;
+  line-height: 25px;
+}
+/* line 86, ../sass/style.scss */
+#todos li:hover {
+  transition: all .2s ease;
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.1);
+}
+/* line 92, ../sass/style.scss */
+#todos #remove {
+  position: absolute;
+  right: -65px;
+  background: none;
+  border: none;
+  color: #F57864;
+  cursor: pointer;
+  font-size: 20px;
+}
+/* line 100, ../sass/style.scss */
+#todos #remove:hover {
+  transition: all .2s ease;
+  transform: scale(1.4);
+}
+/* line 104, ../sass/style.scss */
+#todos #remove:active {
+  transform: scale(0.95);
+}

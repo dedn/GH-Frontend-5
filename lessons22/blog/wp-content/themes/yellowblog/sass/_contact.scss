@@ -1,0 +1,211 @@
+@media(min-width: 769px) {
+  .title-block-contact {
+    @include span(3 of 12);
+  }
+  .big-phone {
+    @include span(5 of 12);
+  }
+  .communication {
+    @include span(3.3 of 12 last);
+  }
+  .contact-form {
+    @include span(6 of 12);
+  }
+}
+
+.contact {
+  margin-top: 140px;
+}
+
+.title-block-contact {
+  h3 {
+    margin: 120px 0 20px;
+    font: 700 36px/24px 'Oswald';
+    color: #272726;
+    text-transform: uppercase;
+  }
+  span {
+    display: block;
+    margin-bottom: 20px;
+    font: 700 14px/24px 'Arial';
+    color: #040303;
+  }
+  .description-contact {
+    color: #878585;
+    font: 400 14px/24px 'Arial';
+  }
+}
+
+.communication {
+  background: #fff;
+  height: 180px;
+  padding: 20px 0 0 20px;
+  .communication-title {
+    margin-bottom: 21px;
+    color: #222;
+    font: 700 16px/14px 'Oswald ';
+    text-transform: uppercase;
+  }
+
+}
+
+.communication-phone {
+  position: relative;
+  width: 255px;
+  height: 37px;
+  background-color: #ffd500;
+  padding-left: 9px;
+  padding-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  line-height: 37px;
+
+  .number {
+    position: relative;
+    top: -5px;
+    font: 700 18px/37px 'Oswald';
+    color: #272726;
+
+  }
+  img {
+    margin-right: 10px;
+  }
+
+}
+
+.communication-discription {
+  display: block;
+  margin-bottom: 20px;
+  font: 400 12px/14px 'Arila';
+  color: #7f7c7c;
+}
+
+.communication-email {
+  position: relative;
+  width: 255px;
+  height: 37px;
+  background-color: #ffd500;
+  padding-left: 9px;
+  padding-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  line-height: 37px;
+
+  a {
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    font: 300 18px/37px 'Oswald';
+    color: #272726;
+    text-transform: uppercase;
+
+  }
+  img {
+    margin-right: 10px;
+  }
+
+}
+
+
+
+/*-------------------------------- Contact --------------------------------*/
+
+#contact_form {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+
+
+}
+
+.contact_name, .contact_email, .contact_theme, .contact_textarea {
+  position: relative;
+}
+
+.contact_name input[type="text"],
+.contact_email input[type="text"],
+.contact_theme input[type="text"] {
+  position: relative;
+  width: 380px;
+  height: 35px;;
+  line-height: 30px;
+  background-color: #e2e2e2;
+  border: 1px solid #b7b7b7;
+  box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.06);
+  padding: 0 0 0 31px;
+  margin: 0 0 20px;
+
+
+
+  font: normal 13px Arial, sans-serif;
+  color: #434343;
+}
+
+.contact_email input[type="text"] {
+  background-color: #e2e2e2;
+  border: 1px solid #b7b7b7;
+  box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.06);;
+}
+
+.contact_theme input[type="text"] {
+  background-color: #e2e2e2;
+  border: 1px solid #b7b7b7;
+  box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.06);
+}
+
+.contact_textarea textarea {
+  position: relative;
+  width:670px ;
+  height:108px;
+  padding: 7px 10px;
+  margin: 0 0 18px;
+  background-color: #e2e2e2;
+  border: 1px solid #b7b7b7;
+  box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.06);
+
+
+  font: normal 13px Arial, sans-serif;
+  color: #434343;
+}
+
+.contact_name input[type="text"]:focus, .contact_email input[type="text"]:focus, .contact_theme input[type="text"]:focus, .contact_textarea textarea:focus, .contact_submit:focus {
+  outline: none;
+  box-shadow: 0 0 5px #aaaaad;
+}
+
+.contact_submit {
+  width:110px ;
+  height:35px ;
+  font:300 14px/35px'Oswald', sans-serif;
+  color: #2c2c2b;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+  text-align: left;
+  background: url(../images/action-btn-arrown.png) 90px no-repeat, url(../images/action-btn-bg.png), #ffd500;
+  border: none;
+  cursor: pointer;
+}
+
+.contact_submit:hover {
+  background: url(../images/action-btn-arrown.png) 90px no-repeat, url(../images/action-btn-bg.png), #fff;
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+}
+
+.contact_message {
+  float: left;
+  width: 100%;
+  height: 22px;
+  padding: 70px 0;
+  text-align: center;
+  font: normal 22px Arial, sans-serif;
+  color: #434343;
+}
+
+.errors, .errorss {
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+  font: normal 12px Arial, sans-serif;
+  color: red;
+  z-index: 999;
+}
